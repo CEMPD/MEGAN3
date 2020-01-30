@@ -1,0 +1,127 @@
+SHELL=/bin/sh
+#.........................................................................
+#  Environment Variables:
+#       BIN     machine/OS/compiler/mode type. Shows up as suffix
+#               for "Makeinclude.${BIN}" to determine compilation
+#               flags, and in ${OBJDIR} and $(INSTALL) to determine
+#               binary directories
+#.........................................................................
+#  Directories:
+#       SRCDIR serves as a root directory for the model source
+#       OBJDIR  is the build-directory (where ".o" ".mod" nad EXE's "live")
+#       IOBASE  is where the I/O API "lives"
+#       IOSRC   is where the I/O API "lives"
+#.........................................................................
+#  Special Make-targets
+#       all:        (".o"s, ".mod"s, and) executables
+#       dir:        create OBJDIR
+#       clean:      remove objects, modules, and executables from OBJDIR
+#       gtar:       create source tar-ball
+#........................................................................
+
+.SUFFIXES : .f .F .f90 .F90 .mod .o 
+
+IOHOME = /proj/ie/apps/longleaf/
+IOBASE = ${IOHOME}/ioapi-3.2
+IOSRC  = ${IOBASE}/ioapi
+BIN    = Linux2_x86_64ifort18.2   # environment variable will over-ride...
+IOLIB  = ${IOBASE}/${BIN}
+SRCDIR = /proj/ie/proj/MEGAN3/cases/All_MEGAN10/src
+OBJDIR = ${SRCDIR}
+
+#.........................................................................
+#  General compiler related definitions.
+#  Note that E132 is the compiler specific "fixed-132-source" flag
+
+include ${IOSRC}/Makeinclude.${BIN}
+
+VPATH = ${OBJDIR}:${IOLIB}
+
+IFLAGS    = -I${IOLIB} -I${IOSRC} -I${SRCDIR} -I.
+OFLAGS    = $(DEFINEFLAGS) $(FOPTFLAGS) $(OMPFLAGS) $(ARCHFLAGS)
+FFLAGS    = $(E132) $(IFLAGS) $(OFLAGS) # for fixed-132 source
+F90FLAGS  = $(IFLAGS) $(OFLAGS)
+
+LIBS = -L${IOLIB} -lioapi -lnetcdff -lnetcdf
+
+#  source-file lists:  first, those that do not require pre-processing
+
+# mSRC   = 
+# fSRC   =
+m90SRC = all_megan.f90
+f90SRC = test_megvea.f90
+
+# #  source-file lists that do require pre-processing
+# 
+# MSRC   = 
+# FSRC   =
+# M90SRC =
+# F90SRC = 
+
+# object and module-file lists
+
+MODS = $(m90SRC:.f90=.mod)
+MOBJ = $(m90SRC:.f90=.o)
+FOBJ = $(f90SRC:.f90=.o)
+OBJ  = ${FOBJ} ${MOBJ}
+
+# MODS = $(mSRC:.f=.mod) $(MSRC:.f=.mod) $(m90SRC:.f90=.mod) $(M90SRC:.F90=.mod)
+# MOBJ = $(mSRC:.f=.o) $(MSRC:.f=.o) $(m90SRC:.f90=.o) $(M90SRC:.F90=.o)
+# FOBJ = $(fSRC:.f=.o) $(FSRC:.f=.o) $(f90SRC:.f90=.o) $(F90SRC:.F90=.o)
+# OBJ  = ${FOBJ} ${MOBJ}
+
+#  executable-lists
+
+EXE = megvea
+
+
+######################################################################
+
+all:  ${EXE}
+
+mod:  ${MODS}
+
+dir:
+	mkdir -p ${OBJDIR}
+
+clean:  ${OBJDIR}
+	rm $(OBJ) $(MODS) $(EXE)
+	rm  *.o core* *.mod *.MOD ${EXE}
+
+gtar:
+	cd ${SRCDIR}; tar cvfz ../test_megvea.tgz Make* *.[fF]*
+
+#-----------------------------------------------------------------------
+# General rules
+
+%.o : %.mod     # line to allow file.mod files to be recognised by GNU make
+
+.f.o: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) $(INCLUDE) ${SRCDIR}/$<
+.F.o: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) $(INCLUDE) ${SRCDIR}/$<
+.f.mod: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) $(INCLUDE) ${SRCDIR}/$<
+.F.mod: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) $(INCLUDE) ${SRCDIR}/$<
+.f90.o: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) ${SRCDIR}/$<
+.F90.o: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) ${SRCDIR}/$<
+.f90.mod: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) $(INCLUDE) ${SRCDIR}/$<
+.F90.mod: 
+	cd ${OBJDIR}; $(FC) -c $(FFLAGS) $(INCLUDE) ${SRCDIR}/$<
+
+#  Module dependencies:
+
+test_megvea.o : m3utilio.mod all_megan.mod
+
+
+#-----------------------------------------------------------------------
+#    Program builds:
+
+megvea : all_megan.o test_megvea.o
+	cd ${OBJDIR}; $(FC) $(FFLAGS) $^ $(LIBS) -o $(@)
+
+#ifort -auto -warn notruncated_source -Bstatic -static-intel -extend-source 132 -I/proj/ie/apps/longleaf//ioapi-3.2/Linux2_x86_64ifort18.2 -I/proj/ie/apps/longleaf//ioapi-3.2/ioapi -I/proj/ie/proj/MEGAN3/cases/All_MEGAN10/src -I. -O3 -unroll -stack_temps -safe_cray_ptr -convert big_endian -assume byterecl -traceback -xHost -qopenmp -DAUTO_ARRAYS=1 -DF90=1 -DFLDMN=1 -DFSTR_L=int -DIOAPI_NO_STDOUT=1 -DAVOID_FLUSH=1 -DBIT32=1 all_megan.o test_megvea.o -L/proj/ie/apps/longleaf//ioapi-3.2/Linux2_x86_64ifort18.2 -lioapi -lnetcdff -lnetcdf -o megvea
