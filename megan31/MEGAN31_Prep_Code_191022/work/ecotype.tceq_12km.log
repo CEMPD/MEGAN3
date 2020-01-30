@@ -1,0 +1,66 @@
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                                                                                                                                                 
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file ecotype30s.nc
+ No such file or directory                                                       
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                                                                                                                                                 
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file ecotype30s.nc
+ No such file or directory                                                       

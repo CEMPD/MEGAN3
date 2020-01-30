@@ -1,0 +1,1091 @@
+            1           12 
+ ./input/wrfout_d01_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                                                                                                                                                                                                                                                     
+            5            6          148          112
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -97.00000    
+ wrf_file: CEN_LAT =     40.00001    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     36000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     176.9444    
+ proj_init: proj%polei,j =     81.50000        278.3400    
+ proj_init: west-east,south-north =   162  128
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-122.67221    , 16.186966    )
+ se corner @ (-71.327789    , 16.186966    )
+ ne corner @ (-52.324432    , 53.920521    )
+ nw corner @ (-141.67557    , 53.920521    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   162     1   128
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ num=1001
+  
+ Reading megan2 bio emiss file laina2008001.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+ megan2_bioemiss: file laina2008001.nc has a new grid
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   1754666.00000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            1
+  Finished megan2 bio emiss dataset laina2008001.nc
+ num=1009
+  
+ Reading megan2 bio emiss file laina2008009.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            2
+  Finished megan2 bio emiss dataset laina2008009.nc
+ num=1017
+  
+ Reading megan2 bio emiss file laina2008017.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            3
+  Finished megan2 bio emiss dataset laina2008017.nc
+ num=1025
+  
+ Reading megan2 bio emiss file laina2008025.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            4
+  Finished megan2 bio emiss dataset laina2008025.nc
+ num=1033
+  
+ Reading megan2 bio emiss file laina2008033.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            5
+  Finished megan2 bio emiss dataset laina2008033.nc
+ num=1041
+  
+ Reading megan2 bio emiss file laina2008041.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            6
+  Finished megan2 bio emiss dataset laina2008041.nc
+ num=1049
+  
+ Reading megan2 bio emiss file laina2008049.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            7
+  Finished megan2 bio emiss dataset laina2008049.nc
+ num=1057
+  
+ Reading megan2 bio emiss file laina2008057.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            8
+  Finished megan2 bio emiss dataset laina2008057.nc
+ num=1065
+  
+ Reading megan2 bio emiss file laina2008065.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=            9
+  Finished megan2 bio emiss dataset laina2008065.nc
+ num=1073
+  
+ Reading megan2 bio emiss file laina2008073.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           10
+  Finished megan2 bio emiss dataset laina2008073.nc
+ num=1081
+  
+ Reading megan2 bio emiss file laina2008081.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           11
+  Finished megan2 bio emiss dataset laina2008081.nc
+ num=1089
+  
+ Reading megan2 bio emiss file laina2008089.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           12
+  Finished megan2 bio emiss dataset laina2008089.nc
+ num=1097
+  
+ Reading megan2 bio emiss file laina2008097.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           13
+  Finished megan2 bio emiss dataset laina2008097.nc
+ num=1105
+  
+ Reading megan2 bio emiss file laina2008105.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           14
+  Finished megan2 bio emiss dataset laina2008105.nc
+ num=1113
+  
+ Reading megan2 bio emiss file laina2008113.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           15
+  Finished megan2 bio emiss dataset laina2008113.nc
+ num=1121
+  
+ Reading megan2 bio emiss file laina2008121.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           16
+  Finished megan2 bio emiss dataset laina2008121.nc
+ num=1129
+  
+ Reading megan2 bio emiss file laina2008129.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           17
+  Finished megan2 bio emiss dataset laina2008129.nc
+ num=1137
+  
+ Reading megan2 bio emiss file laina2008137.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           18
+  Finished megan2 bio emiss dataset laina2008137.nc
+ num=1145
+  
+ Reading megan2 bio emiss file laina2008145.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           19
+  Finished megan2 bio emiss dataset laina2008145.nc
+ num=1153
+  
+ Reading megan2 bio emiss file laina2008153.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           20
+  Finished megan2 bio emiss dataset laina2008153.nc
+ num=1161
+  
+ Reading megan2 bio emiss file laina2008161.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           21
+  Finished megan2 bio emiss dataset laina2008161.nc
+ num=1169
+  
+ Reading megan2 bio emiss file laina2008169.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           22
+  Finished megan2 bio emiss dataset laina2008169.nc
+ num=1177
+  
+ Reading megan2 bio emiss file laina2008177.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           23
+  Finished megan2 bio emiss dataset laina2008177.nc
+ num=1185
+  
+ Reading megan2 bio emiss file laina2008185.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           24
+  Finished megan2 bio emiss dataset laina2008185.nc
+ num=1193
+  
+ Reading megan2 bio emiss file laina2008193.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           25
+  Finished megan2 bio emiss dataset laina2008193.nc
+ num=1201
+  
+ Reading megan2 bio emiss file laina2008201.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           26
+  Finished megan2 bio emiss dataset laina2008201.nc
+ num=1209
+  
+ Reading megan2 bio emiss file laina2008209.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           27
+  Finished megan2 bio emiss dataset laina2008209.nc
+ num=1217
+  
+ Reading megan2 bio emiss file laina2008217.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           28
+  Finished megan2 bio emiss dataset laina2008217.nc
+ num=1225
+  
+ Reading megan2 bio emiss file laina2008225.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           29
+  Finished megan2 bio emiss dataset laina2008225.nc
+ num=1233
+  
+ Reading megan2 bio emiss file laina2008233.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           30
+  Finished megan2 bio emiss dataset laina2008233.nc
+ num=1241
+  
+ Reading megan2 bio emiss file laina2008241.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           31
+  Finished megan2 bio emiss dataset laina2008241.nc
+ num=1249
+  
+ Reading megan2 bio emiss file laina2008249.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           32
+  Finished megan2 bio emiss dataset laina2008249.nc
+ num=1257
+  
+ Reading megan2 bio emiss file laina2008257.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           33
+  Finished megan2 bio emiss dataset laina2008257.nc
+ num=1265
+  
+ Reading megan2 bio emiss file laina2008265.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           34
+  Finished megan2 bio emiss dataset laina2008265.nc
+ num=1273
+  
+ Reading megan2 bio emiss file laina2008273.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           35
+  Finished megan2 bio emiss dataset laina2008273.nc
+ num=1281
+  
+ Reading megan2 bio emiss file laina2008281.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           36
+  Finished megan2 bio emiss dataset laina2008281.nc
+ num=1289
+  
+ Reading megan2 bio emiss file laina2008289.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           37
+  Finished megan2 bio emiss dataset laina2008289.nc
+ num=1297
+  
+ Reading megan2 bio emiss file laina2008297.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           38
+  Finished megan2 bio emiss dataset laina2008297.nc
+ num=1305
+  
+ Reading megan2 bio emiss file laina2008305.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           39
+  Finished megan2 bio emiss dataset laina2008305.nc
+ num=1313
+  
+ Reading megan2 bio emiss file laina2008313.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           40
+  Finished megan2 bio emiss dataset laina2008313.nc
+ num=1321
+  
+ Reading megan2 bio emiss file laina2008321.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           41
+  Finished megan2 bio emiss dataset laina2008321.nc
+ num=1329
+  
+ Reading megan2 bio emiss file laina2008329.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           42
+  Finished megan2 bio emiss dataset laina2008329.nc
+ num=1337
+  
+ Reading megan2 bio emiss file laina2008337.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           43
+  Finished megan2 bio emiss dataset laina2008337.nc
+ num=1345
+  
+ Reading megan2 bio emiss file laina2008345.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           44
+  Finished megan2 bio emiss dataset laina2008345.nc
+ num=1353
+  
+ Reading megan2 bio emiss file laina2008353.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           45
+  Finished megan2 bio emiss dataset laina2008353.nc
+ num=1361
+  
+ Reading megan2 bio emiss file laina2008361.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          2492         1000
+ megan2_bioemiss: data_dx,dx,has_area_map =     6670.695        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.969985961914     -179.909973144531    
+megan2_bioemiss: xedge_megan(1,2) =  -179.999992370605     -179.939971923828    
+megan2_bioemiss: dx =                     16
+megan2_bioemiss: nlon_megan,nlat_megan =   2492   1000
+megan2_bioemiss: ycen_megan  =   69.9100036621094      69.9700012207031    
+megan2_bioemiss: yedge_megan =   69.9400024414063      70.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        100
+area_interp: max model lat ndx =        834
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =   1754666
+area_interp: active dcell cnt           =   1108677
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    596359
+ megan_month=           46
+  Finished megan2 bio emiss dataset laina2008361.nc
+ map_megan2_emissions: Before write_lai3
+ finished writing LAI to .csv file for CMAQ

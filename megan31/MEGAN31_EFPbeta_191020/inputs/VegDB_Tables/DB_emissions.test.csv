@@ -1,0 +1,315 @@
+RefID,VegID,CAS,ERuggh,ERnmm2s,J-rating,Position,Comments,Comments2
+0,-5,50000,-999,0.01,3.5,2,default crop,class 16 formaldehyde and other
+0,-4,50000,-999,0.01,3.5,2,default grass,class 16 formaldehyde and other
+0,-3,50000,-999,0.01,3.5,2,default shrub,class 16 formaldehyde and other
+0,-2,50000,-999,0.01,3.5,2,default btree,class 16 formaldehyde and other 
+0,-1,50000,-999,0.01,3.5,2,default ntree,class 16 formaldehyde and other 
+0,-5,64186,-999,0.12,3.5,2,default crop,class 14 formic and other organic acids
+0,-4,64186,-999,0.12,3.5,2,default grass,class 14 formic and other organic acids
+0,-3,64186,-999,0.12,3.5,2,default shrub,class 14 formic and other organic acids
+0,-2,64186,-999,0.12,3.5,2,default btree,class 14 formic and other organic acids 
+0,-1,64186,-999,0.12,3.5,2,default ntree,class 14 formic and other organic acids 
+0,-5,67541,-999,1.3,3.5,2,default crop,class 11 methanol
+0,-4,67541,-999,1.3,3.5,2,default grass,class 11 methanol
+0,-3,67541,-999,1.3,3.5,2,default shrub,class 11 methanol
+0,-2,67541,-999,1.3,3.5,2,default btree,class 11 methanol
+0,-1,67541,-999,1.3,3.5,2,default ntree,class 11 methanol
+0,-104,67541,-999,1.3,3.5,2,clmPFT4,class 11 methanol
+0,-106,67541,-999,1.3,3.5,2,clmPFT6,class 11 methanol
+0,-5,67641,-999,0.18,3.5,2,default crop,class 12 acetone
+0,-4,67641,-999,0.18,3.5,2,default grass,class 12 acetone
+0,-3,67641,-999,0.18,3.5,2,default shrub,class 12 acetone
+0,-2,67641,-999,0.18,3.5,2,default btree,class 12 acetone
+0,-1,67641,-999,0.18,3.5,2,default ntree,class 12 acetone
+0,-5,74851,-999,0.6,3.5,2,default crop,class 15 ethene and other
+0,-4,74851,-999,0.6,3.5,2,default grass,class 15 ethene and other
+0,-3,74851,-999,0.6,3.5,2,default shrub,class 15 ethene and other
+0,-2,74851,-999,0.6,3.5,2,default btree,class 15 ethene and other 
+0,-1,74851,-999,0.6,3.5,2,default ntree,class 15 ethene and other 
+0,-5,74884,-999,0.01,3.5,2,default crop,class 18 methyl iodide and other
+0,-4,74884,-999,0.014,3.5,2,default grass,class 18 methyl iodide and other
+0,-3,74884,-999,0.06,3.5,2,default shrub,class 18 methyl iodide and other
+0,-2,74884,-999,0.16,3.5,2,default btree,class 18 methyl iodide and other 
+0,-1,74884,-999,0.023333333,3.5,2,default ntree,class 18 methyl iodide and other 
+0,-5,75070,-999,0.18,3.5,2,default crop,class 13 acetaldehyde and ethanol
+0,-4,75070,-999,0.18,3.5,2,default grass,class 13 acetaldehyde and ethanol
+0,-3,75070,-999,0.18,3.5,2,default shrub,class 13 acetaldehyde and ethanol
+0,-2,75070,-999,0.18,3.5,2,default btree,class 13 acetaldehyde and ethanol
+0,-1,75070,-999,0.18,3.5,2,default ntree,class 13 acetaldehyde and ethanol
+0,-5,76222,-999,0.075,3.5,2,default crop,class 08 camphor
+0,-4,76222,-999,0.075,3.5,2,default grass,class 08 camphor
+0,-3,76222,-999,0.08,3.5,2,default shrub,class 08 camphor
+0,-2,76222,-999,0.08,3.5,2,default btree,class 08 camphor
+0,-1,76222,-999,0.075,3.5,2,default ntree,class 08 camphor
+0,-5,78795,-999,0.001,3.5,2,default crop,class 01 isoprene
+0,-4,78795,-999,1.6,3.5,2,default grass,class 01 isoprene
+0,-3,78795,-999,6,3.5,2,default shrub,class 01 isoprene
+0,-2,78795,-999,16,3.5,2,default btree,class 01 isoprene
+0,-1,78795,-999,2,3.5,2,default ntree,class 01 isoprene
+1,386,78795,0.01,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,2547,78795,0.01,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,18112,78795,20,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,18112,78795,0.025,-999,1,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+1,22885,78795,40,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+95,22885,78795,40,-999,0,2,sweetgum,
+209,22885,78795,22.94117647,-999,0,2,,
+1,22885,78795,64,-999,1,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+1,22885,78795,-999,11.7,2,3,Liquidambar styraciflua; environ control leaf cuvette; in situ; field; mature shade leaves,
+1,22885,78795,-999,21.5,3,2,Liquidambar styraciflua; environ control leaf cuvette; in situ; field; mature part shade leaves,
+94,22885,78795,70.6,-999,3,2,field,
+1,22885,78795,-999,38.1,4,1,Liquidambar styraciflua; environ control leaf cuvette; in situ; field; mature sun leaves,
+97,22885,78795,45.5,17,4,1,"sun leaf, mature tree in field, n>15",
+200,22885,78795,68,37,4,1,field leaf cuvette with environ control ;  sun leaves; measured at std conditions,
+374,22885,78795,-999,32.8,4,1,urban and rural field sites ; leaf cuvette with environ control; sun leaves; measured at std conditions,
+1,30154,78795,0.01,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+405,30154,78795,0.095294118,-999,0,2,middle age trees; 2011.6-10; 2012.5-11,
+95,32430,78795,75,-999,0,2,Q. alba branch level,
+174,32430,78795,74.3,-999,0,2,mature leaves; sunlit; midday (09:00-16:00);1998.5-8,
+382,32430,78795,8.4,2.911764706,0,1,sunlit; midday;2012.10,
+95,32430,78795,89,-999,3,2,"Q. alba leaf level, mature shade leaf",
+118,32430,78795,59.8,-999,3,2,field whole plant enclosure; 8 meter tree; in situ GC-RGD; value for PAR of 1000 above canopy which is about 500 at 2 meter canopy depth. Seasonal study- used value for July,
+95,32430,78795,99,-999,4,1,"Q. alba leaf level, mature sun leaf",
+111,32430,78795,89,31,4,3,environ control leaf cuvette; GC-RGD in situ; field; mature shade leaves,
+111,32430,78795,99,51,4,1,environ control leaf cuvette; GC-RGD in situ; field; mature sun leaves,
+200,32430,78795,92,50,4,1,field leaf cuvette with environ control ;  sun leaves; measured at std conditions,
+370,32430,78795,-999,33,4,2,"Missouri EC canopy flux, LAI 3.7",
+382,32430,78795,90.6,35.6,4,1,white oak; field leaf cuvette with environ control ;  sun leaves; measured at std conditions,
+460,32430,78795,-999,38.6,4,1,white oak; environ control leaf cuvette; in situ; field; mature sun leaves,
+461,32430,78795,-999,36.3,4,2,Estimated from aircraft EC data,
+1,32571,78795,40,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+266,32571,78795,65.6,-999,0,2,sunlit leaves; leaves were measured during 10:00-18:00,
+382,32571,78795,11.9,4.058823529,0,1,sunlit; midday;2012.10,
+154,32571,78795,80,-999,3,1,"environmental control leaf cuvette, potted plants outdoors",
+200,32571,78795,73,50,4,1,field leaf cuvette with environ control ;  sun leaves; measured at std conditions,
+374,32571,78795,-999,34.1,4,1,urban and rural field sites ; leaf cuvette with environ control; sun leaves; measured at std conditions,
+382,32571,78795,93.6,36.3,4,1,Quercus stellata; field leaf cuvette with environ control ;  sun leaves; measured at std conditions,
+461,32571,78795,-999,36.3,4,2,Estimated from aircraft EC data,
+375,39717,78795,0.16,-999,2,2,Results show wide ranges ; average used,wheat; Isoprene
+0,-201,78795,-999,1,3.5,2,Betulaceae,class 01 isoprene
+0,-202,78795,-999,3,3.5,2,Bignoniaceae,class 01 isoprene
+0,-203,78795,-999,3,3.5,2,Bumelia,class 01 isoprene
+0,-204,78795,-999,3,3.5,2,Burseraceae,class 01 isoprene
+0,-205,78795,-999,3,3.5,2,Capparaceae,class 01 isoprene
+0,-206,78795,-999,3,3.5,2,Caricaceae,class 01 isoprene
+0,-207,78795,-999,10,3.5,2,Casuarinaceae,class 01 isoprene
+0,-208,78795,-999,3,3.5,2,Chrysobalanaceae,class 01 isoprene
+0,-209,78795,-999,3,3.5,2,Clusiaceae,class 01 isoprene
+0,-210,78795,-999,3,3.5,2,Combretaceae,class 01 isoprene
+0,-211,78795,-999,3,3.5,2,Cornaceae,class 01 isoprene
+0,-212,78795,-999,0.1,3.5,2,Cupressaceae,class 01 isoprene
+0,-213,78795,-999,3,3.5,2,Cyperaceae,class 01 isoprene
+0,-214,78795,-999,3,3.5,2,Cyrillaceae,class 01 isoprene
+0,-215,78795,-999,3,3.5,2,Ebenaceae,class 01 isoprene
+0,-216,78795,-999,3,3.5,2,Elaeagnaceae,class 01 isoprene
+0,-217,78795,-999,3,3.5,2,Ericaceae,class 01 isoprene
+0,-218,78795,-999,15,3.5,2,Fagaceae,class 01 isoprene
+0,-219,78795,-999,15,3.5,2,Hamamelidaceae,class 01 isoprene
+0,-220,78795,-999,3,3.5,2,Hippocastanaceae,class 01 isoprene
+0,-221,78795,-999,1,3.5,2,Juglandaceae,class 01 isoprene
+0,-222,78795,-999,3,3.5,2,Lauraceae,class 01 isoprene
+0,-223,78795,-999,3,3.5,2,Magnoliaceae,class 01 isoprene
+0,-224,78795,-999,3,3.5,2,Malpighiaceae,class 01 isoprene
+0,-225,78795,-999,3,3.5,2,Malvaceae,class 01 isoprene
+0,-226,78795,-999,3,3.5,2,Meliaceae,class 01 isoprene
+0,-227,78795,-999,3,3.5,2,Moraceae,class 01 isoprene
+0,-228,78795,-999,3,3.5,2,Myricaceae,class 01 isoprene
+0,-229,78795,-999,3,3.5,2,Myrtaceae,class 01 isoprene
+0,-230,78795,-999,3,3.5,2,Oleaceae,class 01 isoprene
+0,-231,78795,-999,3,3.5,2,Pandanaceae,class 01 isoprene
+0,-232,78795,-999,0.1,3.5,2,Pinaceae,class 01 isoprene
+0,-233,78795,-999,15,3.5,2,Platanaceae,class 01 isoprene
+0,-234,78795,-999,1,3.5,2,Podocarpaceae,class 01 isoprene
+0,-235,78795,-999,3,3.5,2,Polygalaceae,class 01 isoprene
+0,-236,78795,-999,3,3.5,2,Rhizophoraceae,class 01 isoprene
+0,-237,78795,-999,3,3.5,2,Rosaceae,class 01 isoprene
+0,-238,78795,-999,3,3.5,2,Rutaceae,class 01 isoprene
+0,-239,78795,-999,15,3.5,2,Salicaceae,class 01 isoprene
+0,-240,78795,-999,3,3.5,2,Sapindaceae,class 01 isoprene
+0,-241,78795,-999,3,3.5,2,Sapotaceae,class 01 isoprene
+0,-242,78795,-999,3,3.5,2,Scrophulariaceae,class 01 isoprene
+0,-243,78795,-999,3,3.5,2,Simaroubaceae,class 01 isoprene
+0,-244,78795,-999,10,3.5,2,Simmondsiaceae,class 01 isoprene
+0,-245,78795,-999,3,3.5,2,Sladeniaceae,class 01 isoprene
+0,-246,78795,-999,3,3.5,2,Smilacaceae,class 01 isoprene
+0,-247,78795,-999,3,3.5,2,Sterculiaceae,class 01 isoprene
+0,-248,78795,-999,3,3.5,2,Styracaceae,class 01 isoprene
+0,-249,78795,-999,3,3.5,2,Tamaricaceae,class 01 isoprene
+0,-250,78795,-999,0.1,3.5,2,Taxaceae,class 01 isoprene
+0,-251,78795,-999,15,3.5,2,TBD,class 01 isoprene
+0,-252,78795,-999,3,3.5,2,Theaceae,class 01 isoprene
+0,-253,78795,-999,3,3.5,2,Tiliaceae,class 01 isoprene
+0,-254,78795,-999,1,3.5,2,Ulmaceae,class 01 isoprene
+0,-255,78795,-999,3,3.5,2,Verbenaceae,class 01 isoprene
+0,-256,78795,-999,3,3.5,2,Zygophyllaceae,class 01 isoprene
+0,-101,78795,-999,1,3.5,2,clmPFT1,class 01 isoprene
+0,-102,78795,-999,5,3.5,2,clmPFT2,class 01 isoprene
+0,-103,78795,-999,0.001,3.5,2,clmPFT3,class 01 isoprene
+0,-104,78795,-999,13,3.5,2,clmPFT4,class 01 isoprene
+0,-105,78795,-999,18,3.5,2,clmPFT5,class 01 isoprene
+0,-106,78795,-999,13,3.5,2,clmPFT6,class 01 isoprene
+0,-107,78795,-999,18,3.5,2,clmPFT7,class 01 isoprene
+0,-108,78795,-999,20,3.5,2,clmPFT8,class 01 isoprene
+0,-109,78795,-999,4,3.5,2,clmPFT9,class 01 isoprene
+0,-110,78795,-999,7,3.5,2,clmPFT10,class 01 isoprene
+0,-111,78795,-999,7,3.5,2,clmPFT11,class 01 isoprene
+0,-112,78795,-999,3,3.5,2,clmPFT12,class 01 isoprene
+0,-113,78795,-999,1.5,3.5,2,clmPFT13,class 01 isoprene
+0,-114,78795,-999,0.4,3.5,2,clmPFT14,class 01 isoprene
+0,-115,78795,-999,0.001,3.5,2,clmPFT15,class 01 isoprene
+0,-116,78795,-999,0.1,3.5,2,clmPFT16,class 01 isoprene
+0,-5,78853,-999,0.01,3.5,2,default crop,class 17 Methacrolein and other
+0,-4,78853,-999,0.01,3.5,2,default grass,class 17 Methacrolein and other
+0,-3,78853,-999,0.01,3.5,2,default shrub,class 17 Methacrolein and other
+0,-2,78853,-999,0.01,3.5,2,default btree,class 17 Methacrolein and other
+0,-1,78853,-999,0,3.5,2,default ntree,class 17 Methacrolein and other
+0,-5,79925,-999,0.002,3.5,2,default crop,class 05 Camphene
+0,-4,79925,-999,0.002,3.5,2,default grass,class 05 Camphene
+0,-3,79925,-999,0.09,3.5,2,default shrub,class 05 Camphene
+0,-2,79925,-999,0.08,3.5,2,default btree,class 05 Camphene
+0,-1,79925,-999,0.16,3.5,2,default ntree,class 05 Camphene
+1,386,79925,0.12,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,386,79925,0.1,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+1,18112,79925,0.0008,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,79925,0.12,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,79925,0.2216,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+398,30150,79925,-999,0.002117647,0,2,50-60 years old trees; 2011.5,
+398,30150,79925,-999,0.021176471,0,2,50-60 years old trees; 2011.6-7,
+398,30150,79925,-999,0.012705882,0,2,50-60 years old trees; 2011.8,
+398,30150,79925,-999,0.002823529,0,2,50-60 years old trees; 2011.9,
+398,30150,79925,-999,0.013411765,0,2,50-60 years old trees; 2011; ambient conditions,
+398,30150,79925,-999,0.008470588,0,2,50-60 years old trees; 2011; dry conditions,
+398,30150,79925,-999,0.009176471,0,2,50-60 years old trees; 2011; wet conditions,
+398,30150,79925,-999,0.022588235,0,2,New leaves; 2011.8,
+1,30154,79925,0.12,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,30154,79925,0.054,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+405,30154,79925,0.023223529,-999,0,2,middle age trees; 2011.6-10; 2012.5-11,
+382,32430,79925,0.0032,-999,3,1,sunlit; midday; 2012.6,
+382,32571,79925,0.0096,-999,3,1,sunlit; midday; 2012.6,
+0,-5,80568,-999,0.002,3.5,2,default crop,class 03 a-pinene
+0,-4,80568,-999,0.002,3.5,2,default grass,class 03 a-pinene
+0,-3,80568,-999,0.23,3.5,2,default shrub,class 03 a-pinene
+0,-2,80568,-999,0.44,3.5,2,default btree,class 03 a-pinene
+0,-1,80568,-999,0.56,3.5,2,default ntree,class 03 a-pinene
+1,386,80568,0.825,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,386,80568,0.6875,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+1,18112,80568,0.0055,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,80568,0.825,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,80568,1.5235,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+398,30150,80568,-999,0.014558823,0,2,50-60 years old trees; 2011.5,
+398,30150,80568,-999,0.145588235,0,2,50-60 years old trees; 2011.6-7,
+398,30150,80568,-999,0.087352941,0,2,50-60 years old trees; 2011.8,
+398,30150,80568,-999,0.019411765,0,2,50-60 years old trees; 2011.9,
+398,30150,80568,-999,0.092205882,0,2,50-60 years old trees; 2011; ambient conditions,
+398,30150,80568,-999,0.058235294,0,2,50-60 years old trees; 2011; dry conditions,
+398,30150,80568,-999,0.063088235,0,2,50-60 years old trees; 2011; wet conditions,
+398,30150,80568,-999,0.155294118,0,2,New leaves; 2011.8,
+1,30154,80568,0.825,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,30154,80568,0.37125,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+405,30154,80568,0.159661765,-999,0,2,middle age trees; 2011.6-10; 2012.5-11,
+382,32430,80568,0.022,-999,3,1,sunlit; midday; 2012.6,
+382,32571,80568,0.066,-999,3,1,sunlit; midday; 2012.6,
+0,-5,87445,-999,0,3.5,2,default crop,class 09 b-caryophyllene
+0,-4,87445,-999,0,3.5,2,default grass,class 09 b-caryophyllene
+0,-3,87445,-999,0.01,3.5,2,default shrub,class 09 b-caryophyllene
+0,-2,87445,-999,0.01,3.5,2,default btree,class 09 b-caryophyllene
+0,-1,87445,-999,0.014,3.5,2,default ntree,class 09 b-caryophyllene
+0,-5,99832,-999,0.002,3.5,2,default crop,class 06 a-phellandrene
+0,-4,99832,-999,0.002,3.5,2,default grass,class 06 a-phellandrene
+0,-3,99832,-999,0.16,3.5,2,default shrub,class 06 a-phellandrene
+0,-2,99832,-999,0.16,3.5,2,default btree,class 06 a-phellandrene
+0,-1,99832,-999,0.19,3.5,2,default ntree,class 06 a-phellandrene
+1,386,99832,0.24,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,386,99832,0.2,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+1,18112,99832,0.0016,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,99832,0.24,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,99832,0.4432,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+398,30150,99832,-999,0.004235294,0,2,50-60 years old trees; 2011.5,
+398,30150,99832,-999,0.042352941,0,2,50-60 years old trees; 2011.6-7,
+398,30150,99832,-999,0.025411765,0,2,50-60 years old trees; 2011.8,
+398,30150,99832,-999,0.005647059,0,2,50-60 years old trees; 2011.9,
+398,30150,99832,-999,0.026823529,0,2,50-60 years old trees; 2011; ambient conditions,
+398,30150,99832,-999,0.016941176,0,2,50-60 years old trees; 2011; dry conditions,
+398,30150,99832,-999,0.018352941,0,2,50-60 years old trees; 2011; wet conditions,
+398,30150,99832,-999,0.045176471,0,2,New leaves; 2011.8,
+1,30154,99832,0.24,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,30154,99832,0.108,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+405,30154,99832,0.046447059,-999,0,2,middle age trees; 2011.6-10; 2012.5-11,
+382,32430,99832,0.0064,-999,3,1,sunlit; midday; 2012.6,
+382,32571,99832,0.0192,-999,3,1,sunlit; midday; 2012.6,
+0,-5,99876,-999,0.088,3.5,2,default crop,class 07 p-cymene
+0,-4,99876,-999,0.088,3.5,2,default grass,class 07 p-cymene
+0,-3,99876,-999,0.16,3.5,2,default shrub,class 07 p-cymene
+0,-2,99876,-999,0.16,3.5,2,default btree,class 07 p-cymene
+0,-1,99876,-999,0.16,3.5,2,default ntree,class 07 p-cymene
+1,386,99876,0.03,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,386,99876,0.025,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+1,18112,99876,0.0002,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,99876,0.03,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,99876,0.0554,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+398,30150,99876,-999,0.000529412,0,2,50-60 years old trees; 2011.5,
+398,30150,99876,-999,0.005294118,0,2,50-60 years old trees; 2011.6-7,
+398,30150,99876,-999,0.003176471,0,2,50-60 years old trees; 2011.8,
+398,30150,99876,-999,0.000705882,0,2,50-60 years old trees; 2011.9,
+398,30150,99876,-999,0.003352941,0,2,50-60 years old trees; 2011; ambient conditions,
+398,30150,99876,-999,0.002117647,0,2,50-60 years old trees; 2011; dry conditions,
+398,30150,99876,-999,0.002294118,0,2,50-60 years old trees; 2011; wet conditions,
+398,30150,99876,-999,0.005647059,0,2,New leaves; 2011.8,
+1,30154,99876,0.03,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,30154,99876,0.0135,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+405,30154,99876,0.005805882,-999,0,2,middle age trees; 2011.6-10; 2012.5-11,
+382,32430,99876,0.0008,-999,3,1,sunlit; midday; 2012.6,
+382,32571,99876,0.0024,-999,3,1,sunlit; midday; 2012.6,
+0,-5,115184,-999,0,3.5,2,default crop,class 02 MBO
+0,-4,115184,-999,0,3.5,2,default grass,class 02 MBO
+0,-3,115184,-999,0.002,3.5,2,default shrub,class 02 MBO
+0,-2,115184,-999,0,3.5,2,default btree,class 02 MBO
+0,-1,115184,-999,0.2,3.5,2,default ntree,class 02 MBO
+398,30150,115184,-999,0.606976744,0,2,50-60 years old trees; 2011.5 ,
+398,30150,115184,-999,4.2,0,2,50-60 years old trees; 2011.6-7,
+398,30150,115184,-999,3.606976744,0,2,50-60 years old trees; 2011.8,
+398,30150,115184,-999,1.06744186,0,2,50-60 years old trees; 2011.9,
+398,30150,115184,-999,2.78372093,0,2,50-60 years old trees; 2011; ambient conditions ,
+398,30150,115184,-999,2.051162791,0,2,50-60 years old trees; 2011; dry conditions ,
+398,30150,115184,-999,2.511627907,0,2,50-60 years old trees; 2011; wet conditions ,
+398,30150,115184,-999,0.3,0,2,New leaves; 2011.8,
+0,-101,115184,-999,0.6,3.5,2,clmPFT1,class 02 MBO
+0,-102,115184,-999,0.03,3.5,2,clmPFT2,class 02 MBO
+0,-103,115184,-999,0,3.5,2,clmPFT3,class 02 MBO
+0,-5,123353,-999,0.001,3.5,2,default crop,class 04 Myrcene
+0,-4,123353,-999,0.001,3.5,2,default grass,class 04 Myrcene
+0,-3,123353,-999,0.11,3.5,2,default shrub,class 04 Myrcene
+0,-2,123353,-999,0.13,3.5,2,default btree,class 04 Myrcene
+0,-1,123353,-999,0.1,3.5,2,default ntree,class 04 Myrcene
+1,386,123353,0.285,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,386,123353,0.2375,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+1,18112,123353,0.0019,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,123353,0.285,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,22885,123353,0.5263,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+398,30150,123353,-999,0.005029412,0,2,50-60 years old trees; 2011.5,
+398,30150,123353,-999,0.050294118,0,2,50-60 years old trees; 2011.6-7,
+398,30150,123353,-999,0.030176471,0,2,50-60 years old trees; 2011.8,
+398,30150,123353,-999,0.006705882,0,2,50-60 years old trees; 2011.9,
+398,30150,123353,-999,0.031852941,0,2,50-60 years old trees; 2011; ambient conditions,
+398,30150,123353,-999,0.020117647,0,2,50-60 years old trees; 2011; dry conditions,
+398,30150,123353,-999,0.021794118,0,2,50-60 years old trees; 2011; wet conditions,
+398,30150,123353,-999,0.053647059,0,2,New leaves; 2011.8,
+1,30154,123353,0.285,-999,0,3,Synthesis of qualitative emission surveys conducted from 1960 to 2000,
+1,30154,123353,0.12825,-999,0,3,Synthesis of quantitative emission surveys conducted from 1960 to 2000,
+405,30154,123353,0.055155882,-999,0,2,middle age trees; 2011.6-10; 2012.5-11,
+382,32430,123353,0.0076,-999,3,1,sunlit; midday; 2012.6,
+382,32571,123353,0.0228,-999,3,1,sunlit; midday; 2012.6,
+0,-5,630080,-999,0.003,3.5,2,default crop,class 19 carbon monoxide
+0,-4,630080,-999,0.003,3.5,2,default grass,class 19 carbon monoxide
+0,-3,630080,-999,0.003,3.5,2,default shrub,class 19 carbon monoxide
+0,-2,630080,-999,0.003,3.5,2,default btree,class 19 carbon monoxide
+0,-1,630080,-999,0.001,3.5,2,default ntree,class 19 carbon monoxide
+0,-5,10102439,-999,0.5,3.5,2,default crop,class 20 nitric oxide
+0,-4,10102439,-999,0.5,3.5,2,default grass,class 20 nitric oxide
+0,-3,10102439,-999,0.5,3.5,2,default shrub,class 20 nitric oxide
+0,-2,10102439,-999,0.5,3.5,2,default btree,class 20 nitric oxide
+0,-1,10102439,-999,0.5,3.5,2,default ntree,class 20 nitric oxide
+0,-5,34424572,-999,0.003,3.5,2,default crop,class 10 longifolene
+0,-4,34424572,-999,0.001,3.5,2,default grass,class 10 longifolene
+0,-3,34424572,-999,0.04,3.5,2,default shrub,class 10 longifolene
+0,-2,34424572,-999,0.05,3.5,2,default btree,class 10 longifolene
+0,-1,34424572,-999,0.059,3.5,2,default ntree,class 10 Kaurene

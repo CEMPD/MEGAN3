@@ -1,0 +1,18 @@
+&control
+
+start_lai_mnth = 1,
+end_lai_mnth   = 12,
+wrffile   = './input/wrfout_d01_2013-08-28_12:00:00',
+megan_dir = './input',
+out_dir = './output',
+
+/
+
+&windowdefs
+
+ x0         =  5,
+ y0         =  6,
+ ncolsin    =  148,
+ nrowsin    =  112,
+
+/

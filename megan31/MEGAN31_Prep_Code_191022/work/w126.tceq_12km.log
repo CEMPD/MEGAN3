@@ -1,0 +1,216 @@
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file W126_RPO36_0.3degree.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           261          130
+ megan2_bioemiss: data_dx,dx,has_area_map =     33380.94        12000.00      F
+ megan2_bioemiss: file W126_RPO36_0.3degree.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -136.9927368164063       -58.88066864013672    
+ megan2_bioemiss: megan lat limits =     18.35883522033691        57.09084320068359    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            85          209
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =            14           86
+ dataset size =          9125
+ dataset min,max values =     3.571657        80.67033    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset W126_RPO36_0.3degree.nc
+ map_megan2_emissions: Before write_w126
+ megan_bio_emiss is done
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file W126_RPO36_0.3degree.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           261          130
+ megan2_bioemiss: data_dx,dx,has_area_map =     33380.94        12000.00      F
+ megan2_bioemiss: file W126_RPO36_0.3degree.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -136.9927368164063       -58.88066864013672    
+ megan2_bioemiss: megan lat limits =     18.35883522033691        57.09084320068359    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            85          209
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =            14           86
+ dataset size =          9125
+ dataset min,max values =     3.571657        80.67033    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset W126_RPO36_0.3degree.nc
+ map_megan2_emissions: Before write_w126
+ megan_bio_emiss is done
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file W126_RPO36_0.3degree.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           261          130
+ megan2_bioemiss: data_dx,dx,has_area_map =     33380.94        12000.00      F
+ megan2_bioemiss: file W126_RPO36_0.3degree.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -136.9927368164063       -58.88066864013672    
+ megan2_bioemiss: megan lat limits =     18.35883522033691        57.09084320068359    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            85          209
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =            14           86
+ dataset size =          9125
+ dataset min,max values =     3.571657        80.67033    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset W126_RPO36_0.3degree.nc
+ map_megan2_emissions: Before write_w126
+ megan_bio_emiss is done
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file W126_RPO36_0.3degree.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           261          130
+ megan2_bioemiss: data_dx,dx,has_area_map =     33380.94        12000.00      F
+ megan2_bioemiss: file W126_RPO36_0.3degree.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -136.9927368164063       -58.88066864013672    
+ megan2_bioemiss: megan lat limits =     18.35883522033691        57.09084320068359    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            85          209
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =            14           86
+ dataset size =          9125
+ dataset min,max values =     3.571657        80.67033    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset W126_RPO36_0.3degree.nc
+ map_megan2_emissions: Before write_w126
+ megan_bio_emiss is done

@@ -1,0 +1,57 @@
+!=======================================================================
+!  SPC_CBMZ.EXT
+!  This include file contains CBMZ species and their MW.
+!
+!
+!  Mechanism Name: CBMZ
+!  MEGAN v3
+!
+!  History:
+!  Who          When       What
+!  ---------------------------------------------------------------------
+!  Tan          12/02/06 - Creates this file
+!  Tan          08/14/07 - Move from MEGAN v2.0 to MEGAN v2.1.0 with no update.
+!  Ling Huang   06/17/17 - Updated for MEGANv3
+!=======================================================================
+
+      INTEGER,PARAMETER :: N_CBMZ_SPC = 37     ! Number of mechanism species
+      CHARACTER*26   MECH_SPC_CBMZ( N_CBMZ_SPC )  ! Mechanism species name
+      REAL           MECH_MWT_CBMZ( N_CBMZ_SPC )  ! Mechanism species mol. wt.
+
+      DATA  MECH_SPC_CBMZ( 1), MECH_MWT_CBMZ( 1) / 'ISOP ', 68.12   /
+      DATA  MECH_SPC_CBMZ( 2), MECH_MWT_CBMZ( 2) / 'NO   ', 46.00   /
+      DATA  MECH_SPC_CBMZ( 3), MECH_MWT_CBMZ( 3) / 'NO2  ', 46.00   /
+      DATA  MECH_SPC_CBMZ( 4), MECH_MWT_CBMZ( 4) / 'CO   ', 28.01   /
+      DATA  MECH_SPC_CBMZ( 5), MECH_MWT_CBMZ( 5) / 'CH3OH', 32.04   /
+      DATA  MECH_SPC_CBMZ( 6), MECH_MWT_CBMZ( 6) / 'ANOL ', 46.07   /
+      DATA  MECH_SPC_CBMZ( 7), MECH_MWT_CBMZ( 7) / 'ALD2 ', 44.05   /
+      DATA  MECH_SPC_CBMZ( 8), MECH_MWT_CBMZ( 8) / 'HCHO ', 30.03   /
+      DATA  MECH_SPC_CBMZ( 9), MECH_MWT_CBMZ( 9) / 'HCOOH', 46.03   /
+      DATA  MECH_SPC_CBMZ(10), MECH_MWT_CBMZ(10) / 'RCOOH', 60.05   /
+      DATA  MECH_SPC_CBMZ(11), MECH_MWT_CBMZ(11) / 'CH4  ', 16.04   /
+      DATA  MECH_SPC_CBMZ(12), MECH_MWT_CBMZ(12) / 'C2H6 ', 30.07   /
+      DATA  MECH_SPC_CBMZ(13), MECH_MWT_CBMZ(13) / 'PAR  ', 14.43   /
+      DATA  MECH_SPC_CBMZ(14), MECH_MWT_CBMZ(14) / 'ETH  ', 28.05   /
+      DATA  MECH_SPC_CBMZ(15), MECH_MWT_CBMZ(15) / 'OLET ', 27.00   /
+      DATA  MECH_SPC_CBMZ(16), MECH_MWT_CBMZ(16) / 'OLEI ', 26.00   /
+      DATA  MECH_SPC_CBMZ(17), MECH_MWT_CBMZ(17) / 'CRES ', 108.14  /
+      DATA  MECH_SPC_CBMZ(18), MECH_MWT_CBMZ(18) / 'AONE ', 58.08   /
+      DATA  MECH_SPC_CBMZ(19), MECH_MWT_CBMZ(19) / 'TOL  ', 92.14   /
+      DATA  MECH_SPC_CBMZ(20), MECH_MWT_CBMZ(20) / 'XYL  ', 106.17  /
+      DATA  MECH_SPC_CBMZ(21), MECH_MWT_CBMZ(21) / 'DMS  ', 62.14   /
+      DATA  MECH_SPC_CBMZ(22), MECH_MWT_CBMZ(22) / 'NH3  ', 17.03   /
+      DATA  MECH_SPC_CBMZ(23), MECH_MWT_CBMZ(23) / 'NR   ', 1.00    /
+      DATA  MECH_SPC_CBMZ(24), MECH_MWT_CBMZ(24) / 'OLI  ', 16.04   /
+      DATA  MECH_SPC_CBMZ(25), MECH_MWT_CBMZ(25) / 'TERP ', 136.24  /
+      DATA  MECH_SPC_CBMZ(26), MECH_MWT_CBMZ(26) / 'SESQ ', 204.35  /
+      DATA  MECH_SPC_CBMZ(27), MECH_MWT_CBMZ(27) / 'C2H5OH', 46.07  /
+      DATA  MECH_SPC_CBMZ(28), MECH_MWT_CBMZ(28) / 'KET  ', 28.82   /
+      DATA  MECH_SPC_CBMZ(29), MECH_MWT_CBMZ(29) / 'OL2  ', 28.00   /
+      DATA  MECH_SPC_CBMZ(30), MECH_MWT_CBMZ(30) / 'OLT  ', 42.00   /
+      DATA  MECH_SPC_CBMZ(31), MECH_MWT_CBMZ(31) / 'ISOPRD',70.09 /
+      DATA  MECH_SPC_CBMZ(32), MECH_MWT_CBMZ(32) / 'HCN  ', 27.03   /
+      DATA  MECH_SPC_CBMZ(33), MECH_MWT_CBMZ(33) / 'CH3BR', 94.94   /
+      DATA  MECH_SPC_CBMZ(34), MECH_MWT_CBMZ(34) / 'CH3CL', 50.49   /
+      DATA  MECH_SPC_CBMZ(35), MECH_MWT_CBMZ(35) / 'CH3I ', 141.94  /
+      DATA  MECH_SPC_CBMZ(36), MECH_MWT_CBMZ(36) / 'TRS  ', 34.08   /
+      DATA  MECH_SPC_CBMZ(37), MECH_MWT_CBMZ(37) / 'N2O  ', 44.01   /

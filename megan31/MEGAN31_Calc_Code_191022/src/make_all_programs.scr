@@ -1,0 +1,96 @@
+#! /bin/csh -f
+
+###### Make script for compiling all MEGAN programs ######
+#
+# Created by Tan 07/26/05
+# Modified by bkoo 04/13/07
+# Modified by bkoo 06/20/07 - added IOAPI2UAM
+# Modified by Ling Huang 07/10/2017 for MEGAN3
+##########################################################
+
+source ./setcase.csh
+if ( $#argv != 1 ) then
+echo 'USAGE: $MGNSRC/make_all_program.scr [32bit|64bit'
+exit -1
+endif
+
+source ../setcase.csh
+echo "Removing *.o"
+#rm $MGNSRC/MET2MGN/*.o
+#rm $MGNSRC/MET2MGN_rad45/*.o
+rm $MGNSRC/TXT2IOAPI/*.o
+#rm $MGNSRC/DAYMET/*.o
+#rm $MGNSRC/MEGCAN/*.o
+#rm $MGNSRC/MEGSEA/*.o
+rm $MGNSRC/MEGVEA/*.o
+rm $MGNSRC/MGN2MECH/*.o
+rm $MGNSRC/IOAPI2UAM/*.o
+
+
+echo "Make all programs"
+#cd $MGNSRC/MET2MGN
+#ln -sf Makefile.met2mgn.$argv makefile
+#make
+#cd $MGNSRC/MET2MGN_rad45
+#ln -sf Makefile.met2mgn.$argv makefile
+#make
+cd $MGNSRC/TXT2IOAPI
+ln -sf Makefile.txt2ioapi.$argv makefile
+make
+#cd $MGNSRC/DAYMET
+#ln -sf Makefile.daymet.$argv makefile
+#make
+#cd $MGNSRC/MEGCAN
+#ln -sf Makefile.megcan.$argv makefile
+#make
+#cd $MGNSRC/MEGSEA
+#ln -sf Makefile.megsea.$argv makefile
+#make
+cd $MGNSRC/MEGVEA
+ln -sf Makefile.megvea.$argv makefile
+make
+cd $MGNSRC/MGN2MECH
+ln -sf Makefile.mgn2mech.$argv makefile
+make
+#cd $MGNSRC/IOAPI2UAM
+#ln -sf Makefile.ioapi2uam.$argv makefile
+#make
+
+echo "Create symbolic links"
+if (! -e $MGNEXE/met2mgn ) then
+  ln -sf $MGNSRC/MET2MGN/met2mgn $MGNEXE/met2mgn
+endif
+
+### not available in distributed version
+if (! -e $MGNEXE/met2mgn.rad45 ) then
+  ln -sf $MGNSRC/MET2MGN_rad45/met2mgn.rad45 $MGNEXE/met2mgn.rad45
+endif
+
+
+if (! -e $MGNEXE/txt2ioapi ) then
+  ln -sf $MGNSRC/TXT2IOAPI/txt2ioapi $MGNEXE/txt2ioapi
+endif
+
+if (! -e $MGNEXE/daymet ) then
+  ln -sf $MGNSRC/DAYMET/daymet $MGNEXE/daymet
+endif
+
+if (! -e $MGNEXE/megcan ) then
+  ln -sf $MGNSRC/MEGCAN/megcan $MGNEXE/megcan
+endif
+
+if (! -e $MGNEXE/megsea ) then
+  ln -sf $MGNSRC/MEGSEA/megsea $MGNEXE/megsea
+endif
+
+if (! -e $MGNEXE/megvea ) then
+  ln -sf $MGNSRC/MEGVEA/megvea $MGNEXE/megvea
+endif
+
+if (! -e $MGNEXE/mgn2mech ) then
+  ln -sf $MGNSRC/MGN2MECH/mgn2mech $MGNEXE/mgn2mech
+endif
+
+if (! -e $MGNEXE/ioapi2uam) then
+  ln -sf $MGNSRC/IOAPI2UAM/ioapi2uam $MGNEXE/ioapi2uam
+endif

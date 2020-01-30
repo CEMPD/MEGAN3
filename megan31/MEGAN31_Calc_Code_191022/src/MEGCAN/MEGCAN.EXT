@@ -1,0 +1,71 @@
+C=======================================================================
+C  MEGCAN.EXT
+C  This include file contains information required 
+C  for running MEGCAN canopy environment model
+C
+C  Who             When       What
+C  ---------------------------------------------------------------------
+C  Xuemei Wang     06/16/2009 - Created inputs for CANOPY.EXT
+C				Some of these are used in this file
+C  Alex Guenther   01/28/2017 - Created this file
+C=======================================================================
+
+      INTEGER,PARAMETER :: Layers =5	      ! Number of layers in canopy model
+      REAL,PARAMETER ::                     
+     &     ConvertWm2toUmolm2s = 4.766,       ! Convert radiation from [W/m2] to [umol/m2/s1]
+     &     SolarConstant       = 1367,        ! Solar constant [W/m2]
+     &     WaterAirRatio       = 18.016/28.97 ! Ratio between water and air molecules
+
+! Canopy characteristics for MEGCAN canopy types 
+      INTEGER, PARAMETER ::  NrTyp = 6  	! Number of canopy types
+      INTEGER, PARAMETER ::  NrCha = 17  	! Number of canopy characteristics
+! 16 variables are assigned for each canopy type 
+! 1  = canopy depth
+! 2  = leaf width
+! 3  = leaf length
+! 4  = canopy height
+! 5  = scattering coefficient for PPFD
+! 6  = scattering coefficient for near IR
+! 7  = reflection coefficient for diffuse PPFD
+! 8  = reflection coefficient for diffuse near IR
+! 9  = clustering coefficient (accounts for leaf clumping influence on mean
+!    projected leaf area in the direction of the suns beam)
+! 10 = leaf IR emissivity
+! 11 = leaf stomata and cuticle factor: 1=hypostomatous, 2=amphistomatous,
+!     1.25=hypostomatous but with some transpiration through cuticle
+! 12 = daytime temperature lapse rate (K m-1)
+! 13 = nighttime temperature lapse rate (K m-1)
+! 14 = warm (>283K) canopy total humidity change (Pa)
+! 15 = cool (>= 283K) canopy total humidity change (Pa)
+! 16 = normalized canopy depth where wind is negligible
+! 17 = canopy transparency
+!
+! Six canopy types currently used in MEGCAN: 
+! 1  = Needleleaf trees
+! 2  = Tropical forest trees, 
+! 3  = Temperate broadleaf trees
+! 4  = shrubs
+! 5  = herbaceous
+! 6  = crops    
+
+        REAL,DIMENSION(NrCha,NrTyp) :: Canopychar = RESHAPE(
+     &    (/ 16.   , 16.   , 16.   ,  1.   ,  0.5  ,  1.   ,  
+     &        0.005 ,  0.05 ,  0.05 ,  0.015,  0.01 ,  0.02 ,
+     &        0.1  ,  0.1  ,  0.1  ,  0.1  ,  0.15 ,  0.15 ,
+     &       24.   , 24.   , 24.   ,  2.   ,  0.5  ,  1.0  ,   
+     &        0.2  ,  0.2  ,  0.2  ,  0.2  ,  0.2  ,  0.2  ,
+     &        0.8  ,  0.8  ,  0.8  ,  0.8  ,  0.8  ,  0.8  ,
+     &        0.057,  0.057,  0.057,  0.057,  0.057,  0.057,
+     &        0.389,  0.389,  0.389,  0.389,  0.389,  0.389,
+     &        0.85 ,  1.1  ,  0.9  ,  0.85 ,  0.7  ,  0.65 ,
+     &        0.95 ,  0.95 ,  0.95 ,  0.95 ,  0.95 ,  0.95 ,
+     &        1.25 ,  1.25 ,  1.25 ,  1.   ,  1.25 ,  1.25 ,
+     &        0.06 ,  0.06 ,  0.06 ,  0.06 ,  0.06 ,  0.06 ,
+     &       -0.06 , -0.06 , -0.06 , -0.06 , -0.06 , -0.06 ,
+     &      700.   ,700.   ,700.   ,700.   ,700.   ,700.   ,
+     &      150.   ,150.   ,150.   ,150.   ,150.   ,150.   ,
+     &        0.7  ,  0.7  ,  0.7  ,  0.7  ,  0.7  ,  0.7  ,
+     &        0.2  ,  0.2  ,  0.2  ,  0.2  ,  0.2  ,  0.2 /)
+     &      ,SHAPE=(/NrCha,NrTyp/) 
+     &      ,ORDER=(/2,1/)                      )
+

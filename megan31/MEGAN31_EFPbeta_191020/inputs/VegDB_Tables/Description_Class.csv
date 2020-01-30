@@ -1,0 +1,23 @@
+ClassPlusID,ClassPlusDescription
+1,isoprene
+2,MBO
+3,monoterpenes: pinenes (alpha and beta)
+4,monoterpenes: acyclic 3 bonds; myrcene; ocimenes
+5,monoterpenes: carene; camphene; others
+6,monoterpenes: sabinene; limonene;terpinenes; others
+7,C10 aromatic: cymenes; cymenenes
+8,C8-C13 oxygenated (e.g.; camphor)
+9,Highly reactive SQT (e.g.; caryophyllene)
+10,less reactive SQT  (e.g.; longifolene; copaene) and salates
+11,methanol
+12,acetone
+13,acetaldehyde and ethanol
+14,organic acids: formic acid; acetic acid; pyruvic acid
+15,C2 to C4 HC (e.g.; ethene; ethane)
+16,oxidation products: aldehydes 
+17,Stress compounds (e.g.; linalool)
+18,other VOC (e.g.; indole; pentane; methyl bromide)
+19,carbon monoxide
+20,Nitric oxide
+21,Total monoterpenes
+22,Total sesquiterpenes

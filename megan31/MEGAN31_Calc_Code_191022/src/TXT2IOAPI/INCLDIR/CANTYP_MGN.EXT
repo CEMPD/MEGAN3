@@ -1,0 +1,32 @@
+!=======================================================================
+!  CANTYP_MGN.EXT
+!  This include file contains MEGAN canopy types
+!
+!
+!
+!  MEGAN v3
+!
+!  History:
+!  Who          When       What
+!  ---------------------------------------------------------------------
+!  Tan          07/07/11 - Creates this file for MEGANv2.10
+!  Ling Huang   03/31/17 - Updates this file for MEGANv3
+!=======================================================================
+
+      INTEGER,PARAMETER :: N_CANTYP = 6
+      CHARACTER*16   MGN_CANTYP(N_CANTYP)
+      CHARACTER*16   MGN_NAM(N_CANTYP)
+
+      DATA     MGN_CANTYP(  1) / 'NEEDL      '/
+      DATA     MGN_CANTYP(  2) / 'TROPI      '/
+      DATA     MGN_CANTYP(  3) / 'BROAD      '/
+      DATA     MGN_CANTYP(  4) / 'SHRUB      '/
+      DATA     MGN_CANTYP(  5) / 'HERB       '/
+      DATA     MGN_CANTYP(  6) / 'CROP       '/
+
+      DATA     MGN_NAM(  1) /'Needleaf tree   '/
+      DATA     MGN_NAM(  2) /'Tropical tree   '/
+      DATA     MGN_NAM(  3) /'Broadleaf tree      '/
+      DATA     MGN_NAM(  4) /'Shrub   '/
+      DATA     MGN_NAM(  5) /'Herbaceous  '/
+      DATA     MGN_NAM(  6) /'Crop   '/

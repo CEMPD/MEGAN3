@@ -1,0 +1,19 @@
+C=======================================================================
+C  MEGSEA.EXT
+C  This include file contains wilting point information
+C  for calculating soil moisture activity factor
+C
+C  Created by Alex Guenther and Ling Huang in March 2017
+C=======================================================================
+
+      INTEGER, PARAMETER :: NrTyp = 6          ! Number of canopy types
+      REAL,PARAMETER :: d1 = 0.04
+
+!-- WWLT is wilting point (M^3/M^3) (JN90)
+
+      REAL   WWLT(16)
+
+      DATA  WWLT  /  0.068, 0.075, 0.114, 0.179, 
+     &               0.155, 0.175, 0.218, 0.250, 
+     &               0.219, 0.283, 0.286, 0.286, 
+     &               0.286, 0.286, 0.286, 0.286 /

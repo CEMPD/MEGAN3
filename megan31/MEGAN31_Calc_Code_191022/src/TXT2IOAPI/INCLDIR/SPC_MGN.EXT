@@ -1,0 +1,40 @@
+!=======================================================================
+!  SPC_MGN.EXT
+!  This include file contains MEGAN species
+!
+!
+!
+!  MEGAN v3
+!
+!  History:
+!  Who          When       What
+!  ---------------------------------------------------------------------
+!  Tan          12/02/06 - Creates this file
+!  Tan          08/14/07 - Move from MEGAN v2.0 to MEGAN v2.02 with no update.
+!  Tan          07/07/11 - Move to MEGANv2.10
+!  Ling Huang   03/19/17 - Update for MEGANV3
+!=======================================================================
+
+      INTEGER,PARAMETER :: N_MGN_SPC = 20 
+      CHARACTER*16   MGN_SPC(N_MGN_SPC)
+
+      DATA     MGN_SPC(  1)  / 'ISOP            '/      ! isoprene
+      DATA     MGN_SPC(  2)  / 'MBO             '/      ! MBO
+      DATA     MGN_SPC(  3)  / 'MT_PINE         '/      ! monoterpenes: pines (alpha and beta)
+      DATA     MGN_SPC(  4)  / 'MT_ACYC         '/      ! monoterpenes: acyclic, 3 = (e.g., myrcene, ocimenes)
+      DATA     MGN_SPC(  5)  / 'MT_CAMP         '/      ! monoterpenes: carene, camphene, others
+      DATA     MGN_SPC(  6)  / 'MT_SABI         '/      ! monoterpenes: sabinene, limonene, terpinenes, others
+      DATA     MGN_SPC(  7)  / 'MT_AROM         '/      ! C10 aromatic: cymenes, cymenenes
+      DATA     MGN_SPC(  8)  / 'MT_OXY          '/      ! C8-C13 oxygenated (e.g., camphor)
+      DATA     MGN_SPC(  9)  / 'SQT_HR          '/      ! Highly reactive SQT (e.g., caryophyllene)
+      DATA     MGN_SPC( 10)  / 'SQT_LR          '/      ! less reactive SQT  (e.g., longifolene, copaene) and salates
+      DATA     MGN_SPC( 11)  / 'MEOH            '/      ! methanol
+      DATA     MGN_SPC( 12)  / 'ACTO            '/      ! acetone
+      DATA     MGN_SPC( 13)  / 'ETOH            '/      ! acetaldehyde and ethanol
+      DATA     MGN_SPC( 14)  / 'ACID            '/      ! organic acids: formic acid, acetic acid, pyruvic acid
+      DATA     MGN_SPC( 15)  / 'LVOC            '/      ! C2 to C4 HC (e.g., ethene, ethane)
+      DATA     MGN_SPC( 16)  / 'OXPROD          '/      ! oxidation products: aldehydes
+      DATA     MGN_SPC( 17)  / 'STRESS          '/      ! Stress compounds (e.g., linalool)
+      DATA     MGN_SPC( 18)  / 'OTHER           '/      ! other VOC (e.g., indole, pentane, methyl bromide)
+      DATA     MGN_SPC( 19)  / 'CO              '/      ! carbon monoxide
+      DATA     MGN_SPC( 20)  / 'NO              '/      ! Nitric oxide

@@ -1,0 +1,106 @@
+#!/bin/csh
+
+set OP_SYS=`uname -s`
+if( $OP_SYS == "Linux" ) then
+  setenv FC pgf90
+else
+  setenv FC xlf90
+endif
+
+##if( ! $?NETCDF_DIR ) then
+###------------------------------------------------------------
+###  check for netcdf library
+###------------------------------------------------------------
+##  set found_ncf_lib = 0
+##  foreach tst_dir (/home/lar/opt/netcdf-3.6.3/openmpi-1.6/pgi-12.5 /usr/local /usr /opt)
+##    foreach tst_lib (lib64 lib netcdf)
+##      if( -e $tst_dir/$tst_lib/libnetcdf.a ) then
+##         set found_ncf_lib = 1
+##         break
+##      endif
+##    end
+##    if( $found_ncf_lib ) then
+##      break
+##    endif
+##  end
+##  if( $OP_SYS == "Linux" ) then
+##    if( $found_ncf_lib ) then
+##      setenv NETCDF_DIR $tst_dir
+##    else
+##      setenv NETCDF_DIR /usr/
+##    endif
+##  else
+##    if( $found_ncf_lib ) then
+##      setenv NETCDF_DIR $tst_dir
+##    else
+##      setenv NETCDF_DIR /usr/local
+##    endif
+##  endif
+##  echo " "
+##  echo "Using $FC fortan90 compiler"
+##endif
+##
+#setenv NETCDF_DIR /models/CMAQ/lib64/netcdf-3.6.0-p1
+setenv NETCDF_DIR /usr/local/netcdf-4.0.pgf.v13.4
+echo "NETCDF_DIR = $NETCDF_DIR"
+echo " "
+
+#------------------------------------------------------------
+#  check argument
+#------------------------------------------------------------
+set arg = `echo $1 | tr '[a-z]' '[A-z]'`
+echo "arg"  $arg
+switch( $arg )
+  case PREPMEGAN4CMAQ_LAI.X:
+    set arg1 = prepmegan4cmaq_lai.x
+    breaksw
+  case PREPMEGAN4CMAQ_CANTYPE.X:
+    set arg1 = prepmegan4cmaq_cantype.x
+    breaksw
+  case PREPMEGAN4CMAQ_EF.X:
+    set arg1 = prepmegan4cmaq_ef.x
+    breaksw
+  case PREPMEGAN4CMAQ_GRWFORM.X:
+    set arg1 = prepmegan4cmaq_grwform.x
+    breaksw
+  case PREPMEGAN4CMAQ_ECOTYPE.X:
+    set arg1 = prepmegan4cmaq_ecotype.x
+    breaksw
+  case PREPMEGAN4CMAQ_W126.X:
+    set arg1 = prepmegan4cmaq_w126.x
+    breaksw
+  case PREPMEGAN4CMAQ_ARID.X:
+    set arg1 = prepmegan4cmaq_arid.x
+    breaksw
+  case PREPMEGAN4CMAQ_NON_ARID.X:
+    set arg1 = prepmegan4cmaq_non_arid.x
+    breaksw
+  case PREPMEGAN4CMAQ_FERT.X:
+    set arg1 = prepmegan4cmaq_fert.x
+    breaksw
+  case PREPMEGAN4CMAQ_LANDTYPE.X:
+    set arg1 = prepmegan4cmaq_landtype.x
+    breaksw
+  case PREPMEGAN4CMAQ_NITROGEN.X:
+    set arg1 = prepmegan4cmaq_nitrogen.x
+    breaksw
+  default:
+    echo "+++++++++++++++++++++++++++++++++++++++++++++++++"
+    echo "Usage: argument '$1' is not one of the following:"
+    echo "       prepmegan4cmaq_lai, prepmegan4cmaq_cantype, prepmegan4cmaq_ef, prepmegan4cmaq_grwform, prepmegan4cmaq_ecotype prepmegan4cmaq_w126 prepmegan4cmaq_fert prepmegan4cmaq_non_arid prepmegan4cmaq_arid prepmegan4cmaq_landtype prepmegan4cmaq_nitrogen"
+            "
+    echo "+++++++++++++++++++++++++++++++++++++++++++++++++"
+    exit -1
+endsw
+
+#------------------------------------------------------------
+#  build the executable
+#------------------------------------------------------------
+make cleanup >& /dev/null
+make  ${arg1} || echo "failed to build " ${arg1} && exit -1
+echo " "
+make cleanup >& /dev/null
+echo "++++++++++++++++++++++++"
+echo "$arg1 build successful"
+echo "++++++++++++++++++++++++"
+exit 0

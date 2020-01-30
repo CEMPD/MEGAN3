@@ -1,0 +1,67 @@
+#####################################################
+Documentation of preprocessor modification for MEGAN3
+
+Ling Huang 04/01/2017
+#####################################################
+
+1. LAI preprocessor (prepmegan4cmaq_lai.f90)
+
+Original source codes were modified so that latitude and 
+longitude data are now appended to LAI data.
+
+2. Growth form preprocessor (prepmegan4cmaq_grwform.f90)
+
+Original growth form input data (e.g. crop30s.nc,  gras30s.nc, etc.)
+were reordered so that latitude is in an increasing order (to
+be consistent with previous PFT/EF data format). Otherwise, the
+original reprojection codes do not work.
+
+Reordering command:
+ncpdq -a -y $infile $outfile
+
+Codes were modified based on the PFT preprocessor, 
+which only requires simple modifications for variable names, 
+output file names, etc. 
+
+Input file: crop30s_reorder_lat.nc
+            gras30s_reorder_lat.nc
+            shrb30s_reorder_lat.nc
+            tree30s_reorder_lat.nc
+
+Output file: grid_growth_form.xxkm.csv
+Data format: CID, ICELL, JCELL,  TreeFrac,  ShrubFrac, CropFrac,  GrassFrac
+
+3. Ecotype preprocessor (prepmegan4cmaq_ecotype.f90, modified by Jeremiah)
+
+A new subroutine "discrete_frac" is added to calculated the relative
+abundance of each each ecotype within the target grid cell. Otherwise, 
+similar modifications as growth form preprocessor. Fill value: -999.
+
+Input file: ecotype30s.nc
+
+Output file: grid_ecotype.xxkm.csv
+Data format: CID, ICELL, JCELL,  EcotypeID,  EcotypeFrac
+
+4. BDSNP soil NO algorithm related input data (prepared by Xiaoyan Jiang
+and modified by Ling Huang)
+
+4.1 fertilizer
+
+A new program 'prepmegan4cmaq_fert.x' is added to convert global fertilizer (daily)
+into csv format. 
+Input data: soil_fert_xxx.nc (xxx from 001 to 366 )
+
+4.2 land fraction
+'prepmegan4cmaq_landtype.x'
+Input data: soil_landtype_kk.nc ( kk from 01 to 24; 24 biome types)
+
+4.3 climate data
+'prepmegan4cmaq_non_arid.x'
+'prepmegan4cmaq_arid.x'
+Input data: soil_climate_arid.nc
+            soil_climate_non_arid.nc
+
+4.4 Nitrogen deposition data
+'prepmegan4cmaq_nitrogen.x'
+Input data: soil_nitrogen_monxx.nc ( xx from 01 to 12; monthly data)
+

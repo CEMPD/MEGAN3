@@ -1,0 +1,23 @@
+CAS,CompoundName,MW,ClassPlusID,ClassPlusDescription
+1,Class1,68.11852,1,isoprene
+2,Class2,84.11792,2,MBO
+3,Class3,136.23704,3,monoterpenes: pinenes (alpha and beta)
+4,Class4,136.23704,4,monoterpenes: acyclic 3 bonds; myrcene; ocimenes
+5,Class5,136.23704,5,"monoterpenes: carene; camphene; bornenes, fenchenes"
+6,Class6,134.22116,6,"monoterpenes: sabinene; limonene;terpinenes, phellandrenes, terpinolenes, thujenes, sabinene, verbenene"
+7,Class7,134.22116,7,"C10 aromatic: e.g., cymenes; cymenenes"
+8,Class8,154.25232,8,"C8-C13 oxygenated (e.g.; camphor, borneol)"
+9,Class9,204.35556,9,Highly reactive SQT (e.g.; caryophyllene)
+10,Class10,204.35556,10,less reactive SQT  (e.g.; longifolene; copaene) and salates
+11,Class11,32.04216,11,methanol
+12,Class12,58.08004,12,acetone
+13,Class13,46.06904,13,acetaldehyde and ethanol
+14,Class14,88.06296,14,organic acids: formic acid; acetic acid; pyruvic acid
+15,Class15,30.06964,15,C2 to C4 HC (e.g.; ethene; ethane)
+16,Class16,194.31708,16,oxidation products: aldehydes 
+17,Class17,100.16068,17,Stress compounds (e.g.; linalool)
+18,Class18,34.08188,18,other VOC (e.g.; indole; pentane; methyl bromide)
+19,Class19,28.0104,19,carbon monoxide
+20,Class20,30.00614,20,Nitric oxide
+21,Class21,0,21,Total monoterpenes
+22,Class22,0,22,Total sesquiterpenes

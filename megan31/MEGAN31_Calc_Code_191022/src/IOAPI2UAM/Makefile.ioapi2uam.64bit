@@ -1,0 +1,21 @@
+SHELL = /bin/sh
+FC = pgf90
+FFLAGS = -O2 -Mdalign -Mnoframe -byteswapio -Mlfs -Bstatic_pgi
+PROGRAM = ioapi2uam
+LIBS = -L/models/CMAQ/lib64/ioapi_3/Linux2_x86_64pg -lioapi \
+       -L/models/CMAQ/lib64/netcdf-3.6.0-p1/lib -lnetcdf
+INCLUDE = -I/models/CMAQ/lib64/ioapi_3/ioapi/fixed_src
+
+RAW = $(PROGRAM).o
+
+.f.o:
+	$(FC) $(FFLAGS) $(INCLUDE) -c -o $@ $<
+
+.F.o:
+	$(FC) $(FFLAGS) $(INCLUDE) -c -o $@ $<
+
+$(PROGRAM):     $(RAW)
+	$(FC) $(FFLAGS) $(INCLUDE) -o $(@) $(RAW) $(LIBS)
+
+clean:
+	rm -f $(PROGRAM)

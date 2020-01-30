@@ -1,0 +1,7 @@
+#
+####### MEGAN EFP Requirements #######
+#
+###### Required Libraries ######
+pandas
+numpy
+#

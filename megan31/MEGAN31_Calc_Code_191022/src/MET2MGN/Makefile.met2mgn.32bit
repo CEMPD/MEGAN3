@@ -1,0 +1,56 @@
+FC = /usr/local/pgi/linux86/bin/pgf90
+FCFLGS = -O -Mextend -Mbounds -Mlfs -Msecond_underscore
+FCFLGS2 = -O -Mbyteswapio -Mextend -Mbounds -Mlfs -Msecond_underscore
+LNKFLGS = -Bstatic
+
+OBJCTS = \
+met2mgn.o \
+readpar.o \
+readmcip.o \
+micromet.o \
+caldate.o \
+lcpgeo.o \
+interp_lcp.o \
+procmm5.o \
+readmm5.o \
+xtod.o \
+vertmap.o \
+juldate.o \
+utmgeo.o
+
+LIBS = -L/models/CMAQ/lib/ioapi_3.mulcahy/Linux2_x86pg -lioapi \
+ -L/models/CMAQ/lib/netcdf-3.6.0-p1.mulcahy/lib -lnetcdf -lpthread
+INC = -I/models/CMAQ/lib/ioapi_3.mulcahy/ioapi/fixed_src \
+      -I/models/CMAQ/lib/netcdf-3.6.0-p1.mulcahy/include
+
+met2mgn: $(OBJCTS)
+	$(FC) -o met2mgn $(LNKFLGS) $(OBJCTS) $(LIBS)
+met2mgn.o:
+	$(FC) -c $(FCFLGS2) $(INC) met2mgn.f
+readpar.o:
+	$(FC) -c $(FCFLGS) $(INC) readpar.f
+readmcip.o:
+	$(FC) -c $(FCFLGS2) $(INC) readmcip.f
+micromet.o:
+	$(FC) -c $(FCFLGS2) $(INC) micromet.f
+caldate.o:
+	$(FC) -c $(FCFLGS2) $(INC) caldate.f
+lcpgeo.o:
+	$(FC) -c $(FCFLGS2) ${INC} lcpgeo.f
+interp_lcp.o:
+	$(FC) -c $(FCFLGS2) ${INC} interp_lcp.f
+procmm5.o:
+	$(FC) -c $(FCFLGS2) ${INC} procmm5.f
+readmm5.o:
+	$(FC) -c $(FCFLGS2) ${INC} readmm5.f
+xtod.o:
+	$(FC) -c $(FCFLGS2) ${INC} xtod.f
+vertmap.o:
+	$(FC) -c $(FCFLGS2) ${INC} vertmap.f
+juldate.o:
+	$(FC) -c $(FCFLGS2) ${INC} juldate.f
+utmgeo.o:
+	$(FC) -c $(FCFLGS2) ${INC} utmgeo.f
+clean:
+	rm -rf *.o met2mgn
+

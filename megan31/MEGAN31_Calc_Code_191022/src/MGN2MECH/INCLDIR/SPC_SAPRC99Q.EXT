@@ -1,0 +1,54 @@
+C=======================================================================
+C  SPC_SAPRC99_Q_SAPRC99Q.EXT
+C  This include file contains SAPRC99 (CMAQ) species and their MW.
+C
+C
+C  Mechanism Name: SAPRC99 (CMAQ)
+C  MEGAN v2.10
+C  INPUT version x.x
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  bkoo         04/13/07 - Created
+C  bkoo         05/23/07 - Modified speciation
+C  Ling Huang   03/22/17 - Moved from MEGANv2.10 to MEGAN3 with no update
+C=======================================================================
+
+      CHARACTER*16   SPC_SAPRC99_QMECH
+      PARAMETER     (SPC_SAPRC99_QMECH = 'SAPRC99Q        ')
+
+      INTEGER        N_SAPRC99_Q_SPC
+      PARAMETER     (N_SAPRC99_Q_SPC= 27)
+
+      CHARACTER*16   MECH_SPC_SAPRC99_Q( N_SAPRC99_Q_SPC )  ! Mechanism species name
+      REAL           MECH_MWT_SAPRC99_Q( N_SAPRC99_Q_SPC )  ! Mechanism species molecular weight
+
+
+      DATA  MECH_SPC_SAPRC99_Q(  1), MECH_MWT_SAPRC99_Q(  1) / 'ISOPRENE        ',  68.00  /
+      DATA  MECH_SPC_SAPRC99_Q(  2), MECH_MWT_SAPRC99_Q(  2) / 'TRP1            ', 136.00  /
+      DATA  MECH_SPC_SAPRC99_Q(  3), MECH_MWT_SAPRC99_Q(  3) / 'OLE2            ',  75.80  /
+      DATA  MECH_SPC_SAPRC99_Q(  4), MECH_MWT_SAPRC99_Q(  4) / 'ARO2            ', 118.70  /
+      DATA  MECH_SPC_SAPRC99_Q(  5), MECH_MWT_SAPRC99_Q(  5) / 'ALK5            ', 118.90  /
+      DATA  MECH_SPC_SAPRC99_Q(  6), MECH_MWT_SAPRC99_Q(  6) / 'XC              ',  12.00  /
+      DATA  MECH_SPC_SAPRC99_Q(  7), MECH_MWT_SAPRC99_Q(  7) / 'OLE1            ',  72.30  /
+      DATA  MECH_SPC_SAPRC99_Q(  8), MECH_MWT_SAPRC99_Q(  8) / 'MEOH            ',  32.00  /
+      DATA  MECH_SPC_SAPRC99_Q(  9), MECH_MWT_SAPRC99_Q(  9) / 'ACET            ',  58.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 10), MECH_MWT_SAPRC99_Q( 10) / 'CH4             ',  16.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 11), MECH_MWT_SAPRC99_Q( 11) / 'NH3             ',  17.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 12), MECH_MWT_SAPRC99_Q( 12) / 'NO              ',  30.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 13), MECH_MWT_SAPRC99_Q( 13) / 'CCHO            ',  44.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 14), MECH_MWT_SAPRC99_Q( 14) / 'ALK3            ',  58.60  /
+      DATA  MECH_SPC_SAPRC99_Q( 15), MECH_MWT_SAPRC99_Q( 15) / 'HCOOH           ',  46.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 16), MECH_MWT_SAPRC99_Q( 16) / 'HCHO            ',  30.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 17), MECH_MWT_SAPRC99_Q( 17) / 'CCO_OH          ',  75.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 18), MECH_MWT_SAPRC99_Q( 18) / 'BALD            ', 106.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 19), MECH_MWT_SAPRC99_Q( 19) / 'MEK             ',  72.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 20), MECH_MWT_SAPRC99_Q( 20) / 'RCHO            ',  58.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 21), MECH_MWT_SAPRC99_Q( 21) / 'ALK4            ',  77.60  /
+      DATA  MECH_SPC_SAPRC99_Q( 22), MECH_MWT_SAPRC99_Q( 22) / 'ARO1            ',  98.60  /
+      DATA  MECH_SPC_SAPRC99_Q( 23), MECH_MWT_SAPRC99_Q( 23) / 'BACL            ',  86.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 24), MECH_MWT_SAPRC99_Q( 24) / 'CO              ',  28.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 25), MECH_MWT_SAPRC99_Q( 25) / 'ALK1            ',  30.10  /
+      DATA  MECH_SPC_SAPRC99_Q( 26), MECH_MWT_SAPRC99_Q( 26) / 'ETHENE          ',  92.00  /
+      DATA  MECH_SPC_SAPRC99_Q( 27), MECH_MWT_SAPRC99_Q( 27) / 'ALK2            ',  36.70  /

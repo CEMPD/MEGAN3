@@ -1,0 +1,1122 @@
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                                                                                                                                                                                                                                                     
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ landtype=            1
+  
+ Reading megan2 bio emiss file soil_landtype_01.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+ megan2_bioemiss: file soil_landtype_01.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_01.nc
+ landtype=            2
+  
+ Reading megan2 bio emiss file soil_landtype_02.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_02.nc
+ landtype=            3
+  
+ Reading megan2 bio emiss file soil_landtype_03.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_03.nc
+ landtype=            4
+  
+ Reading megan2 bio emiss file soil_landtype_04.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_04.nc
+ landtype=            5
+  
+ Reading megan2 bio emiss file soil_landtype_05.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_05.nc
+ landtype=            6
+  
+ Reading megan2 bio emiss file soil_landtype_06.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_06.nc
+ landtype=            7
+  
+ Reading megan2 bio emiss file soil_landtype_07.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_07.nc
+ landtype=            8
+  
+ Reading megan2 bio emiss file soil_landtype_08.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_08.nc
+ landtype=            9
+  
+ Reading megan2 bio emiss file soil_landtype_09.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_09.nc
+ landtype=           10
+  
+ Reading megan2 bio emiss file soil_landtype_10.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_10.nc
+ landtype=           11
+  
+ Reading megan2 bio emiss file soil_landtype_11.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_11.nc
+ landtype=           12
+  
+ Reading megan2 bio emiss file soil_landtype_12.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_12.nc
+ landtype=           13
+  
+ Reading megan2 bio emiss file soil_landtype_13.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_13.nc
+ landtype=           14
+  
+ Reading megan2 bio emiss file soil_landtype_14.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_14.nc
+ landtype=           15
+  
+ Reading megan2 bio emiss file soil_landtype_15.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_15.nc
+ landtype=           16
+  
+ Reading megan2 bio emiss file soil_landtype_16.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_16.nc
+ landtype=           17
+  
+ Reading megan2 bio emiss file soil_landtype_17.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_17.nc
+ landtype=           18
+  
+ Reading megan2 bio emiss file soil_landtype_18.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_18.nc
+ landtype=           19
+  
+ Reading megan2 bio emiss file soil_landtype_19.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_19.nc
+ landtype=           20
+  
+ Reading megan2 bio emiss file soil_landtype_20.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_20.nc
+ landtype=           21
+  
+ Reading megan2 bio emiss file soil_landtype_21.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_21.nc
+ landtype=           22
+  
+ Reading megan2 bio emiss file soil_landtype_22.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_22.nc
+ landtype=           23
+  
+ Reading megan2 bio emiss file soil_landtype_23.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_23.nc
+ landtype=           24
+  
+ Reading megan2 bio emiss file soil_landtype_24.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_24.nc
+ map_megan2_emissions: Before write_landtype
+ finished writing LANDTYPE to .csv file for MEGAN
+            1           12 
+ ./input/wrfout_d02_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                                                                                                                                                                                                                                                     
+           17           14          227          164
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -93.48907    
+ wrf_file: CEN_LAT =     33.76472    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     12000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     530.8333    
+ proj_init: proj%polei,j =     99.50000        792.0201    
+ proj_init: west-east,south-north =   252  186
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-108.25827    , 23.304733    )
+ se corner @ (-79.692291    , 22.421028    )
+ ne corner @ (-74.596741    , 41.801369    )
+ nw corner @ (-111.64268    , 42.986717    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   252     1   186
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ landtype=            1
+  
+ Reading megan2 bio emiss file soil_landtype_01.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+ megan2_bioemiss: file soil_landtype_01.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_01.nc
+ landtype=            2
+  
+ Reading megan2 bio emiss file soil_landtype_02.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_02.nc
+ landtype=            3
+  
+ Reading megan2 bio emiss file soil_landtype_03.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_03.nc
+ landtype=            4
+  
+ Reading megan2 bio emiss file soil_landtype_04.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_04.nc
+ landtype=            5
+  
+ Reading megan2 bio emiss file soil_landtype_05.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_05.nc
+ landtype=            6
+  
+ Reading megan2 bio emiss file soil_landtype_06.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_06.nc
+ landtype=            7
+  
+ Reading megan2 bio emiss file soil_landtype_07.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_07.nc
+ landtype=            8
+  
+ Reading megan2 bio emiss file soil_landtype_08.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_08.nc
+ landtype=            9
+  
+ Reading megan2 bio emiss file soil_landtype_09.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_09.nc
+ landtype=           10
+  
+ Reading megan2 bio emiss file soil_landtype_10.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_10.nc
+ landtype=           11
+  
+ Reading megan2 bio emiss file soil_landtype_11.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_11.nc
+ landtype=           12
+  
+ Reading megan2 bio emiss file soil_landtype_12.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_12.nc
+ landtype=           13
+  
+ Reading megan2 bio emiss file soil_landtype_13.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_13.nc
+ landtype=           14
+  
+ Reading megan2 bio emiss file soil_landtype_14.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_14.nc
+ landtype=           15
+  
+ Reading megan2 bio emiss file soil_landtype_15.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_15.nc
+ landtype=           16
+  
+ Reading megan2 bio emiss file soil_landtype_16.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_16.nc
+ landtype=           17
+  
+ Reading megan2 bio emiss file soil_landtype_17.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_17.nc
+ landtype=           18
+  
+ Reading megan2 bio emiss file soil_landtype_18.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        0.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_18.nc
+ landtype=           19
+  
+ Reading megan2 bio emiss file soil_landtype_19.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_19.nc
+ landtype=           20
+  
+ Reading megan2 bio emiss file soil_landtype_20.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_20.nc
+ landtype=           21
+  
+ Reading megan2 bio emiss file soil_landtype_21.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_21.nc
+ landtype=           22
+  
+ Reading megan2 bio emiss file soil_landtype_22.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_22.nc
+ landtype=           23
+  
+ Reading megan2 bio emiss file soil_landtype_23.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_23.nc
+ landtype=           24
+  
+ Reading megan2 bio emiss file soil_landtype_24.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        12000.00      F
+  
+ megan2_bioemiss: model lon limits =    -111.6426849365234       -74.59674072265625    
+ megan2_bioemiss: model lat limits =     22.42102813720703        43.84727859497070    
+  
+ megan2_bioemiss: megan lon limits =    -179.8750000000000        179.8750000000000    
+ megan2_bioemiss: megan lat limits =    -89.87500000000000        89.87500000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =           273          423
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           450          536
+ dataset size =         13137
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_landtype_24.nc
+ map_megan2_emissions: Before write_landtype
+ finished writing LANDTYPE to .csv file for MEGAN

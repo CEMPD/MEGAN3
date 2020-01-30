@@ -1,0 +1,585 @@
+            1           12 
+ ./input/wrfout_d01_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                                                                                                                                                                                                                                                     
+            5            6          148          112
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -97.00000    
+ wrf_file: CEN_LAT =     40.00001    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     36000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     176.9444    
+ proj_init: proj%polei,j =     81.50000        278.3400    
+ proj_init: west-east,south-north =   162  128
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-122.67221    , 16.186966    )
+ se corner @ (-71.327789    , 16.186966    )
+ ne corner @ (-52.324432    , 53.920521    )
+ nw corner @ (-141.67557    , 53.920521    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   162     1   128
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ landtype=            1
+  
+ Reading megan2 bio emiss file soil_landtype_01.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+ megan2_bioemiss: file soil_landtype_01.nc has a new grid
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   288348.000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            1
+  Finished megan2 bio emiss dataset soil_landtype_01.nc
+ landtype=            2
+  
+ Reading megan2 bio emiss file soil_landtype_02.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            2
+  Finished megan2 bio emiss dataset soil_landtype_02.nc
+ landtype=            3
+  
+ Reading megan2 bio emiss file soil_landtype_03.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            3
+  Finished megan2 bio emiss dataset soil_landtype_03.nc
+ landtype=            4
+  
+ Reading megan2 bio emiss file soil_landtype_04.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            4
+  Finished megan2 bio emiss dataset soil_landtype_04.nc
+ landtype=            5
+  
+ Reading megan2 bio emiss file soil_landtype_05.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            5
+  Finished megan2 bio emiss dataset soil_landtype_05.nc
+ landtype=            6
+  
+ Reading megan2 bio emiss file soil_landtype_06.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            6
+  Finished megan2 bio emiss dataset soil_landtype_06.nc
+ landtype=            7
+  
+ Reading megan2 bio emiss file soil_landtype_07.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            7
+  Finished megan2 bio emiss dataset soil_landtype_07.nc
+ landtype=            8
+  
+ Reading megan2 bio emiss file soil_landtype_08.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            8
+  Finished megan2 bio emiss dataset soil_landtype_08.nc
+ landtype=            9
+  
+ Reading megan2 bio emiss file soil_landtype_09.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=            9
+  Finished megan2 bio emiss dataset soil_landtype_09.nc
+ landtype=           10
+  
+ Reading megan2 bio emiss file soil_landtype_10.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           10
+  Finished megan2 bio emiss dataset soil_landtype_10.nc
+ landtype=           11
+  
+ Reading megan2 bio emiss file soil_landtype_11.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           11
+  Finished megan2 bio emiss dataset soil_landtype_11.nc
+ landtype=           12
+  
+ Reading megan2 bio emiss file soil_landtype_12.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           12
+  Finished megan2 bio emiss dataset soil_landtype_12.nc
+ landtype=           13
+  
+ Reading megan2 bio emiss file soil_landtype_13.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           13
+  Finished megan2 bio emiss dataset soil_landtype_13.nc
+ landtype=           14
+  
+ Reading megan2 bio emiss file soil_landtype_14.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           14
+  Finished megan2 bio emiss dataset soil_landtype_14.nc
+ landtype=           15
+  
+ Reading megan2 bio emiss file soil_landtype_15.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           15
+  Finished megan2 bio emiss dataset soil_landtype_15.nc
+ landtype=           16
+  
+ Reading megan2 bio emiss file soil_landtype_16.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           16
+  Finished megan2 bio emiss dataset soil_landtype_16.nc
+ landtype=           17
+  
+ Reading megan2 bio emiss file soil_landtype_17.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           17
+  Finished megan2 bio emiss dataset soil_landtype_17.nc
+ landtype=           18
+  
+ Reading megan2 bio emiss file soil_landtype_18.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           18
+  Finished megan2 bio emiss dataset soil_landtype_18.nc
+ landtype=           19
+  
+ Reading megan2 bio emiss file soil_landtype_19.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           19
+  Finished megan2 bio emiss dataset soil_landtype_19.nc
+ landtype=           20
+  
+ Reading megan2 bio emiss file soil_landtype_20.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           20
+  Finished megan2 bio emiss dataset soil_landtype_20.nc
+ landtype=           21
+  
+ Reading megan2 bio emiss file soil_landtype_21.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           21
+  Finished megan2 bio emiss dataset soil_landtype_21.nc
+ landtype=           22
+  
+ Reading megan2 bio emiss file soil_landtype_22.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           22
+  Finished megan2 bio emiss dataset soil_landtype_22.nc
+ landtype=           23
+  
+ Reading megan2 bio emiss file soil_landtype_23.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           23
+  Finished megan2 bio emiss dataset soil_landtype_23.nc
+ landtype=           24
+  
+ Reading megan2 bio emiss file soil_landtype_24.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =          1440          720
+ megan2_bioemiss: data_dx,dx,has_area_map =     27794.37        36000.00      T
+megan2_bioemiss: xcen_megan(1,2)  =  -179.875000000000     -179.625000000000    
+megan2_bioemiss: xedge_megan(1,2) =  -180.000000000000     -179.750000000000    
+megan2_bioemiss: dx =                      4
+megan2_bioemiss: nlon_megan,nlat_megan =   1440    720
+megan2_bioemiss: ycen_megan  =   89.6250000000000      89.8750000000000    
+megan2_bioemiss: yedge_megan =   89.7500000000000      90.0000000000000    
+  
+ area_interp: diagnostics
+area_interp: min model lat ndx =        424
+area_interp: max model lat ndx =        600
+area_interp: mcells outside data domain =                      0
+area_interp: wght size =   0.00000000000000    
+area_interp: total dcell cnt            =    288348
+area_interp: active dcell cnt           =    141584
+area_interp: interior dcell cnt         =         0
+area_interp: partial dcell cnt          =    139764
+ iland=           24
+  Finished megan2 bio emiss dataset soil_landtype_24.nc
+ map_megan2_emissions: Before write_landtype
+ finished writing LANDTYPE to .csv file for MEGAN

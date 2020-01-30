@@ -1,0 +1,1066 @@
+C=======================================================================
+C  MAP_CV2CBMZ.EXT
+C  This include file contains conversion table for 201 speciated species
+C  to CBMZ (CMAQ/CAMx) species
+C
+C
+C  MEGAN v3
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  Tan          07/18/11 - Created for MEGANv2.10
+C  Ling Huang   06/13/17 - Updated for MEGANv3
+C=======================================================================
+
+      CHARACTER*16   MAP_CBMZMECH
+      PARAMETER     (MAP_CBMZMECH = 'CBMZ            ')
+
+      INTEGER        N_CBMZ
+      PARAMETER     (N_CBMZ = (148))        ! Number of map species
+
+      CHARACTER*16   SPMH_NAM_CBMZ( N_CBMZ )   ! speciated species name
+      INTEGER        SPMH_MAP_CBMZ( N_CBMZ )   ! speciated species name
+                                              ! mapped to SPC_SPCAT.EXT
+      CHARACTER*16   MECH_NAM_CBMZ( N_CBMZ )   ! mechanism species
+      INTEGER        MECH_MAP_CBMZ( N_CBMZ )   ! mechanism species mapped
+
+      REAL           CONV_FAC_CBMZ( N_CBMZ )   ! conversion factor
+
+ 
+      DATA  SPMH_NAM_CBMZ( 1)     , SPMH_MAP_CBMZ( 1)
+     &    / 'isoprene     ', 1           /
+      DATA  MECH_NAM_CBMZ( 1)     , MECH_MAP_CBMZ( 1)
+     &    / 'ISOP      ', 1           /
+      DATA  CONV_FAC_CBMZ( 1)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 2)     , SPMH_MAP_CBMZ( 2)
+     &    / 'MBO_2m3e2ol     ', 2           /
+      DATA  MECH_NAM_CBMZ( 2)     , MECH_MAP_CBMZ( 2)
+     &    / 'OLI      ', 24           /
+      DATA  CONV_FAC_CBMZ( 2)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 3)     , SPMH_MAP_CBMZ( 3)
+     &    / 'MBO_2m3e2ol     ', 2           /
+      DATA  MECH_NAM_CBMZ( 3)     , MECH_MAP_CBMZ( 3)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 3)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 4)     , SPMH_MAP_CBMZ( 4)
+     &    / 'pinene_a     ', 3           /
+      DATA  MECH_NAM_CBMZ( 4)     , MECH_MAP_CBMZ( 4)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 4)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 5)     , SPMH_MAP_CBMZ( 5)
+     &    / 'pinene_b     ', 4           /
+      DATA  MECH_NAM_CBMZ( 5)     , MECH_MAP_CBMZ( 5)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 5)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 6)     , SPMH_MAP_CBMZ( 6)
+     &    / 'myrcene     ', 5           /
+      DATA  MECH_NAM_CBMZ( 6)     , MECH_MAP_CBMZ( 6)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 6)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 7)     , SPMH_MAP_CBMZ( 7)
+     &    / 'ocimene_al     ', 6           /
+      DATA  MECH_NAM_CBMZ( 7)     , MECH_MAP_CBMZ( 7)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 7)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 8)     , SPMH_MAP_CBMZ( 8)
+     &    / 'ocimene_c_b     ', 7           /
+      DATA  MECH_NAM_CBMZ( 8)     , MECH_MAP_CBMZ( 8)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 8)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 9)     , SPMH_MAP_CBMZ( 9)
+     &    / 'ocimene_t_b     ', 8           /
+      DATA  MECH_NAM_CBMZ( 9)     , MECH_MAP_CBMZ( 9)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 9)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 10)     , SPMH_MAP_CBMZ( 10)
+     &    / 'camphene     ', 10           /
+      DATA  MECH_NAM_CBMZ( 10)     , MECH_MAP_CBMZ( 10)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 10)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 11)     , SPMH_MAP_CBMZ( 11)
+     &    / 'bornene     ', 9           /
+      DATA  MECH_NAM_CBMZ( 11)     , MECH_MAP_CBMZ( 11)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 11)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 12)     , SPMH_MAP_CBMZ( 12)
+     &    / 'fenchene_a     ', 12           /
+      DATA  MECH_NAM_CBMZ( 12)     , MECH_MAP_CBMZ( 12)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 12)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 13)     , SPMH_MAP_CBMZ( 13)
+     &    / 'tricyclene     ', 14           /
+      DATA  MECH_NAM_CBMZ( 13)     , MECH_MAP_CBMZ( 13)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 13)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 14)     , SPMH_MAP_CBMZ( 14)
+     &    / 'carene_3     ', 11           /
+      DATA  MECH_NAM_CBMZ( 14)     , MECH_MAP_CBMZ( 14)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 14)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 15)     , SPMH_MAP_CBMZ( 15)
+     &    / 'fenchene_b     ', 13           /
+      DATA  MECH_NAM_CBMZ( 15)     , MECH_MAP_CBMZ( 15)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 15)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 16)     , SPMH_MAP_CBMZ( 16)
+     &    / 'phellandrene_a     ', 17           /
+      DATA  MECH_NAM_CBMZ( 16)     , MECH_MAP_CBMZ( 16)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 16)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 17)     , SPMH_MAP_CBMZ( 17)
+     &    / 'terpinene_g     ', 20           /
+      DATA  MECH_NAM_CBMZ( 17)     , MECH_MAP_CBMZ( 17)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 17)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 18)     , SPMH_MAP_CBMZ( 18)
+     &    / 'terpinene_a     ', 19           /
+      DATA  MECH_NAM_CBMZ( 18)     , MECH_MAP_CBMZ( 18)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 18)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 19)     , SPMH_MAP_CBMZ( 19)
+     &    / 'limonene     ', 15           /
+      DATA  MECH_NAM_CBMZ( 19)     , MECH_MAP_CBMZ( 19)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 19)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 20)     , SPMH_MAP_CBMZ( 20)
+     &    / 'phellandrene_b     ', 16           /
+      DATA  MECH_NAM_CBMZ( 20)     , MECH_MAP_CBMZ( 20)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 20)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 21)     , SPMH_MAP_CBMZ( 21)
+     &    / 'terpinolene     ', 21           /
+      DATA  MECH_NAM_CBMZ( 21)     , MECH_MAP_CBMZ( 21)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 21)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 22)     , SPMH_MAP_CBMZ( 22)
+     &    / 'thujene_a     ', 22           /
+      DATA  MECH_NAM_CBMZ( 22)     , MECH_MAP_CBMZ( 22)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 22)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 23)     , SPMH_MAP_CBMZ( 23)
+     &    / 'sabinene     ', 18           /
+      DATA  MECH_NAM_CBMZ( 23)     , MECH_MAP_CBMZ( 23)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 23)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 24)     , SPMH_MAP_CBMZ( 24)
+     &    / 'verbenene     ', 23           /
+      DATA  MECH_NAM_CBMZ( 24)     , MECH_MAP_CBMZ( 24)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 24)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 25)     , SPMH_MAP_CBMZ( 25)
+     &    / 'cymene_p     ', 25           /
+      DATA  MECH_NAM_CBMZ( 25)     , MECH_MAP_CBMZ( 25)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 25)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 26)     , SPMH_MAP_CBMZ( 26)
+     &    / 'cymene_o     ', 24           /
+      DATA  MECH_NAM_CBMZ( 26)     , MECH_MAP_CBMZ( 26)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 26)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 27)     , SPMH_MAP_CBMZ( 27)
+     &    / 'meta-cymenene     ', 26           /
+      DATA  MECH_NAM_CBMZ( 27)     , MECH_MAP_CBMZ( 27)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 27)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 28)     , SPMH_MAP_CBMZ( 28)
+     &    / 'p-cymenene     ', 27           /
+      DATA  MECH_NAM_CBMZ( 28)     , MECH_MAP_CBMZ( 28)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 28)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 29)     , SPMH_MAP_CBMZ( 29)
+     &    / 'camphor     ', 30           /
+      DATA  MECH_NAM_CBMZ( 29)     , MECH_MAP_CBMZ( 29)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 29)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 30)     , SPMH_MAP_CBMZ( 30)
+     &    / 'bornyl_ACT     ', 29           /
+      DATA  MECH_NAM_CBMZ( 30)     , MECH_MAP_CBMZ( 30)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 30)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 31)     , SPMH_MAP_CBMZ( 31)
+     &    / 'piperitone     ', 38           /
+      DATA  MECH_NAM_CBMZ( 31)     , MECH_MAP_CBMZ( 31)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 31)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 32)     , SPMH_MAP_CBMZ( 32)
+     &    / 'terpineol_a     ', 40           /
+      DATA  MECH_NAM_CBMZ( 32)     , MECH_MAP_CBMZ( 32)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 32)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 33)     , SPMH_MAP_CBMZ( 33)
+     &    / 'octanol     ', 36           /
+      DATA  MECH_NAM_CBMZ( 33)     , MECH_MAP_CBMZ( 33)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 33)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 34)     , SPMH_MAP_CBMZ( 34)
+     &    / 'estragole     ', 31           /
+      DATA  MECH_NAM_CBMZ( 34)     , MECH_MAP_CBMZ( 34)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 34)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 35)     , SPMH_MAP_CBMZ( 35)
+     &    / 'borneol     ', 28           /
+      DATA  MECH_NAM_CBMZ( 35)     , MECH_MAP_CBMZ( 35)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 35)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 36)     , SPMH_MAP_CBMZ( 36)
+     &    / 'thujone_b     ', 42           /
+      DATA  MECH_NAM_CBMZ( 36)     , MECH_MAP_CBMZ( 36)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 36)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 37)     , SPMH_MAP_CBMZ( 37)
+     &    / 'thujone_a     ', 41           /
+      DATA  MECH_NAM_CBMZ( 37)     , MECH_MAP_CBMZ( 37)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 37)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 38)     , SPMH_MAP_CBMZ( 38)
+     &    / 'terpineol_4     ', 39           /
+      DATA  MECH_NAM_CBMZ( 38)     , MECH_MAP_CBMZ( 38)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 38)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 39)     , SPMH_MAP_CBMZ( 39)
+     &    / 'myrtenal     ', 35           /
+      DATA  MECH_NAM_CBMZ( 39)     , MECH_MAP_CBMZ( 39)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 39)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 40)     , SPMH_MAP_CBMZ( 40)
+     &    / 'fenchone     ', 32           /
+      DATA  MECH_NAM_CBMZ( 40)     , MECH_MAP_CBMZ( 40)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 40)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 41)     , SPMH_MAP_CBMZ( 41)
+     &    / 'octenol_1e3ol     ', 37           /
+      DATA  MECH_NAM_CBMZ( 41)     , MECH_MAP_CBMZ( 41)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 41)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 42)     , SPMH_MAP_CBMZ( 42)
+     &    / 'ionone_b     ', 33           /
+      DATA  MECH_NAM_CBMZ( 42)     , MECH_MAP_CBMZ( 42)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 42)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 43)     , SPMH_MAP_CBMZ( 43)
+     &    / 'ipsenol     ', 34           /
+      DATA  MECH_NAM_CBMZ( 43)     , MECH_MAP_CBMZ( 43)
+     &    / 'TERP      ', 25           /
+      DATA  CONV_FAC_CBMZ( 43)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 44)     , SPMH_MAP_CBMZ( 44)
+     &    / 'caryophyllene_b     ', 51           /
+      DATA  MECH_NAM_CBMZ( 44)     , MECH_MAP_CBMZ( 44)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 44)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 45)     , SPMH_MAP_CBMZ( 45)
+     &    / 'caryophyllene_c_i     ', 52           /
+      DATA  MECH_NAM_CBMZ( 45)     , MECH_MAP_CBMZ( 45)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 45)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 46)     , SPMH_MAP_CBMZ( 46)
+     &    / 'cadinene_d     ', 48           /
+      DATA  MECH_NAM_CBMZ( 46)     , MECH_MAP_CBMZ( 46)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 46)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 47)     , SPMH_MAP_CBMZ( 47)
+     &    / 'cadinene_d     ', 48           /
+      DATA  MECH_NAM_CBMZ( 47)     , MECH_MAP_CBMZ( 47)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 47)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 48)     , SPMH_MAP_CBMZ( 48)
+     &    / 'bisabolene_b     ', 47           /
+      DATA  MECH_NAM_CBMZ( 48)     , MECH_MAP_CBMZ( 48)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 48)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 49)     , SPMH_MAP_CBMZ( 49)
+     &    / 'farnescene_a     ', 54           /
+      DATA  MECH_NAM_CBMZ( 49)     , MECH_MAP_CBMZ( 49)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 49)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 50)     , SPMH_MAP_CBMZ( 50)
+     &    / 'patchoulene_b     ', 65           /
+      DATA  MECH_NAM_CBMZ( 50)     , MECH_MAP_CBMZ( 50)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 50)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 51)     , SPMH_MAP_CBMZ( 51)
+     &    / 'elemene_b     ', 53           /
+      DATA  MECH_NAM_CBMZ( 51)     , MECH_MAP_CBMZ( 51)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 51)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 52)     , SPMH_MAP_CBMZ( 52)
+     &    / 'nerolidol_c     ', 63           /
+      DATA  MECH_NAM_CBMZ( 52)     , MECH_MAP_CBMZ( 52)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 52)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 53)     , SPMH_MAP_CBMZ( 53)
+     &    / 'farnesol     ', 56           /
+      DATA  MECH_NAM_CBMZ( 53)     , MECH_MAP_CBMZ( 53)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 53)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 54)     , SPMH_MAP_CBMZ( 54)
+     &    / 'humulene_a     ', 59           /
+      DATA  MECH_NAM_CBMZ( 54)     , MECH_MAP_CBMZ( 54)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 54)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 55)     , SPMH_MAP_CBMZ( 55)
+     &    / 'muurolene_a     ', 61           /
+      DATA  MECH_NAM_CBMZ( 55)     , MECH_MAP_CBMZ( 55)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 55)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 56)     , SPMH_MAP_CBMZ( 56)
+     &    / 'bergamotene_a     ', 44           /
+      DATA  MECH_NAM_CBMZ( 56)     , MECH_MAP_CBMZ( 56)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 56)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 57)     , SPMH_MAP_CBMZ( 57)
+     &    / 'germacrene_B     ', 57           /
+      DATA  MECH_NAM_CBMZ( 57)     , MECH_MAP_CBMZ( 57)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 57)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 58)     , SPMH_MAP_CBMZ( 58)
+     &    / 'selinene_b     ', 66           /
+      DATA  MECH_NAM_CBMZ( 58)     , MECH_MAP_CBMZ( 58)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 58)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 59)     , SPMH_MAP_CBMZ( 59)
+     &    / 'calarene     ', 50           /
+      DATA  MECH_NAM_CBMZ( 59)     , MECH_MAP_CBMZ( 59)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 59)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 60)     , SPMH_MAP_CBMZ( 60)
+     &    / 'farnescene_b     ', 55           /
+      DATA  MECH_NAM_CBMZ( 60)     , MECH_MAP_CBMZ( 60)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 60)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 61)     , SPMH_MAP_CBMZ( 61)
+     &    / 'acoradiene     ', 43           /
+      DATA  MECH_NAM_CBMZ( 61)     , MECH_MAP_CBMZ( 61)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 61)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 62)     , SPMH_MAP_CBMZ( 62)
+     &    / 'humulene_g     ', 60           /
+      DATA  MECH_NAM_CBMZ( 62)     , MECH_MAP_CBMZ( 62)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 62)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 63)     , SPMH_MAP_CBMZ( 63)
+     &    / 'muurolene_g     ', 62           /
+      DATA  MECH_NAM_CBMZ( 63)     , MECH_MAP_CBMZ( 63)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 63)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 64)     , SPMH_MAP_CBMZ( 64)
+     &    / 'germacrene_D     ', 58           /
+      DATA  MECH_NAM_CBMZ( 64)     , MECH_MAP_CBMZ( 64)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 64)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 65)     , SPMH_MAP_CBMZ( 65)
+     &    / 'cadinene_g     ', 49           /
+      DATA  MECH_NAM_CBMZ( 65)     , MECH_MAP_CBMZ( 65)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 65)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 66)     , SPMH_MAP_CBMZ( 66)
+     &    / 'nerolidol_t     ', 64           /
+      DATA  MECH_NAM_CBMZ( 66)     , MECH_MAP_CBMZ( 66)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 66)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 67)     , SPMH_MAP_CBMZ( 67)
+     &    / 'bergamotene_b     ', 45           /
+      DATA  MECH_NAM_CBMZ( 67)     , MECH_MAP_CBMZ( 67)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 67)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 68)     , SPMH_MAP_CBMZ( 68)
+     &    / 'bisabolene_a     ', 46           /
+      DATA  MECH_NAM_CBMZ( 68)     , MECH_MAP_CBMZ( 68)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 68)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 69)     , SPMH_MAP_CBMZ( 69)
+     &    / 'cedrol     ', 73           /
+      DATA  MECH_NAM_CBMZ( 69)     , MECH_MAP_CBMZ( 69)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 69)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 70)     , SPMH_MAP_CBMZ( 70)
+     &    / 'homosalate     ', 78           /
+      DATA  MECH_NAM_CBMZ( 70)     , MECH_MAP_CBMZ( 70)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 70)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 71)     , SPMH_MAP_CBMZ( 71)
+     &    / '2ethyl_hexyl_salate     ', 68           /
+      DATA  MECH_NAM_CBMZ( 71)     , MECH_MAP_CBMZ( 71)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 71)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 72)     , SPMH_MAP_CBMZ( 72)
+     &    / 'cedrene_a     ', 72           /
+      DATA  MECH_NAM_CBMZ( 72)     , MECH_MAP_CBMZ( 72)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 72)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 73)     , SPMH_MAP_CBMZ( 73)
+     &    / 'thujopsene     ', 83           /
+      DATA  MECH_NAM_CBMZ( 73)     , MECH_MAP_CBMZ( 73)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 73)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 74)     , SPMH_MAP_CBMZ( 74)
+     &    / 'longifolene     ', 81           /
+      DATA  MECH_NAM_CBMZ( 74)     , MECH_MAP_CBMZ( 74)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 74)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 75)     , SPMH_MAP_CBMZ( 75)
+     &    / 'cadinol_a     ', 71           /
+      DATA  MECH_NAM_CBMZ( 75)     , MECH_MAP_CBMZ( 75)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 75)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 76)     , SPMH_MAP_CBMZ( 76)
+     &    / 'zingiberene_a     ', 85           /
+      DATA  MECH_NAM_CBMZ( 76)     , MECH_MAP_CBMZ( 76)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 76)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 77)     , SPMH_MAP_CBMZ( 77)
+     &    / 'isolongifolene     ', 79           /
+      DATA  MECH_NAM_CBMZ( 77)     , MECH_MAP_CBMZ( 77)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 77)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 78)     , SPMH_MAP_CBMZ( 78)
+     &    / 'longicyclene     ', 87           /
+      DATA  MECH_NAM_CBMZ( 78)     , MECH_MAP_CBMZ( 78)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 78)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 79)     , SPMH_MAP_CBMZ( 79)
+     &    / 'copaene_a     ', 74           /
+      DATA  MECH_NAM_CBMZ( 79)     , MECH_MAP_CBMZ( 79)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 79)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 80)     , SPMH_MAP_CBMZ( 80)
+     &    / 'bourbonene_b     ', 70           /
+      DATA  MECH_NAM_CBMZ( 80)     , MECH_MAP_CBMZ( 80)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 80)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 81)     , SPMH_MAP_CBMZ( 81)
+     &    / 'longipinene     ', 82           /
+      DATA  MECH_NAM_CBMZ( 81)     , MECH_MAP_CBMZ( 81)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 81)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 82)     , SPMH_MAP_CBMZ( 82)
+     &    / 'cubebene_b     ', 76           /
+      DATA  MECH_NAM_CBMZ( 82)     , MECH_MAP_CBMZ( 82)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 82)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 83)     , SPMH_MAP_CBMZ( 83)
+     &    / 'ylangene_a     ', 84           /
+      DATA  MECH_NAM_CBMZ( 83)     , MECH_MAP_CBMZ( 83)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 83)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 84)     , SPMH_MAP_CBMZ( 84)
+     &    / 'cubebene_a     ', 75           /
+      DATA  MECH_NAM_CBMZ( 84)     , MECH_MAP_CBMZ( 84)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 84)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 85)     , SPMH_MAP_CBMZ( 85)
+     &    / 'copaene_b     ', 86           /
+      DATA  MECH_NAM_CBMZ( 85)     , MECH_MAP_CBMZ( 85)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 85)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 86)     , SPMH_MAP_CBMZ( 86)
+     &    / 'kaur_16_ene     ', 80           /
+      DATA  MECH_NAM_CBMZ( 86)     , MECH_MAP_CBMZ( 86)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 86)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 87)     , SPMH_MAP_CBMZ( 87)
+     &    / 'gurjunene_b     ', 77           /
+      DATA  MECH_NAM_CBMZ( 87)     , MECH_MAP_CBMZ( 87)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 87)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 88)     , SPMH_MAP_CBMZ( 88)
+     &    / 'aromadendrene     ', 69           /
+      DATA  MECH_NAM_CBMZ( 88)     , MECH_MAP_CBMZ( 88)
+     &    / 'SESQ      ', 26           /
+      DATA  CONV_FAC_CBMZ( 88)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 89)     , SPMH_MAP_CBMZ( 89)
+     &    / 'methanol     ', 88           /
+      DATA  MECH_NAM_CBMZ( 89)     , MECH_MAP_CBMZ( 89)
+     &    / 'CH3OH      ', 5           /
+      DATA  CONV_FAC_CBMZ( 89)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 90)     , SPMH_MAP_CBMZ( 90)
+     &    / 'acetone     ', 89           /
+      DATA  MECH_NAM_CBMZ( 90)     , MECH_MAP_CBMZ( 90)
+     &    / 'KET      ', 28           /
+      DATA  CONV_FAC_CBMZ( 90)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 91)     , SPMH_MAP_CBMZ( 91)
+     &    / 'acetone     ', 89           /
+      DATA  MECH_NAM_CBMZ( 91)     , MECH_MAP_CBMZ( 91)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 91)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_CBMZ( 92)     , SPMH_MAP_CBMZ( 92)
+     &    / 'ethanol     ', 91           /
+      DATA  MECH_NAM_CBMZ( 92)     , MECH_MAP_CBMZ( 92)
+     &    / 'C2H5OH      ', 27           /
+      DATA  CONV_FAC_CBMZ( 92)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 93)     , SPMH_MAP_CBMZ( 93)
+     &    / 'acetaldehyde     ', 90           /
+      DATA  MECH_NAM_CBMZ( 93)     , MECH_MAP_CBMZ( 93)
+     &    / 'ALD2      ', 7           /
+      DATA  CONV_FAC_CBMZ( 93)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 94)     , SPMH_MAP_CBMZ( 94)
+     &    / 'formic_acid     ', 93           /
+      DATA  MECH_NAM_CBMZ( 94)     , MECH_MAP_CBMZ( 94)
+     &    / 'HCOOH      ', 9           /
+      DATA  CONV_FAC_CBMZ( 94)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 95)     , SPMH_MAP_CBMZ( 95)
+     &    / 'acetic_acid     ', 92           /
+      DATA  MECH_NAM_CBMZ( 95)     , MECH_MAP_CBMZ( 95)
+     &    / 'RCOOH      ', 10           /
+      DATA  CONV_FAC_CBMZ( 95)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 96)     , SPMH_MAP_CBMZ( 96)
+     &    / 'ethane     ', 100           /
+      DATA  MECH_NAM_CBMZ( 96)     , MECH_MAP_CBMZ( 96)
+     &    / 'ETH      ', 14           /
+      DATA  CONV_FAC_CBMZ( 96)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 97)     , SPMH_MAP_CBMZ( 97)
+     &    / 'ethene     ', 101           /
+      DATA  MECH_NAM_CBMZ( 97)     , MECH_MAP_CBMZ( 97)
+     &    / 'OL2      ', 29           /
+      DATA  CONV_FAC_CBMZ( 97)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 98)     , SPMH_MAP_CBMZ( 98)
+     &    / 'propane     ', 102           /
+      DATA  MECH_NAM_CBMZ( 98)     , MECH_MAP_CBMZ( 98)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 98)
+     &    / 1.5       /
+ 
+      DATA  SPMH_NAM_CBMZ( 99)     , SPMH_MAP_CBMZ( 99)
+     &    / 'butene     ', 97           /
+      DATA  MECH_NAM_CBMZ( 99)     , MECH_MAP_CBMZ( 99)
+     &    / 'OLT      ', 30           /
+      DATA  CONV_FAC_CBMZ( 99)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 100)     , SPMH_MAP_CBMZ( 100)
+     &    / 'butene     ', 97           /
+      DATA  MECH_NAM_CBMZ( 100)     , MECH_MAP_CBMZ( 100)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 100)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_CBMZ( 101)     , SPMH_MAP_CBMZ( 101)
+     &    / 'propene     ', 103           /
+      DATA  MECH_NAM_CBMZ( 101)     , MECH_MAP_CBMZ( 101)
+     &    / 'OLT      ', 30           /
+      DATA  CONV_FAC_CBMZ( 101)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 102)     , SPMH_MAP_CBMZ( 102)
+     &    / 'propene     ', 103           /
+      DATA  MECH_NAM_CBMZ( 102)     , MECH_MAP_CBMZ( 102)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 102)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 103)     , SPMH_MAP_CBMZ( 103)
+     &    / '2_methylprop_1_ene     ', 95           /
+      DATA  MECH_NAM_CBMZ( 103)     , MECH_MAP_CBMZ( 103)
+     &    / 'OLT      ', 30           /
+      DATA  CONV_FAC_CBMZ( 103)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 104)     , SPMH_MAP_CBMZ( 104)
+     &    / '2_methylprop_1_ene     ', 95           /
+      DATA  MECH_NAM_CBMZ( 104)     , MECH_MAP_CBMZ( 104)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 104)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_CBMZ( 105)     , SPMH_MAP_CBMZ( 105)
+     &    / 'butene_c2     ', 98           /
+      DATA  MECH_NAM_CBMZ( 105)     , MECH_MAP_CBMZ( 105)
+     &    / 'OLI      ', 24           /
+      DATA  CONV_FAC_CBMZ( 105)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 106)     , SPMH_MAP_CBMZ( 106)
+     &    / 'butene_c2     ', 98           /
+      DATA  MECH_NAM_CBMZ( 106)     , MECH_MAP_CBMZ( 106)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 106)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_CBMZ( 107)     , SPMH_MAP_CBMZ( 107)
+     &    / 'butene_t2     ', 99           /
+      DATA  MECH_NAM_CBMZ( 107)     , MECH_MAP_CBMZ( 107)
+     &    / 'OLI      ', 24           /
+      DATA  CONV_FAC_CBMZ( 107)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 108)     , SPMH_MAP_CBMZ( 108)
+     &    / 'butene_t2     ', 99           /
+      DATA  MECH_NAM_CBMZ( 108)     , MECH_MAP_CBMZ( 108)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 108)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_CBMZ( 109)     , SPMH_MAP_CBMZ( 109)
+     &    / 'formaldehyde     ', 113           /
+      DATA  MECH_NAM_CBMZ( 109)     , MECH_MAP_CBMZ( 109)
+     &    / 'HCHO      ', 8           /
+      DATA  CONV_FAC_CBMZ( 109)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 110)     , SPMH_MAP_CBMZ( 110)
+     &    / 'met_heptenone     ', 106           /
+      DATA  MECH_NAM_CBMZ( 110)     , MECH_MAP_CBMZ( 110)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 110)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 111)     , SPMH_MAP_CBMZ( 111)
+     &    / 'oxopentanal     ', 114           /
+      DATA  MECH_NAM_CBMZ( 111)     , MECH_MAP_CBMZ( 111)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 111)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 112)     , SPMH_MAP_CBMZ( 112)
+     &    / 'geranyl_acetone     ', 105           /
+      DATA  MECH_NAM_CBMZ( 112)     , MECH_MAP_CBMZ( 112)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 112)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 113)     , SPMH_MAP_CBMZ( 113)
+     &    / 'hexanal     ', 141           /
+      DATA  MECH_NAM_CBMZ( 113)     , MECH_MAP_CBMZ( 113)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 113)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 114)     , SPMH_MAP_CBMZ( 114)
+     &    / 'hydrogen_cyanide     ', 147           /
+      DATA  MECH_NAM_CBMZ( 114)     , MECH_MAP_CBMZ( 114)
+     &    / 'HCN      ', 32           /
+      DATA  CONV_FAC_CBMZ( 114)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 115)     , SPMH_MAP_CBMZ( 115)
+     &    / 'linalool     ', 150           /
+      DATA  MECH_NAM_CBMZ( 115)     , MECH_MAP_CBMZ( 115)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 115)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 116)     , SPMH_MAP_CBMZ( 116)
+     &    / 'methacrolein     ', 153           /
+      DATA  MECH_NAM_CBMZ( 116)     , MECH_MAP_CBMZ( 116)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 116)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 117)     , SPMH_MAP_CBMZ( 117)
+     &    / 'met_vinylketone     ', 158           /
+      DATA  MECH_NAM_CBMZ( 117)     , MECH_MAP_CBMZ( 117)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 117)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 118)     , SPMH_MAP_CBMZ( 118)
+     &    / 'hexanol_1     ', 142           /
+      DATA  MECH_NAM_CBMZ( 118)     , MECH_MAP_CBMZ( 118)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 118)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 119)     , SPMH_MAP_CBMZ( 119)
+     &    / 'met_salicylate     ', 156           /
+      DATA  MECH_NAM_CBMZ( 119)     , MECH_MAP_CBMZ( 119)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 119)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 120)     , SPMH_MAP_CBMZ( 120)
+     &    / 'cineole_1_8     ', 133           /
+      DATA  MECH_NAM_CBMZ( 120)     , MECH_MAP_CBMZ( 120)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 120)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 121)     , SPMH_MAP_CBMZ( 121)
+     &    / 'hexenal_t2     ', 144           /
+      DATA  MECH_NAM_CBMZ( 121)     , MECH_MAP_CBMZ( 121)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 121)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 122)     , SPMH_MAP_CBMZ( 122)
+     &    / 'hexenol_c3     ', 145           /
+      DATA  MECH_NAM_CBMZ( 122)     , MECH_MAP_CBMZ( 122)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 122)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 123)     , SPMH_MAP_CBMZ( 123)
+     &    / 'hexenyl_ACT_c3     ', 146           /
+      DATA  MECH_NAM_CBMZ( 123)     , MECH_MAP_CBMZ( 123)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 123)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 124)     , SPMH_MAP_CBMZ( 124)
+     &    / 'hexenal_c3     ', 143           /
+      DATA  MECH_NAM_CBMZ( 124)     , MECH_MAP_CBMZ( 124)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 124)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 125)     , SPMH_MAP_CBMZ( 125)
+     &    / '2met_nonatriene     ', 137           /
+      DATA  MECH_NAM_CBMZ( 125)     , MECH_MAP_CBMZ( 125)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 125)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 126)     , SPMH_MAP_CBMZ( 126)
+     &    / 'methane     ', 184           /
+      DATA  MECH_NAM_CBMZ( 126)     , MECH_MAP_CBMZ( 126)
+     &    / 'CH4      ', 11           /
+      DATA  CONV_FAC_CBMZ( 126)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 127)     , SPMH_MAP_CBMZ( 127)
+     &    / 'met_bromide     ', 185           /
+      DATA  MECH_NAM_CBMZ( 127)     , MECH_MAP_CBMZ( 127)
+     &    / 'CH3BR      ', 33           /
+      DATA  CONV_FAC_CBMZ( 127)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 128)     , SPMH_MAP_CBMZ( 128)
+     &    / 'met_chloride     ', 186           /
+      DATA  MECH_NAM_CBMZ( 128)     , MECH_MAP_CBMZ( 128)
+     &    / 'CH3CL      ', 34           /
+      DATA  CONV_FAC_CBMZ( 128)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 129)     , SPMH_MAP_CBMZ( 129)
+     &    / 'met_iodide     ', 187           /
+      DATA  MECH_NAM_CBMZ( 129)     , MECH_MAP_CBMZ( 129)
+     &    / 'CH3I      ', 35           /
+      DATA  CONV_FAC_CBMZ( 129)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 130)     , SPMH_MAP_CBMZ( 130)
+     &    / 'met_mercaptan     ', 188           /
+      DATA  MECH_NAM_CBMZ( 130)     , MECH_MAP_CBMZ( 130)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 130)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 131)     , SPMH_MAP_CBMZ( 131)
+     &    / 'carbon_2s     ', 171           /
+      DATA  MECH_NAM_CBMZ( 131)     , MECH_MAP_CBMZ( 131)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 131)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 132)     , SPMH_MAP_CBMZ( 132)
+     &    / '2met_s     ', 176           /
+      DATA  MECH_NAM_CBMZ( 132)     , MECH_MAP_CBMZ( 132)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 132)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 133)     , SPMH_MAP_CBMZ( 133)
+     &    / 'butanone_2     ', 170           /
+      DATA  MECH_NAM_CBMZ( 133)     , MECH_MAP_CBMZ( 133)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 133)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 134)     , SPMH_MAP_CBMZ( 134)
+     &    / 'terpinyl_ACT_a     ', 197           /
+      DATA  MECH_NAM_CBMZ( 134)     , MECH_MAP_CBMZ( 134)
+     &    / 'ISOPRD      ', 31           /
+      DATA  CONV_FAC_CBMZ( 134)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 135)     , SPMH_MAP_CBMZ( 135)
+     &    / 'pentane     ', 193           /
+      DATA  MECH_NAM_CBMZ( 135)     , MECH_MAP_CBMZ( 135)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 135)
+     &    / 5       /
+ 
+      DATA  SPMH_NAM_CBMZ( 136)     , SPMH_MAP_CBMZ( 136)
+     &    / 'hexane     ', 181           /
+      DATA  MECH_NAM_CBMZ( 136)     , MECH_MAP_CBMZ( 136)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 136)
+     &    / 6       /
+ 
+      DATA  SPMH_NAM_CBMZ( 137)     , SPMH_MAP_CBMZ( 137)
+     &    / 'decane     ', 173           /
+      DATA  MECH_NAM_CBMZ( 137)     , MECH_MAP_CBMZ( 137)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 137)
+     &    / 10       /
+ 
+      DATA  SPMH_NAM_CBMZ( 138)     , SPMH_MAP_CBMZ( 138)
+     &    / 'heptane     ', 179           /
+      DATA  MECH_NAM_CBMZ( 138)     , MECH_MAP_CBMZ( 138)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 138)
+     &    / 7       /
+ 
+      DATA  SPMH_NAM_CBMZ( 139)     , SPMH_MAP_CBMZ( 139)
+     &    / 'carbonyl_s     ', 172           /
+      DATA  MECH_NAM_CBMZ( 139)     , MECH_MAP_CBMZ( 139)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 139)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 140)     , SPMH_MAP_CBMZ( 140)
+     &    / '2met_2s     ', 175           /
+      DATA  MECH_NAM_CBMZ( 140)     , MECH_MAP_CBMZ( 140)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 140)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 141)     , SPMH_MAP_CBMZ( 141)
+     &    / 'undecane     ', 199           /
+      DATA  MECH_NAM_CBMZ( 141)     , MECH_MAP_CBMZ( 141)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 141)
+     &    / 12       /
+ 
+      DATA  SPMH_NAM_CBMZ( 142)     , SPMH_MAP_CBMZ( 142)
+     &    / 'tetradecene_1     ', 198           /
+      DATA  MECH_NAM_CBMZ( 142)     , MECH_MAP_CBMZ( 142)
+     &    / 'PAR      ', 13           /
+      DATA  CONV_FAC_CBMZ( 142)
+     &    / 14       /
+ 
+      DATA  SPMH_NAM_CBMZ( 143)     , SPMH_MAP_CBMZ( 143)
+     &    / 'diallyl_2s     ', 174           /
+      DATA  MECH_NAM_CBMZ( 143)     , MECH_MAP_CBMZ( 143)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 143)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 144)     , SPMH_MAP_CBMZ( 144)
+     &    / 'PPPP_2s     ', 194           /
+      DATA  MECH_NAM_CBMZ( 144)     , MECH_MAP_CBMZ( 144)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 144)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 145)     , SPMH_MAP_CBMZ( 145)
+     &    / 'met_propenyl_2s     ', 189           /
+      DATA  MECH_NAM_CBMZ( 145)     , MECH_MAP_CBMZ( 145)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 145)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 146)     , SPMH_MAP_CBMZ( 146)
+     &    / 'hydrogen_s     ', 182           /
+      DATA  MECH_NAM_CBMZ( 146)     , MECH_MAP_CBMZ( 146)
+     &    / 'TRS      ', 36           /
+      DATA  CONV_FAC_CBMZ( 146)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 147)     , SPMH_MAP_CBMZ( 147)
+     &    / 'carbon_monoxide     ', 200           /
+      DATA  MECH_NAM_CBMZ( 147)     , MECH_MAP_CBMZ( 147)
+     &    / 'CO      ', 4           /
+      DATA  CONV_FAC_CBMZ( 147)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_CBMZ( 148)     , SPMH_MAP_CBMZ( 148)
+     &    / 'nitric_OXD     ', 201           /
+      DATA  MECH_NAM_CBMZ( 148)     , MECH_MAP_CBMZ( 148)
+     &    / 'NO      ', 2           /
+      DATA  CONV_FAC_CBMZ( 148)
+     &    / 1       /
+ 

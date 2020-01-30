@@ -1,0 +1,24 @@
+!  coords --line:  name; type, P-alpha, P-beta, P-gamma, xcent, ycent
+'LAM_39N97W'
+2, 33.0D0, 45.D0, -97.D0, -97.D0, 39.D0
+'LAM_40N97W'
+2, 33.0D0, 45.D0, -97.D0, -97.D0, 40.D0
+' '  !  end coords.  grids:  name; xorig,yorig,xcell,ycell,ncols,nrows,nthik
+
+'USA36km'
+'LAM_39N97W'  -2664000.000  -1905428.125     36000.000     36000.000 148 112   1
+
+'gomr36km'
+'LAM_39N97W'  -2736000.000  -2088000.000     36000.000     36000.000 148 112   1
+
+'tceq_36km'
+'LAM_40N97W'  -2736000.000  -2088000.000     36000.000     36000.000 148 112   1
+
+'tceq_12km'
+'LAM_40N97W'   -984000.000  -1632000.000     12000.000     12000.000 227 164   1
+
+'Calpine.4km'
+'boem_arctic' -376000.000   -292000.000      4000.000      4000.000 185 185   1
+
+
+' '  !  end grids.

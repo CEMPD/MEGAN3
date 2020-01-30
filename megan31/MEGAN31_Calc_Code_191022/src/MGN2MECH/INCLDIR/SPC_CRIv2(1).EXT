@@ -1,0 +1,46 @@
+C=======================================================================
+C  SPC_CRIv2.EXT
+C  This include file contains CRIv2 species and their MW.
+C
+C
+C  Mechanism Name: CRIv2
+C  MEGAN v3
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  Ling Huang   06/13/17 - Created for MEGANv3
+C=======================================================================
+
+      INTEGER,PARAMETER :: N_CRIv2_SPC = 28     ! Number of mechanism species
+      CHARACTER*26   MECH_SPC_CRIv2( N_CRIv2_SPC )  ! Mechanism species name
+      REAL           MECH_MWT_CRIv2( N_CRIv2_SPC )  ! Mechanism species mol. wt.
+
+      DATA  MECH_SPC_CRIv2(  1), MECH_MWT_CRIv2(  1) /'C5H8     ', 68.12   /
+      DATA  MECH_SPC_CRIv2(  2), MECH_MWT_CRIv2(  2) /'TBUT2ENE ', 56.11   /
+      DATA  MECH_SPC_CRIv2(  3), MECH_MWT_CRIv2(  3) /'APINENE  ', 136.23  /
+      DATA  MECH_SPC_CRIv2(  4), MECH_MWT_CRIv2(  4) /'BPINENE  ', 136.23  /
+      DATA  MECH_SPC_CRIv2(  5), MECH_MWT_CRIv2(  5) /'SESQ     ', 204.35  /
+      DATA  MECH_SPC_CRIv2(  6), MECH_MWT_CRIv2(  6) /'CH3OH    ', 32.04   /
+      DATA  MECH_SPC_CRIv2(  7), MECH_MWT_CRIv2(  7) /'CH3COCH3 ', 58.08   /
+      DATA  MECH_SPC_CRIv2(  8), MECH_MWT_CRIv2(  8) /'C2H5OH   ', 46.07   /
+      DATA  MECH_SPC_CRIv2(  9), MECH_MWT_CRIv2(  9) /'CH3CHO   ', 44.05   /
+      DATA  MECH_SPC_CRIv2( 10), MECH_MWT_CRIv2( 10) /'HCOOH    ', 46.03   /
+      DATA  MECH_SPC_CRIv2( 11), MECH_MWT_CRIv2( 11) /'CH3CO2H  ', 60.05   /
+      DATA  MECH_SPC_CRIv2( 12), MECH_MWT_CRIv2( 12) /'C2H6     ', 30.07   /
+      DATA  MECH_SPC_CRIv2( 13), MECH_MWT_CRIv2( 13) /'C2H4     ', 28.05   /
+      DATA  MECH_SPC_CRIv2( 14), MECH_MWT_CRIv2( 14) /'C3H8     ', 44.10   /
+      DATA  MECH_SPC_CRIv2( 15), MECH_MWT_CRIv2( 15) /'C3H6     ', 42.08   /
+      DATA  MECH_SPC_CRIv2( 16), MECH_MWT_CRIv2( 16) /'HCHO     ', 30.03   /
+      DATA  MECH_SPC_CRIv2( 17), MECH_MWT_CRIv2( 17) /'UCARB10  ', 70.09  /
+      DATA  MECH_SPC_CRIv2( 18), MECH_MWT_CRIv2( 18) /'HCN      ', 27.03   /
+      DATA  MECH_SPC_CRIv2( 19), MECH_MWT_CRIv2( 19) /'CH4      ', 16.04   /
+      DATA  MECH_SPC_CRIv2( 20), MECH_MWT_CRIv2( 20) /'CH3BR    ', 94.94   /
+      DATA  MECH_SPC_CRIv2( 21), MECH_MWT_CRIv2( 21) /'CH3CL    ', 50.49   /
+      DATA  MECH_SPC_CRIv2( 22), MECH_MWT_CRIv2( 22) /'CH3I     ', 141.94  /
+      DATA  MECH_SPC_CRIv2( 23), MECH_MWT_CRIv2( 23) /'DMS      ', 62.13   /
+      DATA  MECH_SPC_CRIv2( 24), MECH_MWT_CRIv2( 24) /'NC4H10   ', 58.12   /
+      DATA  MECH_SPC_CRIv2( 25), MECH_MWT_CRIv2( 25) /'CO       ', 28.01   /
+      DATA  MECH_SPC_CRIv2( 26), MECH_MWT_CRIv2( 26) /'NO       ', 46.00   /
+      DATA  MECH_SPC_CRIv2( 27), MECH_MWT_CRIv2( 27) /'NH3      ', 17.03   /
+      DATA  MECH_SPC_CRIv2( 28), MECH_MWT_CRIv2( 28) /'N2O      ', 44.01   /

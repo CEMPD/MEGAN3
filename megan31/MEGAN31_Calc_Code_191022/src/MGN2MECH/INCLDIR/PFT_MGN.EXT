@@ -1,0 +1,33 @@
+!=======================================================================
+!  PFT_MGN.EXT
+!  This include file contains MEGAN species
+!
+!
+!
+!  MEGAN v3
+!
+!  History:
+!  Who          When       What
+!  ---------------------------------------------------------------------
+!  Tan          07/07/11 - Creates this file for MEGANv2.10
+!  Ling Huang   03/19/17 - Updates this file for MEGANv3
+!=======================================================================
+
+      INTEGER,PARAMETER :: N_MGN_PFT = 6
+      CHARACTER*16   MGN_PFT(N_MGN_PFT)
+      CHARACTER*16   MGN_NAM(N_MGN_PFT)
+      REAL           MGN_DUM(N_MGN_PFT)
+
+      DATA     MGN_PFT(  1), MGN_DUM(  1) / 'NEEDL      ', 1.0    /
+      DATA     MGN_PFT(  2), MGN_DUM(  2) / 'TROPI      ', 1.0    /
+      DATA     MGN_PFT(  3), MGN_DUM(  3) / 'BROAD      ', 1.0    /
+      DATA     MGN_PFT(  4), MGN_DUM(  4) / 'SHRUB      ', 1.0    /
+      DATA     MGN_PFT(  5), MGN_DUM(  5) / 'HERB       ', 1.0    /
+      DATA     MGN_PFT(  6), MGN_DUM(  6) / 'CROP       ', 1.0    /
+
+      DATA     MGN_NAM(  1) /'Needleaf tree   '/
+      DATA     MGN_NAM(  2) /'Tropical tree   '/
+      DATA     MGN_NAM(  3) /'Broadleaf tree  '/
+      DATA     MGN_NAM(  4) /'Shrub           '/
+      DATA     MGN_NAM(  5) /'Herbaceous      '/
+      DATA     MGN_NAM(  6) /'Crops           '/

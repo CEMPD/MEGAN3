@@ -1,0 +1,1437 @@
+C=======================================================================
+C  MAP_CV2SAPRCII.EXT
+C  This include file contains conversion table for 201 speciated species
+C  to SAPRCII (CMAQ/CAMx) species
+C
+C
+C  MEGAN v3
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  Tan          07/18/11 - Created for MEGANv2.10
+C  Ling Huang   06/13/17 - Updated for MEGANv3
+C=======================================================================
+
+      CHARACTER*16   MAP_SAPRCIIMECH
+      PARAMETER     (MAP_SAPRCIIMECH = 'SAPRCII            ')
+
+      INTEGER        N_SAPRCII
+      PARAMETER     (N_SAPRCII = (201))        ! Number of map species
+
+      CHARACTER*16   SPMH_NAM_SAPRCII( N_SAPRCII )   ! speciated species name
+      INTEGER        SPMH_MAP_SAPRCII( N_SAPRCII )   ! speciated species name
+                                              ! mapped to SPC_SPCAT.EXT
+      CHARACTER*16   MECH_NAM_SAPRCII( N_SAPRCII )   ! mechanism species
+      INTEGER        MECH_MAP_SAPRCII( N_SAPRCII )   ! mechanism species mapped
+
+      REAL           CONV_FAC_SAPRCII( N_SAPRCII )   ! conversion factor
+
+ 
+      DATA  SPMH_NAM_SAPRCII( 1)     , SPMH_MAP_SAPRCII( 1)
+     &    / 'isoprene     ', 1           /
+      DATA  MECH_NAM_SAPRCII( 1)     , MECH_MAP_SAPRCII( 1)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 1)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 2)     , SPMH_MAP_SAPRCII( 2)
+     &    / 'MBO_2m3e2ol     ', 2           /
+      DATA  MECH_NAM_SAPRCII( 2)     , MECH_MAP_SAPRCII( 2)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 2)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 3)     , SPMH_MAP_SAPRCII( 3)
+     &    / 'pinene_a     ', 3           /
+      DATA  MECH_NAM_SAPRCII( 3)     , MECH_MAP_SAPRCII( 3)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 3)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 4)     , SPMH_MAP_SAPRCII( 4)
+     &    / 'pinene_b     ', 4           /
+      DATA  MECH_NAM_SAPRCII( 4)     , MECH_MAP_SAPRCII( 4)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 4)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 5)     , SPMH_MAP_SAPRCII( 5)
+     &    / 'myrcene     ', 5           /
+      DATA  MECH_NAM_SAPRCII( 5)     , MECH_MAP_SAPRCII( 5)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 5)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 6)     , SPMH_MAP_SAPRCII( 6)
+     &    / 'ocimene_al     ', 6           /
+      DATA  MECH_NAM_SAPRCII( 6)     , MECH_MAP_SAPRCII( 6)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 6)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 7)     , SPMH_MAP_SAPRCII( 7)
+     &    / 'ocimene_c_b     ', 7           /
+      DATA  MECH_NAM_SAPRCII( 7)     , MECH_MAP_SAPRCII( 7)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 7)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 8)     , SPMH_MAP_SAPRCII( 8)
+     &    / 'ocimene_t_b     ', 8           /
+      DATA  MECH_NAM_SAPRCII( 8)     , MECH_MAP_SAPRCII( 8)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 8)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 9)     , SPMH_MAP_SAPRCII( 9)
+     &    / 'camphene     ', 10           /
+      DATA  MECH_NAM_SAPRCII( 9)     , MECH_MAP_SAPRCII( 9)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 9)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 10)     , SPMH_MAP_SAPRCII( 10)
+     &    / 'bornene     ', 9           /
+      DATA  MECH_NAM_SAPRCII( 10)     , MECH_MAP_SAPRCII( 10)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 10)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 11)     , SPMH_MAP_SAPRCII( 11)
+     &    / 'fenchene_a     ', 12           /
+      DATA  MECH_NAM_SAPRCII( 11)     , MECH_MAP_SAPRCII( 11)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 11)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 12)     , SPMH_MAP_SAPRCII( 12)
+     &    / 'tricyclene     ', 14           /
+      DATA  MECH_NAM_SAPRCII( 12)     , MECH_MAP_SAPRCII( 12)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 12)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 13)     , SPMH_MAP_SAPRCII( 13)
+     &    / 'carene_3     ', 11           /
+      DATA  MECH_NAM_SAPRCII( 13)     , MECH_MAP_SAPRCII( 13)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 13)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 14)     , SPMH_MAP_SAPRCII( 14)
+     &    / 'fenchene_b     ', 13           /
+      DATA  MECH_NAM_SAPRCII( 14)     , MECH_MAP_SAPRCII( 14)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 14)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 15)     , SPMH_MAP_SAPRCII( 15)
+     &    / 'phellandrene_a     ', 17           /
+      DATA  MECH_NAM_SAPRCII( 15)     , MECH_MAP_SAPRCII( 15)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 15)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 16)     , SPMH_MAP_SAPRCII( 16)
+     &    / 'terpinene_g     ', 20           /
+      DATA  MECH_NAM_SAPRCII( 16)     , MECH_MAP_SAPRCII( 16)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 16)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 17)     , SPMH_MAP_SAPRCII( 17)
+     &    / 'terpinene_a     ', 19           /
+      DATA  MECH_NAM_SAPRCII( 17)     , MECH_MAP_SAPRCII( 17)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 17)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 18)     , SPMH_MAP_SAPRCII( 18)
+     &    / 'limonene     ', 15           /
+      DATA  MECH_NAM_SAPRCII( 18)     , MECH_MAP_SAPRCII( 18)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 18)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 19)     , SPMH_MAP_SAPRCII( 19)
+     &    / 'phellandrene_b     ', 16           /
+      DATA  MECH_NAM_SAPRCII( 19)     , MECH_MAP_SAPRCII( 19)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 19)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 20)     , SPMH_MAP_SAPRCII( 20)
+     &    / 'terpinolene     ', 21           /
+      DATA  MECH_NAM_SAPRCII( 20)     , MECH_MAP_SAPRCII( 20)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 20)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 21)     , SPMH_MAP_SAPRCII( 21)
+     &    / 'thujene_a     ', 22           /
+      DATA  MECH_NAM_SAPRCII( 21)     , MECH_MAP_SAPRCII( 21)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 21)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 22)     , SPMH_MAP_SAPRCII( 22)
+     &    / 'sabinene     ', 18           /
+      DATA  MECH_NAM_SAPRCII( 22)     , MECH_MAP_SAPRCII( 22)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 22)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 23)     , SPMH_MAP_SAPRCII( 23)
+     &    / 'verbenene     ', 23           /
+      DATA  MECH_NAM_SAPRCII( 23)     , MECH_MAP_SAPRCII( 23)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 23)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 24)     , SPMH_MAP_SAPRCII( 24)
+     &    / 'cymene_p     ', 25           /
+      DATA  MECH_NAM_SAPRCII( 24)     , MECH_MAP_SAPRCII( 24)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 24)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 25)     , SPMH_MAP_SAPRCII( 25)
+     &    / 'cymene_o     ', 24           /
+      DATA  MECH_NAM_SAPRCII( 25)     , MECH_MAP_SAPRCII( 25)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 25)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 26)     , SPMH_MAP_SAPRCII( 26)
+     &    / 'meta-cymenene     ', 26           /
+      DATA  MECH_NAM_SAPRCII( 26)     , MECH_MAP_SAPRCII( 26)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 26)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 27)     , SPMH_MAP_SAPRCII( 27)
+     &    / 'p-cymenene     ', 27           /
+      DATA  MECH_NAM_SAPRCII( 27)     , MECH_MAP_SAPRCII( 27)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 27)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 28)     , SPMH_MAP_SAPRCII( 28)
+     &    / 'camphor     ', 30           /
+      DATA  MECH_NAM_SAPRCII( 28)     , MECH_MAP_SAPRCII( 28)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 28)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 29)     , SPMH_MAP_SAPRCII( 29)
+     &    / 'bornyl_ACT     ', 29           /
+      DATA  MECH_NAM_SAPRCII( 29)     , MECH_MAP_SAPRCII( 29)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 29)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 30)     , SPMH_MAP_SAPRCII( 30)
+     &    / 'piperitone     ', 38           /
+      DATA  MECH_NAM_SAPRCII( 30)     , MECH_MAP_SAPRCII( 30)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 30)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 31)     , SPMH_MAP_SAPRCII( 31)
+     &    / 'terpineol_a     ', 40           /
+      DATA  MECH_NAM_SAPRCII( 31)     , MECH_MAP_SAPRCII( 31)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 31)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 32)     , SPMH_MAP_SAPRCII( 32)
+     &    / 'octanol     ', 36           /
+      DATA  MECH_NAM_SAPRCII( 32)     , MECH_MAP_SAPRCII( 32)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 32)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 33)     , SPMH_MAP_SAPRCII( 33)
+     &    / 'estragole     ', 31           /
+      DATA  MECH_NAM_SAPRCII( 33)     , MECH_MAP_SAPRCII( 33)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 33)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 34)     , SPMH_MAP_SAPRCII( 34)
+     &    / 'borneol     ', 28           /
+      DATA  MECH_NAM_SAPRCII( 34)     , MECH_MAP_SAPRCII( 34)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 34)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 35)     , SPMH_MAP_SAPRCII( 35)
+     &    / 'thujone_b     ', 42           /
+      DATA  MECH_NAM_SAPRCII( 35)     , MECH_MAP_SAPRCII( 35)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 35)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 36)     , SPMH_MAP_SAPRCII( 36)
+     &    / 'thujone_a     ', 41           /
+      DATA  MECH_NAM_SAPRCII( 36)     , MECH_MAP_SAPRCII( 36)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 36)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 37)     , SPMH_MAP_SAPRCII( 37)
+     &    / 'terpineol_4     ', 39           /
+      DATA  MECH_NAM_SAPRCII( 37)     , MECH_MAP_SAPRCII( 37)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 37)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 38)     , SPMH_MAP_SAPRCII( 38)
+     &    / 'myrtenal     ', 35           /
+      DATA  MECH_NAM_SAPRCII( 38)     , MECH_MAP_SAPRCII( 38)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 38)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 39)     , SPMH_MAP_SAPRCII( 39)
+     &    / 'fenchone     ', 32           /
+      DATA  MECH_NAM_SAPRCII( 39)     , MECH_MAP_SAPRCII( 39)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 39)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 40)     , SPMH_MAP_SAPRCII( 40)
+     &    / 'octenol_1e3ol     ', 37           /
+      DATA  MECH_NAM_SAPRCII( 40)     , MECH_MAP_SAPRCII( 40)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 40)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 41)     , SPMH_MAP_SAPRCII( 41)
+     &    / 'ionone_b     ', 33           /
+      DATA  MECH_NAM_SAPRCII( 41)     , MECH_MAP_SAPRCII( 41)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 41)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 42)     , SPMH_MAP_SAPRCII( 42)
+     &    / 'ipsenol     ', 34           /
+      DATA  MECH_NAM_SAPRCII( 42)     , MECH_MAP_SAPRCII( 42)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 42)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 43)     , SPMH_MAP_SAPRCII( 43)
+     &    / 'caryophyllene_b     ', 51           /
+      DATA  MECH_NAM_SAPRCII( 43)     , MECH_MAP_SAPRCII( 43)
+     &    / 'BCARL      ', 3           /
+      DATA  CONV_FAC_SAPRCII( 43)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 44)     , SPMH_MAP_SAPRCII( 44)
+     &    / 'caryophyllene_c_i     ', 52           /
+      DATA  MECH_NAM_SAPRCII( 44)     , MECH_MAP_SAPRCII( 44)
+     &    / 'BCARL      ', 3           /
+      DATA  CONV_FAC_SAPRCII( 44)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 45)     , SPMH_MAP_SAPRCII( 45)
+     &    / 'cadinene_d     ', 48           /
+      DATA  MECH_NAM_SAPRCII( 45)     , MECH_MAP_SAPRCII( 45)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 45)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 46)     , SPMH_MAP_SAPRCII( 46)
+     &    / 'selinene_d     ', 67           /
+      DATA  MECH_NAM_SAPRCII( 46)     , MECH_MAP_SAPRCII( 46)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 46)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 47)     , SPMH_MAP_SAPRCII( 47)
+     &    / 'bisabolene_b     ', 47           /
+      DATA  MECH_NAM_SAPRCII( 47)     , MECH_MAP_SAPRCII( 47)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 47)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 48)     , SPMH_MAP_SAPRCII( 48)
+     &    / 'farnescene_a     ', 54           /
+      DATA  MECH_NAM_SAPRCII( 48)     , MECH_MAP_SAPRCII( 48)
+     &    / 'AHUMUL      ', 4           /
+      DATA  CONV_FAC_SAPRCII( 48)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 49)     , SPMH_MAP_SAPRCII( 49)
+     &    / 'patchoulene_b     ', 65           /
+      DATA  MECH_NAM_SAPRCII( 49)     , MECH_MAP_SAPRCII( 49)
+     &    / 'BCARL      ', 3           /
+      DATA  CONV_FAC_SAPRCII( 49)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 50)     , SPMH_MAP_SAPRCII( 50)
+     &    / 'elemene_b     ', 53           /
+      DATA  MECH_NAM_SAPRCII( 50)     , MECH_MAP_SAPRCII( 50)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 50)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 51)     , SPMH_MAP_SAPRCII( 51)
+     &    / 'nerolidol_c     ', 63           /
+      DATA  MECH_NAM_SAPRCII( 51)     , MECH_MAP_SAPRCII( 51)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 51)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 52)     , SPMH_MAP_SAPRCII( 52)
+     &    / 'farnesol     ', 56           /
+      DATA  MECH_NAM_SAPRCII( 52)     , MECH_MAP_SAPRCII( 52)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 52)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 53)     , SPMH_MAP_SAPRCII( 53)
+     &    / 'humulene_a     ', 59           /
+      DATA  MECH_NAM_SAPRCII( 53)     , MECH_MAP_SAPRCII( 53)
+     &    / 'AHUMUL      ', 4           /
+      DATA  CONV_FAC_SAPRCII( 53)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 54)     , SPMH_MAP_SAPRCII( 54)
+     &    / 'muurolene_a     ', 61           /
+      DATA  MECH_NAM_SAPRCII( 54)     , MECH_MAP_SAPRCII( 54)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 54)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 55)     , SPMH_MAP_SAPRCII( 55)
+     &    / 'bergamotene_a     ', 44           /
+      DATA  MECH_NAM_SAPRCII( 55)     , MECH_MAP_SAPRCII( 55)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 55)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 56)     , SPMH_MAP_SAPRCII( 56)
+     &    / 'germacrene_B     ', 57           /
+      DATA  MECH_NAM_SAPRCII( 56)     , MECH_MAP_SAPRCII( 56)
+     &    / 'AHUMUL      ', 4           /
+      DATA  CONV_FAC_SAPRCII( 56)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 57)     , SPMH_MAP_SAPRCII( 57)
+     &    / 'selinene_b     ', 66           /
+      DATA  MECH_NAM_SAPRCII( 57)     , MECH_MAP_SAPRCII( 57)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 57)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 58)     , SPMH_MAP_SAPRCII( 58)
+     &    / 'calarene     ', 50           /
+      DATA  MECH_NAM_SAPRCII( 58)     , MECH_MAP_SAPRCII( 58)
+     &    / 'BCARL      ', 3           /
+      DATA  CONV_FAC_SAPRCII( 58)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 59)     , SPMH_MAP_SAPRCII( 59)
+     &    / 'farnescene_b     ', 55           /
+      DATA  MECH_NAM_SAPRCII( 59)     , MECH_MAP_SAPRCII( 59)
+     &    / 'AHUMUL      ', 4           /
+      DATA  CONV_FAC_SAPRCII( 59)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 60)     , SPMH_MAP_SAPRCII( 60)
+     &    / 'acoradiene     ', 43           /
+      DATA  MECH_NAM_SAPRCII( 60)     , MECH_MAP_SAPRCII( 60)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 60)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 61)     , SPMH_MAP_SAPRCII( 61)
+     &    / 'humulene_g     ', 60           /
+      DATA  MECH_NAM_SAPRCII( 61)     , MECH_MAP_SAPRCII( 61)
+     &    / 'AHUMUL      ', 4           /
+      DATA  CONV_FAC_SAPRCII( 61)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 62)     , SPMH_MAP_SAPRCII( 62)
+     &    / 'muurolene_g     ', 62           /
+      DATA  MECH_NAM_SAPRCII( 62)     , MECH_MAP_SAPRCII( 62)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 62)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 63)     , SPMH_MAP_SAPRCII( 63)
+     &    / 'germacrene_D     ', 58           /
+      DATA  MECH_NAM_SAPRCII( 63)     , MECH_MAP_SAPRCII( 63)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 63)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 64)     , SPMH_MAP_SAPRCII( 64)
+     &    / 'cadinene_g     ', 49           /
+      DATA  MECH_NAM_SAPRCII( 64)     , MECH_MAP_SAPRCII( 64)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 64)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 65)     , SPMH_MAP_SAPRCII( 65)
+     &    / 'nerolidol_t     ', 64           /
+      DATA  MECH_NAM_SAPRCII( 65)     , MECH_MAP_SAPRCII( 65)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 65)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 66)     , SPMH_MAP_SAPRCII( 66)
+     &    / 'bergamotene_b     ', 45           /
+      DATA  MECH_NAM_SAPRCII( 66)     , MECH_MAP_SAPRCII( 66)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 66)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 67)     , SPMH_MAP_SAPRCII( 67)
+     &    / 'bisabolene_a     ', 46           /
+      DATA  MECH_NAM_SAPRCII( 67)     , MECH_MAP_SAPRCII( 67)
+     &    / 'AHUMUL      ', 4           /
+      DATA  CONV_FAC_SAPRCII( 67)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 68)     , SPMH_MAP_SAPRCII( 68)
+     &    / 'cedrol     ', 73           /
+      DATA  MECH_NAM_SAPRCII( 68)     , MECH_MAP_SAPRCII( 68)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 68)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 69)     , SPMH_MAP_SAPRCII( 69)
+     &    / 'homosalate     ', 78           /
+      DATA  MECH_NAM_SAPRCII( 69)     , MECH_MAP_SAPRCII( 69)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 69)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 70)     , SPMH_MAP_SAPRCII( 70)
+     &    / '2ethyl_hexyl_salate     ', 68           /
+      DATA  MECH_NAM_SAPRCII( 70)     , MECH_MAP_SAPRCII( 70)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 70)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 71)     , SPMH_MAP_SAPRCII( 71)
+     &    / 'cedrene_a     ', 72           /
+      DATA  MECH_NAM_SAPRCII( 71)     , MECH_MAP_SAPRCII( 71)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 71)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 72)     , SPMH_MAP_SAPRCII( 72)
+     &    / 'thujopsene     ', 83           /
+      DATA  MECH_NAM_SAPRCII( 72)     , MECH_MAP_SAPRCII( 72)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 72)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 73)     , SPMH_MAP_SAPRCII( 73)
+     &    / 'longifolene     ', 81           /
+      DATA  MECH_NAM_SAPRCII( 73)     , MECH_MAP_SAPRCII( 73)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 73)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 74)     , SPMH_MAP_SAPRCII( 74)
+     &    / 'cadinol_a     ', 71           /
+      DATA  MECH_NAM_SAPRCII( 74)     , MECH_MAP_SAPRCII( 74)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 74)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 75)     , SPMH_MAP_SAPRCII( 75)
+     &    / 'zingiberene_a     ', 85           /
+      DATA  MECH_NAM_SAPRCII( 75)     , MECH_MAP_SAPRCII( 75)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 75)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 76)     , SPMH_MAP_SAPRCII( 76)
+     &    / 'isolongifolene     ', 79           /
+      DATA  MECH_NAM_SAPRCII( 76)     , MECH_MAP_SAPRCII( 76)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 76)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 77)     , SPMH_MAP_SAPRCII( 77)
+     &    / 'longicyclene     ', 87           /
+      DATA  MECH_NAM_SAPRCII( 77)     , MECH_MAP_SAPRCII( 77)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 77)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 78)     , SPMH_MAP_SAPRCII( 78)
+     &    / 'copaene_a     ', 74           /
+      DATA  MECH_NAM_SAPRCII( 78)     , MECH_MAP_SAPRCII( 78)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 78)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 79)     , SPMH_MAP_SAPRCII( 79)
+     &    / 'bourbonene_b     ', 70           /
+      DATA  MECH_NAM_SAPRCII( 79)     , MECH_MAP_SAPRCII( 79)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 79)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 80)     , SPMH_MAP_SAPRCII( 80)
+     &    / 'longipinene     ', 82           /
+      DATA  MECH_NAM_SAPRCII( 80)     , MECH_MAP_SAPRCII( 80)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 80)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 81)     , SPMH_MAP_SAPRCII( 81)
+     &    / 'cubebene_b     ', 76           /
+      DATA  MECH_NAM_SAPRCII( 81)     , MECH_MAP_SAPRCII( 81)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 81)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 82)     , SPMH_MAP_SAPRCII( 82)
+     &    / 'ylangene_a     ', 84           /
+      DATA  MECH_NAM_SAPRCII( 82)     , MECH_MAP_SAPRCII( 82)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 82)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 83)     , SPMH_MAP_SAPRCII( 83)
+     &    / 'cubebene_a     ', 75           /
+      DATA  MECH_NAM_SAPRCII( 83)     , MECH_MAP_SAPRCII( 83)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 83)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 84)     , SPMH_MAP_SAPRCII( 84)
+     &    / 'copaene_b     ', 86           /
+      DATA  MECH_NAM_SAPRCII( 84)     , MECH_MAP_SAPRCII( 84)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 84)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 85)     , SPMH_MAP_SAPRCII( 85)
+     &    / 'kaur_16_ene     ', 80           /
+      DATA  MECH_NAM_SAPRCII( 85)     , MECH_MAP_SAPRCII( 85)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 85)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 86)     , SPMH_MAP_SAPRCII( 86)
+     &    / 'gurjunene_b     ', 77           /
+      DATA  MECH_NAM_SAPRCII( 86)     , MECH_MAP_SAPRCII( 86)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 86)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 87)     , SPMH_MAP_SAPRCII( 87)
+     &    / 'aromadendrene     ', 69           /
+      DATA  MECH_NAM_SAPRCII( 87)     , MECH_MAP_SAPRCII( 87)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 87)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 88)     , SPMH_MAP_SAPRCII( 88)
+     &    / 'methanol     ', 88           /
+      DATA  MECH_NAM_SAPRCII( 88)     , MECH_MAP_SAPRCII( 88)
+     &    / 'MEOH      ', 6           /
+      DATA  CONV_FAC_SAPRCII( 88)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 89)     , SPMH_MAP_SAPRCII( 89)
+     &    / 'acetone     ', 89           /
+      DATA  MECH_NAM_SAPRCII( 89)     , MECH_MAP_SAPRCII( 89)
+     &    / 'ACET      ', 7           /
+      DATA  CONV_FAC_SAPRCII( 89)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 90)     , SPMH_MAP_SAPRCII( 90)
+     &    / 'ethanol     ', 91           /
+      DATA  MECH_NAM_SAPRCII( 90)     , MECH_MAP_SAPRCII( 90)
+     &    / 'ALK3      ', 23           /
+      DATA  CONV_FAC_SAPRCII( 90)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 91)     , SPMH_MAP_SAPRCII( 91)
+     &    / 'acetaldehyde     ', 90           /
+      DATA  MECH_NAM_SAPRCII( 91)     , MECH_MAP_SAPRCII( 91)
+     &    / 'CCHO      ', 12           /
+      DATA  CONV_FAC_SAPRCII( 91)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 92)     , SPMH_MAP_SAPRCII( 92)
+     &    / 'formic_acid     ', 93           /
+      DATA  MECH_NAM_SAPRCII( 92)     , MECH_MAP_SAPRCII( 92)
+     &    / 'HCOOH      ', 13           /
+      DATA  CONV_FAC_SAPRCII( 92)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 93)     , SPMH_MAP_SAPRCII( 93)
+     &    / 'acetic_acid     ', 92           /
+      DATA  MECH_NAM_SAPRCII( 93)     , MECH_MAP_SAPRCII( 93)
+     &    / 'CCO_OH      ', 15           /
+      DATA  CONV_FAC_SAPRCII( 93)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 94)     , SPMH_MAP_SAPRCII( 94)
+     &    / 'pyruvic_acid     ', 94           /
+      DATA  MECH_NAM_SAPRCII( 94)     , MECH_MAP_SAPRCII( 94)
+     &    / 'RCO_OH      ', 18           /
+      DATA  CONV_FAC_SAPRCII( 94)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 95)     , SPMH_MAP_SAPRCII( 95)
+     &    / 'ethane     ', 100           /
+      DATA  MECH_NAM_SAPRCII( 95)     , MECH_MAP_SAPRCII( 95)
+     &    / 'ALK1      ', 21           /
+      DATA  CONV_FAC_SAPRCII( 95)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 96)     , SPMH_MAP_SAPRCII( 96)
+     &    / 'ethene     ', 101           /
+      DATA  MECH_NAM_SAPRCII( 96)     , MECH_MAP_SAPRCII( 96)
+     &    / 'ETHENE      ', 20           /
+      DATA  CONV_FAC_SAPRCII( 96)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 97)     , SPMH_MAP_SAPRCII( 97)
+     &    / 'propane     ', 102           /
+      DATA  MECH_NAM_SAPRCII( 97)     , MECH_MAP_SAPRCII( 97)
+     &    / 'ALK2      ', 22           /
+      DATA  CONV_FAC_SAPRCII( 97)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 98)     , SPMH_MAP_SAPRCII( 98)
+     &    / 'butane     ', 96           /
+      DATA  MECH_NAM_SAPRCII( 98)     , MECH_MAP_SAPRCII( 98)
+     &    / 'ALK4      ', 24           /
+      DATA  CONV_FAC_SAPRCII( 98)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 99)     , SPMH_MAP_SAPRCII( 99)
+     &    / 'butene     ', 97           /
+      DATA  MECH_NAM_SAPRCII( 99)     , MECH_MAP_SAPRCII( 99)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 99)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 100)     , SPMH_MAP_SAPRCII( 100)
+     &    / 'propene     ', 103           /
+      DATA  MECH_NAM_SAPRCII( 100)     , MECH_MAP_SAPRCII( 100)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 100)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 101)     , SPMH_MAP_SAPRCII( 101)
+     &    / '2_methylprop_1_ene     ', 95           /
+      DATA  MECH_NAM_SAPRCII( 101)     , MECH_MAP_SAPRCII( 101)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 101)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 102)     , SPMH_MAP_SAPRCII( 102)
+     &    / 'butene_c2     ', 98           /
+      DATA  MECH_NAM_SAPRCII( 102)     , MECH_MAP_SAPRCII( 102)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 102)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 103)     , SPMH_MAP_SAPRCII( 103)
+     &    / 'butene_t2     ', 99           /
+      DATA  MECH_NAM_SAPRCII( 103)     , MECH_MAP_SAPRCII( 103)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 103)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 104)     , SPMH_MAP_SAPRCII( 104)
+     &    / 'formaldehyde     ', 113           /
+      DATA  MECH_NAM_SAPRCII( 104)     , MECH_MAP_SAPRCII( 104)
+     &    / 'HCHO      ', 14           /
+      DATA  CONV_FAC_SAPRCII( 104)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 105)     , SPMH_MAP_SAPRCII( 105)
+     &    / 'pentanal     ', 111           /
+      DATA  MECH_NAM_SAPRCII( 105)     , MECH_MAP_SAPRCII( 105)
+     &    / 'RCHO      ', 30           /
+      DATA  CONV_FAC_SAPRCII( 105)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 106)     , SPMH_MAP_SAPRCII( 106)
+     &    / 'met_heptenone     ', 106           /
+      DATA  MECH_NAM_SAPRCII( 106)     , MECH_MAP_SAPRCII( 106)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 106)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 107)     , SPMH_MAP_SAPRCII( 107)
+     &    / 'decanal     ', 104           /
+      DATA  MECH_NAM_SAPRCII( 107)     , MECH_MAP_SAPRCII( 107)
+     &    / 'RCHO      ', 30           /
+      DATA  CONV_FAC_SAPRCII( 107)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 108)     , SPMH_MAP_SAPRCII( 108)
+     &    / 'octanal     ', 110           /
+      DATA  MECH_NAM_SAPRCII( 108)     , MECH_MAP_SAPRCII( 108)
+     &    / 'RCHO      ', 30           /
+      DATA  CONV_FAC_SAPRCII( 108)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 109)     , SPMH_MAP_SAPRCII( 109)
+     &    / 'nonanal     ', 108           /
+      DATA  MECH_NAM_SAPRCII( 109)     , MECH_MAP_SAPRCII( 109)
+     &    / 'RCHO      ', 30           /
+      DATA  CONV_FAC_SAPRCII( 109)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 110)     , SPMH_MAP_SAPRCII( 110)
+     &    / 'oxopentanal     ', 114           /
+      DATA  MECH_NAM_SAPRCII( 110)     , MECH_MAP_SAPRCII( 110)
+     &    / 'RCHO      ', 30           /
+      DATA  CONV_FAC_SAPRCII( 110)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 111)     , SPMH_MAP_SAPRCII( 111)
+     &    / 'nonenal     ', 109           /
+      DATA  MECH_NAM_SAPRCII( 111)     , MECH_MAP_SAPRCII( 111)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 111)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 112)     , SPMH_MAP_SAPRCII( 112)
+     &    / 't-2-octenal     ', 112           /
+      DATA  MECH_NAM_SAPRCII( 112)     , MECH_MAP_SAPRCII( 112)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 112)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 113)     , SPMH_MAP_SAPRCII( 113)
+     &    / 'geranyl_acetone     ', 105           /
+      DATA  MECH_NAM_SAPRCII( 113)     , MECH_MAP_SAPRCII( 113)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 113)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 114)     , SPMH_MAP_SAPRCII( 114)
+     &    / 'neryl_acetone     ', 107           /
+      DATA  MECH_NAM_SAPRCII( 114)     , MECH_MAP_SAPRCII( 114)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 114)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 115)     , SPMH_MAP_SAPRCII( 115)
+     &    / 'hexanal     ', 141           /
+      DATA  MECH_NAM_SAPRCII( 115)     , MECH_MAP_SAPRCII( 115)
+     &    / 'RCHO      ', 30           /
+      DATA  CONV_FAC_SAPRCII( 115)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 116)     , SPMH_MAP_SAPRCII( 116)
+     &    / '1_pentanol     ', 115           /
+      DATA  MECH_NAM_SAPRCII( 116)     , MECH_MAP_SAPRCII( 116)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 116)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 117)     , SPMH_MAP_SAPRCII( 117)
+     &    / 'benzene     ', 128           /
+      DATA  MECH_NAM_SAPRCII( 117)     , MECH_MAP_SAPRCII( 117)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 117)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 118)     , SPMH_MAP_SAPRCII( 118)
+     &    / 'hydrogen_cyanide     ', 147           /
+      DATA  MECH_NAM_SAPRCII( 118)     , MECH_MAP_SAPRCII( 118)
+     &    / 'NONR      ', 31           /
+      DATA  CONV_FAC_SAPRCII( 118)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 119)     , SPMH_MAP_SAPRCII( 119)
+     &    / 'linalool     ', 150           /
+      DATA  MECH_NAM_SAPRCII( 119)     , MECH_MAP_SAPRCII( 119)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 119)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 120)     , SPMH_MAP_SAPRCII( 120)
+     &    / 'isobutyronitrile     ', 148           /
+      DATA  MECH_NAM_SAPRCII( 120)     , MECH_MAP_SAPRCII( 120)
+     &    / 'ALK4      ', 24           /
+      DATA  CONV_FAC_SAPRCII( 120)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 121)     , SPMH_MAP_SAPRCII( 121)
+     &    / 'methacrolein     ', 153           /
+      DATA  MECH_NAM_SAPRCII( 121)     , MECH_MAP_SAPRCII( 121)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 121)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 122)     , SPMH_MAP_SAPRCII( 122)
+     &    / 'met_vinylketone     ', 158           /
+      DATA  MECH_NAM_SAPRCII( 122)     , MECH_MAP_SAPRCII( 122)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 122)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 123)     , SPMH_MAP_SAPRCII( 123)
+     &    / 'met_acetate     ', 157           /
+      DATA  MECH_NAM_SAPRCII( 123)     , MECH_MAP_SAPRCII( 123)
+     &    / 'RCO_OH      ', 18           /
+      DATA  CONV_FAC_SAPRCII( 123)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 124)     , SPMH_MAP_SAPRCII( 124)
+     &    / 'salicylaldehyde     ', 163           /
+      DATA  MECH_NAM_SAPRCII( 124)     , MECH_MAP_SAPRCII( 124)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 124)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 125)     , SPMH_MAP_SAPRCII( 125)
+     &    / 'guaiacol     ', 140           /
+      DATA  MECH_NAM_SAPRCII( 125)     , MECH_MAP_SAPRCII( 125)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 125)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 126)     , SPMH_MAP_SAPRCII( 126)
+     &    / 'met_benzoate     ', 154           /
+      DATA  MECH_NAM_SAPRCII( 126)     , MECH_MAP_SAPRCII( 126)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 126)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 127)     , SPMH_MAP_SAPRCII( 127)
+     &    / 'safrole     ', 162           /
+      DATA  MECH_NAM_SAPRCII( 127)     , MECH_MAP_SAPRCII( 127)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 127)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 128)     , SPMH_MAP_SAPRCII( 128)
+     &    / '3_pentanone     ', 121           /
+      DATA  MECH_NAM_SAPRCII( 128)     , MECH_MAP_SAPRCII( 128)
+     &    / 'MEK      ', 17           /
+      DATA  CONV_FAC_SAPRCII( 128)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 129)     , SPMH_MAP_SAPRCII( 129)
+     &    / 'eugenol     ', 139           /
+      DATA  MECH_NAM_SAPRCII( 129)     , MECH_MAP_SAPRCII( 129)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 129)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 130)     , SPMH_MAP_SAPRCII( 130)
+     &    / 'acetophenone     ', 125           /
+      DATA  MECH_NAM_SAPRCII( 130)     , MECH_MAP_SAPRCII( 130)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 130)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 131)     , SPMH_MAP_SAPRCII( 131)
+     &    / 'benzyl_alcohol     ', 131           /
+      DATA  MECH_NAM_SAPRCII( 131)     , MECH_MAP_SAPRCII( 131)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 131)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 132)     , SPMH_MAP_SAPRCII( 132)
+     &    / 'benzaldehyde     ', 127           /
+      DATA  MECH_NAM_SAPRCII( 132)     , MECH_MAP_SAPRCII( 132)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 132)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 133)     , SPMH_MAP_SAPRCII( 133)
+     &    / 'anisole     ', 126           /
+      DATA  MECH_NAM_SAPRCII( 133)     , MECH_MAP_SAPRCII( 133)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 133)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 134)     , SPMH_MAP_SAPRCII( 134)
+     &    / 'ethyl_cinnamate     ', 138           /
+      DATA  MECH_NAM_SAPRCII( 134)     , MECH_MAP_SAPRCII( 134)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 134)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 135)     , SPMH_MAP_SAPRCII( 135)
+     &    / 'cinnamaldehyde     ', 134           /
+      DATA  MECH_NAM_SAPRCII( 135)     , MECH_MAP_SAPRCII( 135)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 135)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 136)     , SPMH_MAP_SAPRCII( 136)
+     &    / 'toluene     ', 164           /
+      DATA  MECH_NAM_SAPRCII( 136)     , MECH_MAP_SAPRCII( 136)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 136)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 137)     , SPMH_MAP_SAPRCII( 137)
+     &    / 'phenol     ', 160           /
+      DATA  MECH_NAM_SAPRCII( 137)     , MECH_MAP_SAPRCII( 137)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 137)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 138)     , SPMH_MAP_SAPRCII( 138)
+     &    / '2_pentene     ', 118           /
+      DATA  MECH_NAM_SAPRCII( 138)     , MECH_MAP_SAPRCII( 138)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 138)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 139)     , SPMH_MAP_SAPRCII( 139)
+     &    / 'hexanol_1     ', 142           /
+      DATA  MECH_NAM_SAPRCII( 139)     , MECH_MAP_SAPRCII( 139)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 139)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 140)     , SPMH_MAP_SAPRCII( 140)
+     &    / 'met_salicylate     ', 156           /
+      DATA  MECH_NAM_SAPRCII( 140)     , MECH_MAP_SAPRCII( 140)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 140)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 141)     , SPMH_MAP_SAPRCII( 141)
+     &    / 'benzyl_benzoate     ', 129           /
+      DATA  MECH_NAM_SAPRCII( 141)     , MECH_MAP_SAPRCII( 141)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 141)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 142)     , SPMH_MAP_SAPRCII( 142)
+     &    / 'phenylacetaldehyde     ', 161           /
+      DATA  MECH_NAM_SAPRCII( 142)     , MECH_MAP_SAPRCII( 142)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 142)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 143)     , SPMH_MAP_SAPRCII( 143)
+     &    / 'cinnamic_acid     ', 135           /
+      DATA  MECH_NAM_SAPRCII( 143)     , MECH_MAP_SAPRCII( 143)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 143)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 144)     , SPMH_MAP_SAPRCII( 144)
+     &    / 'benzyl_acetate     ', 130           /
+      DATA  MECH_NAM_SAPRCII( 144)     , MECH_MAP_SAPRCII( 144)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 144)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 145)     , SPMH_MAP_SAPRCII( 145)
+     &    / 'coniferyl_alcohol     ', 136           /
+      DATA  MECH_NAM_SAPRCII( 145)     , MECH_MAP_SAPRCII( 145)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 145)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 146)     , SPMH_MAP_SAPRCII( 146)
+     &    / 'cineole_1_8     ', 133           /
+      DATA  MECH_NAM_SAPRCII( 146)     , MECH_MAP_SAPRCII( 146)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 146)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 147)     , SPMH_MAP_SAPRCII( 147)
+     &    / 'jasmone     ', 149           /
+      DATA  MECH_NAM_SAPRCII( 147)     , MECH_MAP_SAPRCII( 147)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 147)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 148)     , SPMH_MAP_SAPRCII( 148)
+     &    / 'chavicol     ', 132           /
+      DATA  MECH_NAM_SAPRCII( 148)     , MECH_MAP_SAPRCII( 148)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 148)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 149)     , SPMH_MAP_SAPRCII( 149)
+     &    / 'p_coumaric_acid     ', 159           /
+      DATA  MECH_NAM_SAPRCII( 149)     , MECH_MAP_SAPRCII( 149)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 149)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 150)     , SPMH_MAP_SAPRCII( 150)
+     &    / 'hexenal_t2     ', 144           /
+      DATA  MECH_NAM_SAPRCII( 150)     , MECH_MAP_SAPRCII( 150)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 150)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 151)     , SPMH_MAP_SAPRCII( 151)
+     &    / '3_metthiophene     ', 120           /
+      DATA  MECH_NAM_SAPRCII( 151)     , MECH_MAP_SAPRCII( 151)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 151)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 152)     , SPMH_MAP_SAPRCII( 152)
+     &    / '4_penten_1_ol     ', 123           /
+      DATA  MECH_NAM_SAPRCII( 152)     , MECH_MAP_SAPRCII( 152)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 152)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 153)     , SPMH_MAP_SAPRCII( 153)
+     &    / 'hexenol_c3     ', 145           /
+      DATA  MECH_NAM_SAPRCII( 153)     , MECH_MAP_SAPRCII( 153)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 153)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 154)     , SPMH_MAP_SAPRCII( 154)
+     &    / '3_metfuran     ', 119           /
+      DATA  MECH_NAM_SAPRCII( 154)     , MECH_MAP_SAPRCII( 154)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 154)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 155)     , SPMH_MAP_SAPRCII( 155)
+     &    / 'met_jasmonate     ', 155           /
+      DATA  MECH_NAM_SAPRCII( 155)     , MECH_MAP_SAPRCII( 155)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 155)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 156)     , SPMH_MAP_SAPRCII( 156)
+     &    / 'xylene     ', 166           /
+      DATA  MECH_NAM_SAPRCII( 156)     , MECH_MAP_SAPRCII( 156)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 156)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 157)     , SPMH_MAP_SAPRCII( 157)
+     &    / 'z2_penten_1ol     ', 167           /
+      DATA  MECH_NAM_SAPRCII( 157)     , MECH_MAP_SAPRCII( 157)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 157)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 158)     , SPMH_MAP_SAPRCII( 158)
+     &    / '1_penten_3_one     ', 116           /
+      DATA  MECH_NAM_SAPRCII( 158)     , MECH_MAP_SAPRCII( 158)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 158)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 159)     , SPMH_MAP_SAPRCII( 159)
+     &    / 'hexenyl_ACT_c3     ', 146           /
+      DATA  MECH_NAM_SAPRCII( 159)     , MECH_MAP_SAPRCII( 159)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 159)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 160)     , SPMH_MAP_SAPRCII( 160)
+     &    / '3_penten_2_ol     ', 122           /
+      DATA  MECH_NAM_SAPRCII( 160)     , MECH_MAP_SAPRCII( 160)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 160)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 161)     , SPMH_MAP_SAPRCII( 161)
+     &    / 'linalool_OXD_c     ', 151           /
+      DATA  MECH_NAM_SAPRCII( 161)     , MECH_MAP_SAPRCII( 161)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 161)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 162)     , SPMH_MAP_SAPRCII( 162)
+     &    / 'hexenal_c3     ', 143           /
+      DATA  MECH_NAM_SAPRCII( 162)     , MECH_MAP_SAPRCII( 162)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 162)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 163)     , SPMH_MAP_SAPRCII( 163)
+     &    / '8_heptadecene     ', 124           /
+      DATA  MECH_NAM_SAPRCII( 163)     , MECH_MAP_SAPRCII( 163)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 163)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 164)     , SPMH_MAP_SAPRCII( 164)
+     &    / 'z3_hexen_1yl_butyrate     ', 169           /
+      DATA  MECH_NAM_SAPRCII( 164)     , MECH_MAP_SAPRCII( 164)
+     &    / 'SSQT      ', 5           /
+      DATA  CONV_FAC_SAPRCII( 164)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 165)     , SPMH_MAP_SAPRCII( 165)
+     &    / '2_met_butanenitrile     ', 117           /
+      DATA  MECH_NAM_SAPRCII( 165)     , MECH_MAP_SAPRCII( 165)
+     &    / 'ALK4      ', 24           /
+      DATA  CONV_FAC_SAPRCII( 165)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 166)     , SPMH_MAP_SAPRCII( 166)
+     &    / 'linalool_OXD_t     ', 152           /
+      DATA  MECH_NAM_SAPRCII( 166)     , MECH_MAP_SAPRCII( 166)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 166)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 167)     , SPMH_MAP_SAPRCII( 167)
+     &    / '2met_nonatriene     ', 137           /
+      DATA  MECH_NAM_SAPRCII( 167)     , MECH_MAP_SAPRCII( 167)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 167)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 168)     , SPMH_MAP_SAPRCII( 168)
+     &    / 'z2_penten_3ol     ', 168           /
+      DATA  MECH_NAM_SAPRCII( 168)     , MECH_MAP_SAPRCII( 168)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 168)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 169)     , SPMH_MAP_SAPRCII( 169)
+     &    / '3met_3DCTT     ', 165           /
+      DATA  MECH_NAM_SAPRCII( 169)     , MECH_MAP_SAPRCII( 169)
+     &    / 'AHUMUL      ', 4           /
+      DATA  CONV_FAC_SAPRCII( 169)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 170)     , SPMH_MAP_SAPRCII( 170)
+     &    / 'methane     ', 184           /
+      DATA  MECH_NAM_SAPRCII( 170)     , MECH_MAP_SAPRCII( 170)
+     &    / 'CH4      ', 8           /
+      DATA  CONV_FAC_SAPRCII( 170)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 171)     , SPMH_MAP_SAPRCII( 171)
+     &    / 'met_bromide     ', 185           /
+      DATA  MECH_NAM_SAPRCII( 171)     , MECH_MAP_SAPRCII( 171)
+     &    / 'NONR      ', 31           /
+      DATA  CONV_FAC_SAPRCII( 171)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 172)     , SPMH_MAP_SAPRCII( 172)
+     &    / 'met_chloride     ', 186           /
+      DATA  MECH_NAM_SAPRCII( 172)     , MECH_MAP_SAPRCII( 172)
+     &    / 'NONR      ', 31           /
+      DATA  CONV_FAC_SAPRCII( 172)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 173)     , SPMH_MAP_SAPRCII( 173)
+     &    / 'met_iodide     ', 187           /
+      DATA  MECH_NAM_SAPRCII( 173)     , MECH_MAP_SAPRCII( 173)
+     &    / 'NONR      ', 31           /
+      DATA  CONV_FAC_SAPRCII( 173)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 174)     , SPMH_MAP_SAPRCII( 174)
+     &    / 'met_mercaptan     ', 188           /
+      DATA  MECH_NAM_SAPRCII( 174)     , MECH_MAP_SAPRCII( 174)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 174)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 175)     , SPMH_MAP_SAPRCII( 175)
+     &    / 'carbon_2s     ', 171           /
+      DATA  MECH_NAM_SAPRCII( 175)     , MECH_MAP_SAPRCII( 175)
+     &    / 'NONR      ', 31           /
+      DATA  CONV_FAC_SAPRCII( 175)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 176)     , SPMH_MAP_SAPRCII( 176)
+     &    / '2met_s     ', 176           /
+      DATA  MECH_NAM_SAPRCII( 176)     , MECH_MAP_SAPRCII( 176)
+     &    / 'ALK4      ', 24           /
+      DATA  CONV_FAC_SAPRCII( 176)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 177)     , SPMH_MAP_SAPRCII( 177)
+     &    / 'butanone_2     ', 170           /
+      DATA  MECH_NAM_SAPRCII( 177)     , MECH_MAP_SAPRCII( 177)
+     &    / 'MEK      ', 17           /
+      DATA  CONV_FAC_SAPRCII( 177)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 178)     , SPMH_MAP_SAPRCII( 178)
+     &    / 'terpinyl_ACT_a     ', 197           /
+      DATA  MECH_NAM_SAPRCII( 178)     , MECH_MAP_SAPRCII( 178)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 178)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 179)     , SPMH_MAP_SAPRCII( 179)
+     &    / 'skatole     ', 196           /
+      DATA  MECH_NAM_SAPRCII( 179)     , MECH_MAP_SAPRCII( 179)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 179)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 180)     , SPMH_MAP_SAPRCII( 180)
+     &    / 'naphthalene     ', 192           /
+      DATA  MECH_NAM_SAPRCII( 180)     , MECH_MAP_SAPRCII( 180)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 180)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 181)     , SPMH_MAP_SAPRCII( 181)
+     &    / 'pentane     ', 193           /
+      DATA  MECH_NAM_SAPRCII( 181)     , MECH_MAP_SAPRCII( 181)
+     &    / 'ALK4      ', 24           /
+      DATA  CONV_FAC_SAPRCII( 181)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 182)     , SPMH_MAP_SAPRCII( 182)
+     &    / 'heptanone     ', 180           /
+      DATA  MECH_NAM_SAPRCII( 182)     , MECH_MAP_SAPRCII( 182)
+     &    / 'OLE2      ', 29           /
+      DATA  CONV_FAC_SAPRCII( 182)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 183)     , SPMH_MAP_SAPRCII( 183)
+     &    / 'hexane     ', 181           /
+      DATA  MECH_NAM_SAPRCII( 183)     , MECH_MAP_SAPRCII( 183)
+     &    / 'ALK4      ', 24           /
+      DATA  CONV_FAC_SAPRCII( 183)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 184)     , SPMH_MAP_SAPRCII( 184)
+     &    / 'heptanal     ', 178           /
+      DATA  MECH_NAM_SAPRCII( 184)     , MECH_MAP_SAPRCII( 184)
+     &    / 'RCHO      ', 30           /
+      DATA  CONV_FAC_SAPRCII( 184)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 185)     , SPMH_MAP_SAPRCII( 185)
+     &    / 'dodecene_1     ', 177           /
+      DATA  MECH_NAM_SAPRCII( 185)     , MECH_MAP_SAPRCII( 185)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 185)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 186)     , SPMH_MAP_SAPRCII( 186)
+     &    / 'indole     ', 183           /
+      DATA  MECH_NAM_SAPRCII( 186)     , MECH_MAP_SAPRCII( 186)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 186)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 187)     , SPMH_MAP_SAPRCII( 187)
+     &    / 'decane     ', 173           /
+      DATA  MECH_NAM_SAPRCII( 187)     , MECH_MAP_SAPRCII( 187)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 187)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 188)     , SPMH_MAP_SAPRCII( 188)
+     &    / 'heptane     ', 179           /
+      DATA  MECH_NAM_SAPRCII( 188)     , MECH_MAP_SAPRCII( 188)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 188)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 189)     , SPMH_MAP_SAPRCII( 189)
+     &    / 'carbonyl_s     ', 172           /
+      DATA  MECH_NAM_SAPRCII( 189)     , MECH_MAP_SAPRCII( 189)
+     &    / 'NONR      ', 31           /
+      DATA  CONV_FAC_SAPRCII( 189)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 190)     , SPMH_MAP_SAPRCII( 190)
+     &    / 'santene     ', 195           /
+      DATA  MECH_NAM_SAPRCII( 190)     , MECH_MAP_SAPRCII( 190)
+     &    / 'TRP1      ', 2           /
+      DATA  CONV_FAC_SAPRCII( 190)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 191)     , SPMH_MAP_SAPRCII( 191)
+     &    / 'MBO_3m2e1ol     ', 190           /
+      DATA  MECH_NAM_SAPRCII( 191)     , MECH_MAP_SAPRCII( 191)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 191)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 192)     , SPMH_MAP_SAPRCII( 192)
+     &    / '2met_2s     ', 175           /
+      DATA  MECH_NAM_SAPRCII( 192)     , MECH_MAP_SAPRCII( 192)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 192)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 193)     , SPMH_MAP_SAPRCII( 193)
+     &    / 'MBO_3m3e1ol     ', 191           /
+      DATA  MECH_NAM_SAPRCII( 193)     , MECH_MAP_SAPRCII( 193)
+     &    / 'ISOPRENE      ', 1           /
+      DATA  CONV_FAC_SAPRCII( 193)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 194)     , SPMH_MAP_SAPRCII( 194)
+     &    / 'undecane     ', 199           /
+      DATA  MECH_NAM_SAPRCII( 194)     , MECH_MAP_SAPRCII( 194)
+     &    / 'ALK5      ', 25           /
+      DATA  CONV_FAC_SAPRCII( 194)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 195)     , SPMH_MAP_SAPRCII( 195)
+     &    / 'tetradecene_1     ', 198           /
+      DATA  MECH_NAM_SAPRCII( 195)     , MECH_MAP_SAPRCII( 195)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 195)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 196)     , SPMH_MAP_SAPRCII( 196)
+     &    / 'diallyl_2s     ', 174           /
+      DATA  MECH_NAM_SAPRCII( 196)     , MECH_MAP_SAPRCII( 196)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 196)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 197)     , SPMH_MAP_SAPRCII( 197)
+     &    / 'PPPP_2s     ', 194           /
+      DATA  MECH_NAM_SAPRCII( 197)     , MECH_MAP_SAPRCII( 197)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 197)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 198)     , SPMH_MAP_SAPRCII( 198)
+     &    / 'met_propenyl_2s     ', 189           /
+      DATA  MECH_NAM_SAPRCII( 198)     , MECH_MAP_SAPRCII( 198)
+     &    / 'OLE1      ', 28           /
+      DATA  CONV_FAC_SAPRCII( 198)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 199)     , SPMH_MAP_SAPRCII( 199)
+     &    / 'hydrogen_s     ', 182           /
+      DATA  MECH_NAM_SAPRCII( 199)     , MECH_MAP_SAPRCII( 199)
+     &    / 'NONR      ', 31           /
+      DATA  CONV_FAC_SAPRCII( 199)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 200)     , SPMH_MAP_SAPRCII( 200)
+     &    / 'carbon_monoxide     ', 200           /
+      DATA  MECH_NAM_SAPRCII( 200)     , MECH_MAP_SAPRCII( 200)
+     &    / 'CO      ', 19           /
+      DATA  CONV_FAC_SAPRCII( 200)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SAPRCII( 201)     , SPMH_MAP_SAPRCII( 201)
+     &    / 'nitric_OXD     ', 201           /
+      DATA  MECH_NAM_SAPRCII( 201)     , MECH_MAP_SAPRCII( 201)
+     &    / 'NO      ', 9           /
+      DATA  CONV_FAC_SAPRCII( 201)
+     &    / 1       /
+ 

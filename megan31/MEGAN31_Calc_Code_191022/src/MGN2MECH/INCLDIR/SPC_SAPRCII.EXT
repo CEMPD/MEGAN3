@@ -1,0 +1,84 @@
+C=======================================================================
+C  SPC_SAPRCII.EXT
+C  This include file contains SAPRCII species and their MW.
+C
+C
+C  Mechanism Name: SAPRCII
+C  MEGAN v2.1.0
+C  INPUT version 200
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  Tan          12/02/06 - Creates this file
+C  Tan          08/14/07 - Move from MEGAN v2.0 to MEGAN v2.1.0 with no update.
+C  Ling Huang   02/22/17 - Move from MEGAN v2.1 to MEGAN v3 with no update
+C=======================================================================
+! Note conversion between 134 species and SAPRCII is done by 1:1 mole
+
+      INTEGER,PARAMETER :: N_SAPRCII_SPC = 31  ! Number of mechanism species
+      CHARACTER*26   MECH_SPC_SAPRCII( N_SAPRCII_SPC )  ! Mechanism species name
+      REAL           MECH_MWT_SAPRCII( N_SAPRCII_SPC )  ! Mechanism species mol. wt.
+
+      DATA  MECH_SPC_SAPRCII(  1), MECH_MWT_SAPRCII(  1)
+     &                      / 'ISOPRENE', 68.00   /
+      DATA  MECH_SPC_SAPRCII(  2), MECH_MWT_SAPRCII(  2)
+     &                      / 'TRP1    ', 136.00  /
+      DATA  MECH_SPC_SAPRCII(  3), MECH_MWT_SAPRCII(  3) 
+     &                      / 'BCARL   ', 204.00  /
+      DATA  MECH_SPC_SAPRCII(  4), MECH_MWT_SAPRCII(  4) 
+     &                      / 'AHUMUL  ', 204.00  /
+      DATA  MECH_SPC_SAPRCII(  5), MECH_MWT_SAPRCII(  5) 
+     &                       / 'SSQT   ', 204.00  /
+      DATA  MECH_SPC_SAPRCII(  6), MECH_MWT_SAPRCII(  6) 
+     &                       / 'MEOH   ', 32.00   /
+      DATA  MECH_SPC_SAPRCII(  7), MECH_MWT_SAPRCII(  7)
+     &                       / 'ACET    ', 58.00   /
+      DATA  MECH_SPC_SAPRCII(  8), MECH_MWT_SAPRCII(  8)
+     &                       / 'CH4    ', 16.00   /
+      DATA  MECH_SPC_SAPRCII(  9), MECH_MWT_SAPRCII(  9)
+     &                       / 'NO     ', 30.00   /
+      DATA  MECH_SPC_SAPRCII( 10), MECH_MWT_SAPRCII( 10)
+     &                       / 'NO2    ', 44.01   /
+      DATA  MECH_SPC_SAPRCII( 11), MECH_MWT_SAPRCII( 11)
+     &                       / 'NH3    ', 17.00   /
+      DATA  MECH_SPC_SAPRCII( 12), MECH_MWT_SAPRCII( 12) 
+     &                       / 'CCHO   ', 44.00   /
+      DATA  MECH_SPC_SAPRCII( 13), MECH_MWT_SAPRCII( 13) 
+     &                       / 'HCOOH  ', 46.00   /
+      DATA  MECH_SPC_SAPRCII( 14), MECH_MWT_SAPRCII( 14) 
+     &                       / 'HCHO   ', 30.00   /
+      DATA  MECH_SPC_SAPRCII( 15), MECH_MWT_SAPRCII( 15) 
+     &                      / 'CCO_OH ', 60.00   /
+      DATA  MECH_SPC_SAPRCII( 16), MECH_MWT_SAPRCII( 16)
+     &                      / 'BALD   ', 106.00  /
+      DATA  MECH_SPC_SAPRCII( 17), MECH_MWT_SAPRCII( 17) 
+     &                      / 'MEK    ', 72.00   /
+      DATA  MECH_SPC_SAPRCII( 18), MECH_MWT_SAPRCII( 18) 
+     &                      / 'RCO_OH ', 74.00   /
+      DATA  MECH_SPC_SAPRCII( 19), MECH_MWT_SAPRCII( 19)
+     &                      / 'CO     ', 28.00   /
+      DATA  MECH_SPC_SAPRCII( 20), MECH_MWT_SAPRCII( 20)
+     &                      / 'ETHENE ', 28.00   /
+      DATA  MECH_SPC_SAPRCII( 21), MECH_MWT_SAPRCII( 21)
+     &                      / 'ALK1   ', 30.10   /
+      DATA  MECH_SPC_SAPRCII( 22), MECH_MWT_SAPRCII( 22) 
+     &                      / 'ALK2   ', 36.70   /
+      DATA  MECH_SPC_SAPRCII( 23), MECH_MWT_SAPRCII( 23) 
+     &                      / 'ALK3   ', 58.60   /
+      DATA  MECH_SPC_SAPRCII( 24), MECH_MWT_SAPRCII( 24) 
+     &                      / 'ALK4   ', 77.60   /
+      DATA  MECH_SPC_SAPRCII( 25), MECH_MWT_SAPRCII( 25) 
+     &                      / 'ALK5   ', 118.90  /
+      DATA  MECH_SPC_SAPRCII( 26), MECH_MWT_SAPRCII( 26) 
+     &                      / 'ARO1   ', 98.60   /
+      DATA  MECH_SPC_SAPRCII( 27), MECH_MWT_SAPRCII( 27)
+     &                      / 'ARO2   ', 118.70  /
+      DATA  MECH_SPC_SAPRCII( 28), MECH_MWT_SAPRCII( 28) 
+     &                      / 'OLE1   ', 72.30   /
+      DATA  MECH_SPC_SAPRCII( 29), MECH_MWT_SAPRCII( 29) 
+     &                      / 'OLE2   ', 75.80   /
+      DATA  MECH_SPC_SAPRCII( 30), MECH_MWT_SAPRCII( 30) 
+     &                      / 'RCHO  ', 58.00   /
+      DATA  MECH_SPC_SAPRCII( 31), MECH_MWT_SAPRCII( 31) 
+     &                      / 'NONR  ', 1.00    /

@@ -1,0 +1,75 @@
+How this code came about
+2014-05-05
+Serena H. Chung
+
+------------------------------------------------------------------------
+The MEGAN preprocessing tool for CMAQ in this directory is based on
+one written for WRF-Chem by Gabriele Pfister, Stacy Walters, and
+Xiaoyan Jiang of NCAR.  This file describes the modifications made to
+the WRF-Chem-relevant version in creating the CMAQ-relevant version
+here.
+------------------------------------------------------------------------
+
+
+  * Started from the preprocessor for WRF-Chem
+    http://www.acd.ucar.edu/webt/MEGAN/MEGAN_prep.tar.gz
+    that was downloaded on 2014-05-02.
+
+    (A copy of the above-mentioned  MEGAN_prep.tar.gz is retained as
+    prepmegan4wrfchem.tar.gz in the current directory.)
+
+  * Split bio_emiss.f90_newef into three separate programs: 
+
+       prepmegan4cmaq_lai.f90
+       prepmegan4cmaq_pft.f90
+       prepmegan4cmaq_ef.f90
+
+    This splitting into three programs results in some code
+    redundancy, but flexibility is gained in that the three *.csv
+    output files necessary as input to run MEGAN can be created
+    indepedently of each other.
+
+  * Makefile and make_util have been updated so that the corresponding
+    compilation commands are
+
+       make_util prepmegan4cmaq_lai.x
+       make_util prepmegan4cmaq_pft.x
+       make_util prepmegan4cmaq_ef.x
+
+  * Removed subroutine write_bioemiss from the three *.f90 files
+    mentioned above.  This subroutine is needed for WRF-Chem but is
+    not needed for CMAQ.
+
+  * Modified the three *.f90 files mentioned above so output domain is
+    that of MCIP/CMAQ, which is usually smaller than the WRF/WRF-Chem
+    domain.  This is done by adding a new group of namelist variables
+    "windowdefs", of which the variable names and values should be the
+    same as those used when running MCIP. CELL_ID, ICELL, and JCELL
+    values written to the *.csv output files are modified accordingly.
+
+  * Modified the three *.f90 files mentioned above to specify output
+    directory as part of the namelist input file.
+
+  * The following files are retained from
+    MEGAN_prep.tar.gz/prepmegan4wrfchem.tar.gz exactly as they were:
+
+      area_mapper.dbg.f90  
+      area_mapper.f90
+      bio_types.f90
+      constants_module.f90  
+      misc_definitions_module.f90  
+
+  * The following files are removed because they are not relevant
+    here:
+
+        megan_xform.f90
+        surfdata_xform.f90
+
+    If you ever need to use them, they can be found in the original
+    preprocessor package for WRF-Chem (see prepmegan4wrfchem.tar.gz in
+    this directory).
+
+  * See prepmegan4cmaq.inp for sample namelist input file.
+
+  * See run_prepmegan4cmaq.csh for example of how to run the preprocessor.
+

@@ -1,0 +1,1661 @@
+C=======================================================================
+C  MAP_CV2RADM2.EXT
+C  This include file contains conversion table for 201 speciated species
+C  to RADM2 (CMAQ/CAMx) species
+C
+C
+C  MEGAN v3
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  Tan          07/18/11 - Created for MEGANv2.10
+C  Ling Huang   06/13/17 - Updated for MEGANv3
+C=======================================================================
+
+      CHARACTER*16   MAP_RADM2MECH
+      PARAMETER     (MAP_RADM2MECH = 'RADM2            ')
+
+      INTEGER        N_RADM2
+      PARAMETER     (N_RADM2 = (233))        ! Number of map species
+
+      CHARACTER*16   SPMH_NAM_RADM2( N_RADM2 )   ! speciated species name
+      INTEGER        SPMH_MAP_RADM2( N_RADM2 )   ! speciated species name
+                                              ! mapped to SPC_SPCAT.EXT
+      CHARACTER*16   MECH_NAM_RADM2( N_RADM2 )   ! mechanism species
+      INTEGER        MECH_MAP_RADM2( N_RADM2 )   ! mechanism species mapped
+
+      REAL           CONV_FAC_RADM2( N_RADM2 )   ! conversion factor
+
+ 
+      DATA  SPMH_NAM_RADM2( 1)     , SPMH_MAP_RADM2( 1)
+     &    / 'isoprene     ', 1           /
+      DATA  MECH_NAM_RADM2( 1)     , MECH_MAP_RADM2( 1)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 1)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 2)     , SPMH_MAP_RADM2( 2)
+     &    / 'MBO_2m3e2ol     ', 2           /
+      DATA  MECH_NAM_RADM2( 2)     , MECH_MAP_RADM2( 2)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 2)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 3)     , SPMH_MAP_RADM2( 3)
+     &    / 'pinene_a     ', 3           /
+      DATA  MECH_NAM_RADM2( 3)     , MECH_MAP_RADM2( 3)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 3)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 4)     , SPMH_MAP_RADM2( 4)
+     &    / 'pinene_b     ', 4           /
+      DATA  MECH_NAM_RADM2( 4)     , MECH_MAP_RADM2( 4)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 4)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 5)     , SPMH_MAP_RADM2( 5)
+     &    / 'myrcene     ', 5           /
+      DATA  MECH_NAM_RADM2( 5)     , MECH_MAP_RADM2( 5)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 5)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 6)     , SPMH_MAP_RADM2( 6)
+     &    / 'myrcene     ', 5           /
+      DATA  MECH_NAM_RADM2( 6)     , MECH_MAP_RADM2( 6)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 6)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 7)     , SPMH_MAP_RADM2( 7)
+     &    / 'ocimene_al     ', 6           /
+      DATA  MECH_NAM_RADM2( 7)     , MECH_MAP_RADM2( 7)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 7)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 8)     , SPMH_MAP_RADM2( 8)
+     &    / 'ocimene_c_b     ', 7           /
+      DATA  MECH_NAM_RADM2( 8)     , MECH_MAP_RADM2( 8)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 8)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 9)     , SPMH_MAP_RADM2( 9)
+     &    / 'ocimene_c_b     ', 7           /
+      DATA  MECH_NAM_RADM2( 9)     , MECH_MAP_RADM2( 9)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 9)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 10)     , SPMH_MAP_RADM2( 10)
+     &    / 'ocimene_t_b     ', 8           /
+      DATA  MECH_NAM_RADM2( 10)     , MECH_MAP_RADM2( 10)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 10)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 11)     , SPMH_MAP_RADM2( 11)
+     &    / 'ocimene_t_b     ', 8           /
+      DATA  MECH_NAM_RADM2( 11)     , MECH_MAP_RADM2( 11)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 11)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 12)     , SPMH_MAP_RADM2( 12)
+     &    / 'camphene     ', 10           /
+      DATA  MECH_NAM_RADM2( 12)     , MECH_MAP_RADM2( 12)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 12)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 13)     , SPMH_MAP_RADM2( 13)
+     &    / 'bornene     ', 9           /
+      DATA  MECH_NAM_RADM2( 13)     , MECH_MAP_RADM2( 13)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 13)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 14)     , SPMH_MAP_RADM2( 14)
+     &    / 'fenchene_a     ', 12           /
+      DATA  MECH_NAM_RADM2( 14)     , MECH_MAP_RADM2( 14)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 14)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 15)     , SPMH_MAP_RADM2( 15)
+     &    / 'tricyclene     ', 14           /
+      DATA  MECH_NAM_RADM2( 15)     , MECH_MAP_RADM2( 15)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 15)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 16)     , SPMH_MAP_RADM2( 16)
+     &    / 'carene_3     ', 11           /
+      DATA  MECH_NAM_RADM2( 16)     , MECH_MAP_RADM2( 16)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 16)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 17)     , SPMH_MAP_RADM2( 17)
+     &    / 'fenchene_b     ', 13           /
+      DATA  MECH_NAM_RADM2( 17)     , MECH_MAP_RADM2( 17)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 17)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 18)     , SPMH_MAP_RADM2( 18)
+     &    / 'phellandrene_a     ', 17           /
+      DATA  MECH_NAM_RADM2( 18)     , MECH_MAP_RADM2( 18)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 18)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 19)     , SPMH_MAP_RADM2( 19)
+     &    / 'terpinene_g     ', 20           /
+      DATA  MECH_NAM_RADM2( 19)     , MECH_MAP_RADM2( 19)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 19)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 20)     , SPMH_MAP_RADM2( 20)
+     &    / 'terpinene_a     ', 19           /
+      DATA  MECH_NAM_RADM2( 20)     , MECH_MAP_RADM2( 20)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 20)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 21)     , SPMH_MAP_RADM2( 21)
+     &    / 'limonene     ', 15           /
+      DATA  MECH_NAM_RADM2( 21)     , MECH_MAP_RADM2( 21)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 21)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 22)     , SPMH_MAP_RADM2( 22)
+     &    / 'limonene     ', 15           /
+      DATA  MECH_NAM_RADM2( 22)     , MECH_MAP_RADM2( 22)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 22)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 23)     , SPMH_MAP_RADM2( 23)
+     &    / 'phellandrene_b     ', 16           /
+      DATA  MECH_NAM_RADM2( 23)     , MECH_MAP_RADM2( 23)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 23)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 24)     , SPMH_MAP_RADM2( 24)
+     &    / 'phellandrene_b     ', 16           /
+      DATA  MECH_NAM_RADM2( 24)     , MECH_MAP_RADM2( 24)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 24)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 25)     , SPMH_MAP_RADM2( 25)
+     &    / 'terpinolene     ', 21           /
+      DATA  MECH_NAM_RADM2( 25)     , MECH_MAP_RADM2( 25)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 25)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 26)     , SPMH_MAP_RADM2( 26)
+     &    / 'thujene_a     ', 22           /
+      DATA  MECH_NAM_RADM2( 26)     , MECH_MAP_RADM2( 26)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 26)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 27)     , SPMH_MAP_RADM2( 27)
+     &    / 'sabinene     ', 18           /
+      DATA  MECH_NAM_RADM2( 27)     , MECH_MAP_RADM2( 27)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 27)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 28)     , SPMH_MAP_RADM2( 28)
+     &    / 'verbenene     ', 23           /
+      DATA  MECH_NAM_RADM2( 28)     , MECH_MAP_RADM2( 28)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 28)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 29)     , SPMH_MAP_RADM2( 29)
+     &    / 'cymene_p     ', 25           /
+      DATA  MECH_NAM_RADM2( 29)     , MECH_MAP_RADM2( 29)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 29)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 30)     , SPMH_MAP_RADM2( 30)
+     &    / 'cymene_o     ', 24           /
+      DATA  MECH_NAM_RADM2( 30)     , MECH_MAP_RADM2( 30)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 30)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 31)     , SPMH_MAP_RADM2( 31)
+     &    / 'meta-cymenene     ', 26           /
+      DATA  MECH_NAM_RADM2( 31)     , MECH_MAP_RADM2( 31)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 31)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 32)     , SPMH_MAP_RADM2( 32)
+     &    / 'p-cymenene     ', 27           /
+      DATA  MECH_NAM_RADM2( 32)     , MECH_MAP_RADM2( 32)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 32)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 33)     , SPMH_MAP_RADM2( 33)
+     &    / 'camphor     ', 30           /
+      DATA  MECH_NAM_RADM2( 33)     , MECH_MAP_RADM2( 33)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 33)
+     &    / 0.388       /
+ 
+      DATA  SPMH_NAM_RADM2( 34)     , SPMH_MAP_RADM2( 34)
+     &    / 'bornyl_ACT     ', 29           /
+      DATA  MECH_NAM_RADM2( 34)     , MECH_MAP_RADM2( 34)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 34)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 35)     , SPMH_MAP_RADM2( 35)
+     &    / 'piperitone     ', 38           /
+      DATA  MECH_NAM_RADM2( 35)     , MECH_MAP_RADM2( 35)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 35)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 36)     , SPMH_MAP_RADM2( 36)
+     &    / 'terpineol_a     ', 40           /
+      DATA  MECH_NAM_RADM2( 36)     , MECH_MAP_RADM2( 36)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 36)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 37)     , SPMH_MAP_RADM2( 37)
+     &    / 'octanol     ', 36           /
+      DATA  MECH_NAM_RADM2( 37)     , MECH_MAP_RADM2( 37)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 37)
+     &    / 1.119       /
+ 
+      DATA  SPMH_NAM_RADM2( 38)     , SPMH_MAP_RADM2( 38)
+     &    / 'estragole     ', 31           /
+      DATA  MECH_NAM_RADM2( 38)     , MECH_MAP_RADM2( 38)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 38)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 39)     , SPMH_MAP_RADM2( 39)
+     &    / 'borneol     ', 28           /
+      DATA  MECH_NAM_RADM2( 39)     , MECH_MAP_RADM2( 39)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 39)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 40)     , SPMH_MAP_RADM2( 40)
+     &    / 'thujone_b     ', 42           /
+      DATA  MECH_NAM_RADM2( 40)     , MECH_MAP_RADM2( 40)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 40)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 41)     , SPMH_MAP_RADM2( 41)
+     &    / 'thujone_a     ', 41           /
+      DATA  MECH_NAM_RADM2( 41)     , MECH_MAP_RADM2( 41)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 41)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 42)     , SPMH_MAP_RADM2( 42)
+     &    / 'terpineol_4     ', 39           /
+      DATA  MECH_NAM_RADM2( 42)     , MECH_MAP_RADM2( 42)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 42)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 43)     , SPMH_MAP_RADM2( 43)
+     &    / 'myrtenal     ', 35           /
+      DATA  MECH_NAM_RADM2( 43)     , MECH_MAP_RADM2( 43)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 43)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 44)     , SPMH_MAP_RADM2( 44)
+     &    / 'fenchone     ', 32           /
+      DATA  MECH_NAM_RADM2( 44)     , MECH_MAP_RADM2( 44)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 44)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 45)     , SPMH_MAP_RADM2( 45)
+     &    / 'octenol_1e3ol     ', 37           /
+      DATA  MECH_NAM_RADM2( 45)     , MECH_MAP_RADM2( 45)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 45)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 46)     , SPMH_MAP_RADM2( 46)
+     &    / 'ionone_b     ', 33           /
+      DATA  MECH_NAM_RADM2( 46)     , MECH_MAP_RADM2( 46)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 46)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 47)     , SPMH_MAP_RADM2( 47)
+     &    / 'ipsenol     ', 34           /
+      DATA  MECH_NAM_RADM2( 47)     , MECH_MAP_RADM2( 47)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 47)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 48)     , SPMH_MAP_RADM2( 48)
+     &    / 'caryophyllene_b     ', 51           /
+      DATA  MECH_NAM_RADM2( 48)     , MECH_MAP_RADM2( 48)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 48)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 49)     , SPMH_MAP_RADM2( 49)
+     &    / 'caryophyllene_b     ', 51           /
+      DATA  MECH_NAM_RADM2( 49)     , MECH_MAP_RADM2( 49)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 49)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 50)     , SPMH_MAP_RADM2( 50)
+     &    / 'caryophyllene_c_i     ', 52           /
+      DATA  MECH_NAM_RADM2( 50)     , MECH_MAP_RADM2( 50)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 50)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 51)     , SPMH_MAP_RADM2( 51)
+     &    / 'caryophyllene_c_i     ', 52           /
+      DATA  MECH_NAM_RADM2( 51)     , MECH_MAP_RADM2( 51)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 51)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 52)     , SPMH_MAP_RADM2( 52)
+     &    / 'cadinene_d     ', 48           /
+      DATA  MECH_NAM_RADM2( 52)     , MECH_MAP_RADM2( 52)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 52)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 53)     , SPMH_MAP_RADM2( 53)
+     &    / 'selinene_d     ', 67           /
+      DATA  MECH_NAM_RADM2( 53)     , MECH_MAP_RADM2( 53)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 53)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 54)     , SPMH_MAP_RADM2( 54)
+     &    / 'bisabolene_b     ', 47           /
+      DATA  MECH_NAM_RADM2( 54)     , MECH_MAP_RADM2( 54)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 54)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 55)     , SPMH_MAP_RADM2( 55)
+     &    / 'bisabolene_b     ', 47           /
+      DATA  MECH_NAM_RADM2( 55)     , MECH_MAP_RADM2( 55)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 55)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 56)     , SPMH_MAP_RADM2( 56)
+     &    / 'farnescene_a     ', 54           /
+      DATA  MECH_NAM_RADM2( 56)     , MECH_MAP_RADM2( 56)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 56)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 57)     , SPMH_MAP_RADM2( 57)
+     &    / 'farnescene_a     ', 54           /
+      DATA  MECH_NAM_RADM2( 57)     , MECH_MAP_RADM2( 57)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 57)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 58)     , SPMH_MAP_RADM2( 58)
+     &    / 'patchoulene_b     ', 65           /
+      DATA  MECH_NAM_RADM2( 58)     , MECH_MAP_RADM2( 58)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 58)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 59)     , SPMH_MAP_RADM2( 59)
+     &    / 'patchoulene_b     ', 65           /
+      DATA  MECH_NAM_RADM2( 59)     , MECH_MAP_RADM2( 59)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 59)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 60)     , SPMH_MAP_RADM2( 60)
+     &    / 'elemene_b     ', 53           /
+      DATA  MECH_NAM_RADM2( 60)     , MECH_MAP_RADM2( 60)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 60)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 61)     , SPMH_MAP_RADM2( 61)
+     &    / 'nerolidol_c     ', 63           /
+      DATA  MECH_NAM_RADM2( 61)     , MECH_MAP_RADM2( 61)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 61)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 62)     , SPMH_MAP_RADM2( 62)
+     &    / 'nerolidol_c     ', 63           /
+      DATA  MECH_NAM_RADM2( 62)     , MECH_MAP_RADM2( 62)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 62)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 63)     , SPMH_MAP_RADM2( 63)
+     &    / 'farnesol     ', 56           /
+      DATA  MECH_NAM_RADM2( 63)     , MECH_MAP_RADM2( 63)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 63)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 64)     , SPMH_MAP_RADM2( 64)
+     &    / 'humulene_a     ', 59           /
+      DATA  MECH_NAM_RADM2( 64)     , MECH_MAP_RADM2( 64)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 64)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 65)     , SPMH_MAP_RADM2( 65)
+     &    / 'muurolene_a     ', 61           /
+      DATA  MECH_NAM_RADM2( 65)     , MECH_MAP_RADM2( 65)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 65)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 66)     , SPMH_MAP_RADM2( 66)
+     &    / 'bergamotene_a     ', 44           /
+      DATA  MECH_NAM_RADM2( 66)     , MECH_MAP_RADM2( 66)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 66)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 67)     , SPMH_MAP_RADM2( 67)
+     &    / 'germacrene_B     ', 57           /
+      DATA  MECH_NAM_RADM2( 67)     , MECH_MAP_RADM2( 67)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 67)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 68)     , SPMH_MAP_RADM2( 68)
+     &    / 'selinene_b     ', 66           /
+      DATA  MECH_NAM_RADM2( 68)     , MECH_MAP_RADM2( 68)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 68)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 69)     , SPMH_MAP_RADM2( 69)
+     &    / 'calarene     ', 50           /
+      DATA  MECH_NAM_RADM2( 69)     , MECH_MAP_RADM2( 69)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 69)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 70)     , SPMH_MAP_RADM2( 70)
+     &    / 'calarene     ', 50           /
+      DATA  MECH_NAM_RADM2( 70)     , MECH_MAP_RADM2( 70)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 70)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 71)     , SPMH_MAP_RADM2( 71)
+     &    / 'farnescene_b     ', 55           /
+      DATA  MECH_NAM_RADM2( 71)     , MECH_MAP_RADM2( 71)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 71)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 72)     , SPMH_MAP_RADM2( 72)
+     &    / 'farnescene_b     ', 55           /
+      DATA  MECH_NAM_RADM2( 72)     , MECH_MAP_RADM2( 72)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 72)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 73)     , SPMH_MAP_RADM2( 73)
+     &    / 'acoradiene     ', 43           /
+      DATA  MECH_NAM_RADM2( 73)     , MECH_MAP_RADM2( 73)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 73)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 74)     , SPMH_MAP_RADM2( 74)
+     &    / 'acoradiene     ', 43           /
+      DATA  MECH_NAM_RADM2( 74)     , MECH_MAP_RADM2( 74)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 74)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 75)     , SPMH_MAP_RADM2( 75)
+     &    / 'humulene_g     ', 60           /
+      DATA  MECH_NAM_RADM2( 75)     , MECH_MAP_RADM2( 75)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 75)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 76)     , SPMH_MAP_RADM2( 76)
+     &    / 'muurolene_g     ', 62           /
+      DATA  MECH_NAM_RADM2( 76)     , MECH_MAP_RADM2( 76)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 76)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 77)     , SPMH_MAP_RADM2( 77)
+     &    / 'muurolene_g     ', 62           /
+      DATA  MECH_NAM_RADM2( 77)     , MECH_MAP_RADM2( 77)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 77)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 78)     , SPMH_MAP_RADM2( 78)
+     &    / 'germacrene_D     ', 58           /
+      DATA  MECH_NAM_RADM2( 78)     , MECH_MAP_RADM2( 78)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 78)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 79)     , SPMH_MAP_RADM2( 79)
+     &    / 'germacrene_D     ', 58           /
+      DATA  MECH_NAM_RADM2( 79)     , MECH_MAP_RADM2( 79)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 79)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 80)     , SPMH_MAP_RADM2( 80)
+     &    / 'cadinene_g     ', 49           /
+      DATA  MECH_NAM_RADM2( 80)     , MECH_MAP_RADM2( 80)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 80)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 81)     , SPMH_MAP_RADM2( 81)
+     &    / 'cadinene_g     ', 49           /
+      DATA  MECH_NAM_RADM2( 81)     , MECH_MAP_RADM2( 81)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 81)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 82)     , SPMH_MAP_RADM2( 82)
+     &    / 'nerolidol_t     ', 64           /
+      DATA  MECH_NAM_RADM2( 82)     , MECH_MAP_RADM2( 82)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 82)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 83)     , SPMH_MAP_RADM2( 83)
+     &    / 'nerolidol_t     ', 64           /
+      DATA  MECH_NAM_RADM2( 83)     , MECH_MAP_RADM2( 83)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 83)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 84)     , SPMH_MAP_RADM2( 84)
+     &    / 'bergamotene_b     ', 45           /
+      DATA  MECH_NAM_RADM2( 84)     , MECH_MAP_RADM2( 84)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 84)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 85)     , SPMH_MAP_RADM2( 85)
+     &    / 'bergamotene_b     ', 45           /
+      DATA  MECH_NAM_RADM2( 85)     , MECH_MAP_RADM2( 85)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 85)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 86)     , SPMH_MAP_RADM2( 86)
+     &    / 'bisabolene_a     ', 46           /
+      DATA  MECH_NAM_RADM2( 86)     , MECH_MAP_RADM2( 86)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 86)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 87)     , SPMH_MAP_RADM2( 87)
+     &    / 'cedrol     ', 73           /
+      DATA  MECH_NAM_RADM2( 87)     , MECH_MAP_RADM2( 87)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 87)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 88)     , SPMH_MAP_RADM2( 88)
+     &    / 'homosalate     ', 78           /
+      DATA  MECH_NAM_RADM2( 88)     , MECH_MAP_RADM2( 88)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 88)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 89)     , SPMH_MAP_RADM2( 89)
+     &    / '2ethyl_hexyl_salate     ', 68           /
+      DATA  MECH_NAM_RADM2( 89)     , MECH_MAP_RADM2( 89)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 89)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 90)     , SPMH_MAP_RADM2( 90)
+     &    / 'cedrene_a     ', 72           /
+      DATA  MECH_NAM_RADM2( 90)     , MECH_MAP_RADM2( 90)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 90)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 91)     , SPMH_MAP_RADM2( 91)
+     &    / 'thujopsene     ', 83           /
+      DATA  MECH_NAM_RADM2( 91)     , MECH_MAP_RADM2( 91)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 91)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 92)     , SPMH_MAP_RADM2( 92)
+     &    / 'longifolene     ', 81           /
+      DATA  MECH_NAM_RADM2( 92)     , MECH_MAP_RADM2( 92)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 92)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 93)     , SPMH_MAP_RADM2( 93)
+     &    / 'cadinol_a     ', 71           /
+      DATA  MECH_NAM_RADM2( 93)     , MECH_MAP_RADM2( 93)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 93)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 94)     , SPMH_MAP_RADM2( 94)
+     &    / 'zingiberene_a     ', 85           /
+      DATA  MECH_NAM_RADM2( 94)     , MECH_MAP_RADM2( 94)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 94)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 95)     , SPMH_MAP_RADM2( 95)
+     &    / 'isolongifolene     ', 79           /
+      DATA  MECH_NAM_RADM2( 95)     , MECH_MAP_RADM2( 95)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 95)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 96)     , SPMH_MAP_RADM2( 96)
+     &    / 'longicyclene     ', 87           /
+      DATA  MECH_NAM_RADM2( 96)     , MECH_MAP_RADM2( 96)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 96)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 97)     , SPMH_MAP_RADM2( 97)
+     &    / 'copaene_a     ', 74           /
+      DATA  MECH_NAM_RADM2( 97)     , MECH_MAP_RADM2( 97)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 97)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 98)     , SPMH_MAP_RADM2( 98)
+     &    / 'bourbonene_b     ', 70           /
+      DATA  MECH_NAM_RADM2( 98)     , MECH_MAP_RADM2( 98)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 98)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 99)     , SPMH_MAP_RADM2( 99)
+     &    / 'longipinene     ', 82           /
+      DATA  MECH_NAM_RADM2( 99)     , MECH_MAP_RADM2( 99)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 99)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 100)     , SPMH_MAP_RADM2( 100)
+     &    / 'cubebene_b     ', 76           /
+      DATA  MECH_NAM_RADM2( 100)     , MECH_MAP_RADM2( 100)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 100)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 101)     , SPMH_MAP_RADM2( 101)
+     &    / 'ylangene_a     ', 84           /
+      DATA  MECH_NAM_RADM2( 101)     , MECH_MAP_RADM2( 101)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 101)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 102)     , SPMH_MAP_RADM2( 102)
+     &    / 'cubebene_a     ', 75           /
+      DATA  MECH_NAM_RADM2( 102)     , MECH_MAP_RADM2( 102)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 102)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 103)     , SPMH_MAP_RADM2( 103)
+     &    / 'copaene_b     ', 86           /
+      DATA  MECH_NAM_RADM2( 103)     , MECH_MAP_RADM2( 103)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 103)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 104)     , SPMH_MAP_RADM2( 104)
+     &    / 'kaur_16_ene     ', 80           /
+      DATA  MECH_NAM_RADM2( 104)     , MECH_MAP_RADM2( 104)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 104)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 105)     , SPMH_MAP_RADM2( 105)
+     &    / 'gurjunene_b     ', 77           /
+      DATA  MECH_NAM_RADM2( 105)     , MECH_MAP_RADM2( 105)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 105)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 106)     , SPMH_MAP_RADM2( 106)
+     &    / 'aromadendrene     ', 69           /
+      DATA  MECH_NAM_RADM2( 106)     , MECH_MAP_RADM2( 106)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 106)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 107)     , SPMH_MAP_RADM2( 107)
+     &    / 'methanol     ', 88           /
+      DATA  MECH_NAM_RADM2( 107)     , MECH_MAP_RADM2( 107)
+     &    / 'HC3      ', 4           /
+      DATA  CONV_FAC_RADM2( 107)
+     &    / 0.402       /
+ 
+      DATA  SPMH_NAM_RADM2( 108)     , SPMH_MAP_RADM2( 108)
+     &    / 'acetone     ', 89           /
+      DATA  MECH_NAM_RADM2( 108)     , MECH_MAP_RADM2( 108)
+     &    / 'KET      ', 11           /
+      DATA  CONV_FAC_RADM2( 108)
+     &    / 0.253       /
+ 
+      DATA  SPMH_NAM_RADM2( 109)     , SPMH_MAP_RADM2( 109)
+     &    / 'ethanol     ', 91           /
+      DATA  MECH_NAM_RADM2( 109)     , MECH_MAP_RADM2( 109)
+     &    / 'HC3      ', 4           /
+      DATA  CONV_FAC_RADM2( 109)
+     &    / 1.198       /
+ 
+      DATA  SPMH_NAM_RADM2( 110)     , SPMH_MAP_RADM2( 110)
+     &    / 'acetaldehyde     ', 90           /
+      DATA  MECH_NAM_RADM2( 110)     , MECH_MAP_RADM2( 110)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 110)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 111)     , SPMH_MAP_RADM2( 111)
+     &    / 'formic_acid     ', 93           /
+      DATA  MECH_NAM_RADM2( 111)     , MECH_MAP_RADM2( 111)
+     &    / 'ORA1      ', 14           /
+      DATA  CONV_FAC_RADM2( 111)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 112)     , SPMH_MAP_RADM2( 112)
+     &    / 'acetic_acid     ', 92           /
+      DATA  MECH_NAM_RADM2( 112)     , MECH_MAP_RADM2( 112)
+     &    / 'ORA2      ', 15           /
+      DATA  CONV_FAC_RADM2( 112)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 113)     , SPMH_MAP_RADM2( 113)
+     &    / 'pyruvic_acid     ', 94           /
+      DATA  MECH_NAM_RADM2( 113)     , MECH_MAP_RADM2( 113)
+     &    / 'ORA2      ', 15           /
+      DATA  CONV_FAC_RADM2( 113)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 114)     , SPMH_MAP_RADM2( 114)
+     &    / 'ethane     ', 100           /
+      DATA  MECH_NAM_RADM2( 114)     , MECH_MAP_RADM2( 114)
+     &    / 'ETH      ', 3           /
+      DATA  CONV_FAC_RADM2( 114)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 115)     , SPMH_MAP_RADM2( 115)
+     &    / 'ethene     ', 101           /
+      DATA  MECH_NAM_RADM2( 115)     , MECH_MAP_RADM2( 115)
+     &    / 'OL2      ', 7           /
+      DATA  CONV_FAC_RADM2( 115)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 116)     , SPMH_MAP_RADM2( 116)
+     &    / 'propane     ', 102           /
+      DATA  MECH_NAM_RADM2( 116)     , MECH_MAP_RADM2( 116)
+     &    / 'HC3      ', 4           /
+      DATA  CONV_FAC_RADM2( 116)
+     &    / 0.519       /
+ 
+      DATA  SPMH_NAM_RADM2( 117)     , SPMH_MAP_RADM2( 117)
+     &    / 'butane     ', 96           /
+      DATA  MECH_NAM_RADM2( 117)     , MECH_MAP_RADM2( 117)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 117)
+     &    / 0.847       /
+ 
+      DATA  SPMH_NAM_RADM2( 118)     , SPMH_MAP_RADM2( 118)
+     &    / 'butene     ', 97           /
+      DATA  MECH_NAM_RADM2( 118)     , MECH_MAP_RADM2( 118)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 118)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 119)     , SPMH_MAP_RADM2( 119)
+     &    / 'propene     ', 103           /
+      DATA  MECH_NAM_RADM2( 119)     , MECH_MAP_RADM2( 119)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 119)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 120)     , SPMH_MAP_RADM2( 120)
+     &    / '2_methylprop_1_ene     ', 95           /
+      DATA  MECH_NAM_RADM2( 120)     , MECH_MAP_RADM2( 120)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 120)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 121)     , SPMH_MAP_RADM2( 121)
+     &    / 'butene_c2     ', 98           /
+      DATA  MECH_NAM_RADM2( 121)     , MECH_MAP_RADM2( 121)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 121)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 122)     , SPMH_MAP_RADM2( 122)
+     &    / 'butene_t2     ', 99           /
+      DATA  MECH_NAM_RADM2( 122)     , MECH_MAP_RADM2( 122)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 122)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 123)     , SPMH_MAP_RADM2( 123)
+     &    / 'formaldehyde     ', 113           /
+      DATA  MECH_NAM_RADM2( 123)     , MECH_MAP_RADM2( 123)
+     &    / 'HCHO      ', 13           /
+      DATA  CONV_FAC_RADM2( 123)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 124)     , SPMH_MAP_RADM2( 124)
+     &    / 'pentanal     ', 111           /
+      DATA  MECH_NAM_RADM2( 124)     , MECH_MAP_RADM2( 124)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 124)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 125)     , SPMH_MAP_RADM2( 125)
+     &    / 'met_heptenone     ', 106           /
+      DATA  MECH_NAM_RADM2( 125)     , MECH_MAP_RADM2( 125)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 125)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 126)     , SPMH_MAP_RADM2( 126)
+     &    / 'decanal     ', 104           /
+      DATA  MECH_NAM_RADM2( 126)     , MECH_MAP_RADM2( 126)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 126)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 127)     , SPMH_MAP_RADM2( 127)
+     &    / 'octanal     ', 110           /
+      DATA  MECH_NAM_RADM2( 127)     , MECH_MAP_RADM2( 127)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 127)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 128)     , SPMH_MAP_RADM2( 128)
+     &    / 'nonanal     ', 108           /
+      DATA  MECH_NAM_RADM2( 128)     , MECH_MAP_RADM2( 128)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 128)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 129)     , SPMH_MAP_RADM2( 129)
+     &    / 'oxopentanal     ', 114           /
+      DATA  MECH_NAM_RADM2( 129)     , MECH_MAP_RADM2( 129)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 129)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 130)     , SPMH_MAP_RADM2( 130)
+     &    / 'nonenal     ', 109           /
+      DATA  MECH_NAM_RADM2( 130)     , MECH_MAP_RADM2( 130)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 130)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 131)     , SPMH_MAP_RADM2( 131)
+     &    / 'nonenal     ', 109           /
+      DATA  MECH_NAM_RADM2( 131)     , MECH_MAP_RADM2( 131)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 131)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 132)     , SPMH_MAP_RADM2( 132)
+     &    / 't-2-octenal     ', 112           /
+      DATA  MECH_NAM_RADM2( 132)     , MECH_MAP_RADM2( 132)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 132)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 133)     , SPMH_MAP_RADM2( 133)
+     &    / 'geranyl_acetone     ', 105           /
+      DATA  MECH_NAM_RADM2( 133)     , MECH_MAP_RADM2( 133)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 133)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 134)     , SPMH_MAP_RADM2( 134)
+     &    / 'neryl_acetone     ', 107           /
+      DATA  MECH_NAM_RADM2( 134)     , MECH_MAP_RADM2( 134)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 134)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 135)     , SPMH_MAP_RADM2( 135)
+     &    / 'hexanal     ', 141           /
+      DATA  MECH_NAM_RADM2( 135)     , MECH_MAP_RADM2( 135)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 135)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 136)     , SPMH_MAP_RADM2( 136)
+     &    / '1_pentanol     ', 115           /
+      DATA  MECH_NAM_RADM2( 136)     , MECH_MAP_RADM2( 136)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 136)
+     &    / 1.697       /
+ 
+      DATA  SPMH_NAM_RADM2( 137)     , SPMH_MAP_RADM2( 137)
+     &    / 'benzene     ', 128           /
+      DATA  MECH_NAM_RADM2( 137)     , MECH_MAP_RADM2( 137)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 137)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 138)     , SPMH_MAP_RADM2( 138)
+     &    / 'hydrogen_cyanide     ', 147           /
+      DATA  MECH_NAM_RADM2( 138)     , MECH_MAP_RADM2( 138)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 138)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 139)     , SPMH_MAP_RADM2( 139)
+     &    / 'linalool     ', 150           /
+      DATA  MECH_NAM_RADM2( 139)     , MECH_MAP_RADM2( 139)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 139)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 140)     , SPMH_MAP_RADM2( 140)
+     &    / 'linalool     ', 150           /
+      DATA  MECH_NAM_RADM2( 140)     , MECH_MAP_RADM2( 140)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 140)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 141)     , SPMH_MAP_RADM2( 141)
+     &    / 'isobutyronitrile     ', 148           /
+      DATA  MECH_NAM_RADM2( 141)     , MECH_MAP_RADM2( 141)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 141)
+     &    / 0.847       /
+ 
+      DATA  SPMH_NAM_RADM2( 142)     , SPMH_MAP_RADM2( 142)
+     &    / 'methacrolein     ', 153           /
+      DATA  MECH_NAM_RADM2( 142)     , MECH_MAP_RADM2( 142)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 142)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 143)     , SPMH_MAP_RADM2( 143)
+     &    / 'met_vinylketone     ', 158           /
+      DATA  MECH_NAM_RADM2( 143)     , MECH_MAP_RADM2( 143)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 143)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 144)     , SPMH_MAP_RADM2( 144)
+     &    / 'met_acetate     ', 157           /
+      DATA  MECH_NAM_RADM2( 144)     , MECH_MAP_RADM2( 144)
+     &    / 'ORA2      ', 15           /
+      DATA  CONV_FAC_RADM2( 144)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 145)     , SPMH_MAP_RADM2( 145)
+     &    / 'salicylaldehyde     ', 163           /
+      DATA  MECH_NAM_RADM2( 145)     , MECH_MAP_RADM2( 145)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 145)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 146)     , SPMH_MAP_RADM2( 146)
+     &    / 'guaiacol     ', 140           /
+      DATA  MECH_NAM_RADM2( 146)     , MECH_MAP_RADM2( 146)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 146)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 147)     , SPMH_MAP_RADM2( 147)
+     &    / 'met_benzoate     ', 154           /
+      DATA  MECH_NAM_RADM2( 147)     , MECH_MAP_RADM2( 147)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 147)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 148)     , SPMH_MAP_RADM2( 148)
+     &    / 'safrole     ', 162           /
+      DATA  MECH_NAM_RADM2( 148)     , MECH_MAP_RADM2( 148)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 148)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 149)     , SPMH_MAP_RADM2( 149)
+     &    / '3_pentanone     ', 121           /
+      DATA  MECH_NAM_RADM2( 149)     , MECH_MAP_RADM2( 149)
+     &    / 'KET      ', 11           /
+      DATA  CONV_FAC_RADM2( 149)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 150)     , SPMH_MAP_RADM2( 150)
+     &    / 'eugenol     ', 139           /
+      DATA  MECH_NAM_RADM2( 150)     , MECH_MAP_RADM2( 150)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 150)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 151)     , SPMH_MAP_RADM2( 151)
+     &    / 'acetophenone     ', 125           /
+      DATA  MECH_NAM_RADM2( 151)     , MECH_MAP_RADM2( 151)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 151)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 152)     , SPMH_MAP_RADM2( 152)
+     &    / 'benzyl_alcohol     ', 131           /
+      DATA  MECH_NAM_RADM2( 152)     , MECH_MAP_RADM2( 152)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 152)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 153)     , SPMH_MAP_RADM2( 153)
+     &    / 'benzaldehyde     ', 127           /
+      DATA  MECH_NAM_RADM2( 153)     , MECH_MAP_RADM2( 153)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 153)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 154)     , SPMH_MAP_RADM2( 154)
+     &    / 'anisole     ', 126           /
+      DATA  MECH_NAM_RADM2( 154)     , MECH_MAP_RADM2( 154)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 154)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 155)     , SPMH_MAP_RADM2( 155)
+     &    / 'ethyl_cinnamate     ', 138           /
+      DATA  MECH_NAM_RADM2( 155)     , MECH_MAP_RADM2( 155)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 155)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 156)     , SPMH_MAP_RADM2( 156)
+     &    / 'cinnamaldehyde     ', 134           /
+      DATA  MECH_NAM_RADM2( 156)     , MECH_MAP_RADM2( 156)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 156)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 157)     , SPMH_MAP_RADM2( 157)
+     &    / 'toluene     ', 164           /
+      DATA  MECH_NAM_RADM2( 157)     , MECH_MAP_RADM2( 157)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 157)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 158)     , SPMH_MAP_RADM2( 158)
+     &    / 'phenol     ', 160           /
+      DATA  MECH_NAM_RADM2( 158)     , MECH_MAP_RADM2( 158)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 158)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 159)     , SPMH_MAP_RADM2( 159)
+     &    / '2_pentene     ', 118           /
+      DATA  MECH_NAM_RADM2( 159)     , MECH_MAP_RADM2( 159)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 159)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 160)     , SPMH_MAP_RADM2( 160)
+     &    / 'hexanol_1     ', 142           /
+      DATA  MECH_NAM_RADM2( 160)     , MECH_MAP_RADM2( 160)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 160)
+     &    / 1.697       /
+ 
+      DATA  SPMH_NAM_RADM2( 161)     , SPMH_MAP_RADM2( 161)
+     &    / 'met_salicylate     ', 156           /
+      DATA  MECH_NAM_RADM2( 161)     , MECH_MAP_RADM2( 161)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 161)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 162)     , SPMH_MAP_RADM2( 162)
+     &    / 'benzyl_benzoate     ', 129           /
+      DATA  MECH_NAM_RADM2( 162)     , MECH_MAP_RADM2( 162)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 162)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 163)     , SPMH_MAP_RADM2( 163)
+     &    / 'phenylacetaldehyde     ', 161           /
+      DATA  MECH_NAM_RADM2( 163)     , MECH_MAP_RADM2( 163)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 163)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 164)     , SPMH_MAP_RADM2( 164)
+     &    / 'cinnamic_acid     ', 135           /
+      DATA  MECH_NAM_RADM2( 164)     , MECH_MAP_RADM2( 164)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 164)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 165)     , SPMH_MAP_RADM2( 165)
+     &    / 'benzyl_acetate     ', 130           /
+      DATA  MECH_NAM_RADM2( 165)     , MECH_MAP_RADM2( 165)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 165)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 166)     , SPMH_MAP_RADM2( 166)
+     &    / 'coniferyl_alcohol     ', 136           /
+      DATA  MECH_NAM_RADM2( 166)     , MECH_MAP_RADM2( 166)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 166)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 167)     , SPMH_MAP_RADM2( 167)
+     &    / 'coniferyl_alcohol     ', 136           /
+      DATA  MECH_NAM_RADM2( 167)     , MECH_MAP_RADM2( 167)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 167)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 168)     , SPMH_MAP_RADM2( 168)
+     &    / 'cineole_1_8     ', 133           /
+      DATA  MECH_NAM_RADM2( 168)     , MECH_MAP_RADM2( 168)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 168)
+     &    / 0.755       /
+ 
+      DATA  SPMH_NAM_RADM2( 169)     , SPMH_MAP_RADM2( 169)
+     &    / 'jasmone     ', 149           /
+      DATA  MECH_NAM_RADM2( 169)     , MECH_MAP_RADM2( 169)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 169)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 170)     , SPMH_MAP_RADM2( 170)
+     &    / 'chavicol     ', 132           /
+      DATA  MECH_NAM_RADM2( 170)     , MECH_MAP_RADM2( 170)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 170)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 171)     , SPMH_MAP_RADM2( 171)
+     &    / 'p_coumaric_acid     ', 159           /
+      DATA  MECH_NAM_RADM2( 171)     , MECH_MAP_RADM2( 171)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 171)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 172)     , SPMH_MAP_RADM2( 172)
+     &    / 'hexenal_t2     ', 144           /
+      DATA  MECH_NAM_RADM2( 172)     , MECH_MAP_RADM2( 172)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 172)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 173)     , SPMH_MAP_RADM2( 173)
+     &    / '3_metthiophene     ', 120           /
+      DATA  MECH_NAM_RADM2( 173)     , MECH_MAP_RADM2( 173)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 173)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 174)     , SPMH_MAP_RADM2( 174)
+     &    / '4_penten_1_ol     ', 123           /
+      DATA  MECH_NAM_RADM2( 174)     , MECH_MAP_RADM2( 174)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 174)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 175)     , SPMH_MAP_RADM2( 175)
+     &    / 'hexenol_c3     ', 145           /
+      DATA  MECH_NAM_RADM2( 175)     , MECH_MAP_RADM2( 175)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 175)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 176)     , SPMH_MAP_RADM2( 176)
+     &    / '3_metfuran     ', 119           /
+      DATA  MECH_NAM_RADM2( 176)     , MECH_MAP_RADM2( 176)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 176)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 177)     , SPMH_MAP_RADM2( 177)
+     &    / 'met_jasmonate     ', 155           /
+      DATA  MECH_NAM_RADM2( 177)     , MECH_MAP_RADM2( 177)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 177)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 178)     , SPMH_MAP_RADM2( 178)
+     &    / 'xylene     ', 166           /
+      DATA  MECH_NAM_RADM2( 178)     , MECH_MAP_RADM2( 178)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 178)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 179)     , SPMH_MAP_RADM2( 179)
+     &    / 'z2_penten_1ol     ', 167           /
+      DATA  MECH_NAM_RADM2( 179)     , MECH_MAP_RADM2( 179)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 179)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 180)     , SPMH_MAP_RADM2( 180)
+     &    / '1_penten_3_one     ', 116           /
+      DATA  MECH_NAM_RADM2( 180)     , MECH_MAP_RADM2( 180)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 180)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 181)     , SPMH_MAP_RADM2( 181)
+     &    / 'hexenyl_ACT_c3     ', 146           /
+      DATA  MECH_NAM_RADM2( 181)     , MECH_MAP_RADM2( 181)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 181)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 182)     , SPMH_MAP_RADM2( 182)
+     &    / '3_penten_2_ol     ', 122           /
+      DATA  MECH_NAM_RADM2( 182)     , MECH_MAP_RADM2( 182)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 182)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 183)     , SPMH_MAP_RADM2( 183)
+     &    / 'linalool_OXD_c     ', 151           /
+      DATA  MECH_NAM_RADM2( 183)     , MECH_MAP_RADM2( 183)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 183)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 184)     , SPMH_MAP_RADM2( 184)
+     &    / 'hexenal_c3     ', 143           /
+      DATA  MECH_NAM_RADM2( 184)     , MECH_MAP_RADM2( 184)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 184)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 185)     , SPMH_MAP_RADM2( 185)
+     &    / '8_heptadecene     ', 124           /
+      DATA  MECH_NAM_RADM2( 185)     , MECH_MAP_RADM2( 185)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 185)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 186)     , SPMH_MAP_RADM2( 186)
+     &    / 'z3_hexen_1yl_butyrate     ', 169           /
+      DATA  MECH_NAM_RADM2( 186)     , MECH_MAP_RADM2( 186)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 186)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 187)     , SPMH_MAP_RADM2( 187)
+     &    / '2_met_butanenitrile     ', 117           /
+      DATA  MECH_NAM_RADM2( 187)     , MECH_MAP_RADM2( 187)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 187)
+     &    / 0.847       /
+ 
+      DATA  SPMH_NAM_RADM2( 188)     , SPMH_MAP_RADM2( 188)
+     &    / 'linalool_OXD_t     ', 152           /
+      DATA  MECH_NAM_RADM2( 188)     , MECH_MAP_RADM2( 188)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 188)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 189)     , SPMH_MAP_RADM2( 189)
+     &    / '2met_nonatriene     ', 137           /
+      DATA  MECH_NAM_RADM2( 189)     , MECH_MAP_RADM2( 189)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 189)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 190)     , SPMH_MAP_RADM2( 190)
+     &    / '2met_nonatriene     ', 137           /
+      DATA  MECH_NAM_RADM2( 190)     , MECH_MAP_RADM2( 190)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 190)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 191)     , SPMH_MAP_RADM2( 191)
+     &    / 'z2_penten_3ol     ', 168           /
+      DATA  MECH_NAM_RADM2( 191)     , MECH_MAP_RADM2( 191)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 191)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 192)     , SPMH_MAP_RADM2( 192)
+     &    / '3met_3DCTT     ', 165           /
+      DATA  MECH_NAM_RADM2( 192)     , MECH_MAP_RADM2( 192)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 192)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 193)     , SPMH_MAP_RADM2( 193)
+     &    / '3met_3DCTT     ', 165           /
+      DATA  MECH_NAM_RADM2( 193)     , MECH_MAP_RADM2( 193)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 193)
+     &    / 0.5       /
+ 
+      DATA  SPMH_NAM_RADM2( 194)     , SPMH_MAP_RADM2( 194)
+     &    / 'methane     ', 184           /
+      DATA  MECH_NAM_RADM2( 194)     , MECH_MAP_RADM2( 194)
+     &    / 'CH4      ', 2           /
+      DATA  CONV_FAC_RADM2( 194)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 195)     , SPMH_MAP_RADM2( 195)
+     &    / 'met_bromide     ', 185           /
+      DATA  MECH_NAM_RADM2( 195)     , MECH_MAP_RADM2( 195)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 195)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 196)     , SPMH_MAP_RADM2( 196)
+     &    / 'met_chloride     ', 186           /
+      DATA  MECH_NAM_RADM2( 196)     , MECH_MAP_RADM2( 196)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 196)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 197)     , SPMH_MAP_RADM2( 197)
+     &    / 'met_iodide     ', 187           /
+      DATA  MECH_NAM_RADM2( 197)     , MECH_MAP_RADM2( 197)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 197)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 198)     , SPMH_MAP_RADM2( 198)
+     &    / 'met_mercaptan     ', 188           /
+      DATA  MECH_NAM_RADM2( 198)     , MECH_MAP_RADM2( 198)
+     &    / 'CH4      ', 2           /
+      DATA  CONV_FAC_RADM2( 198)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 199)     , SPMH_MAP_RADM2( 199)
+     &    / 'met_mercaptan     ', 188           /
+      DATA  MECH_NAM_RADM2( 199)     , MECH_MAP_RADM2( 199)
+     &    / 'SO2      ', 17           /
+      DATA  CONV_FAC_RADM2( 199)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 200)     , SPMH_MAP_RADM2( 200)
+     &    / 'carbon_2s     ', 171           /
+      DATA  MECH_NAM_RADM2( 200)     , MECH_MAP_RADM2( 200)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 200)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 201)     , SPMH_MAP_RADM2( 201)
+     &    / '2met_s     ', 176           /
+      DATA  MECH_NAM_RADM2( 201)     , MECH_MAP_RADM2( 201)
+     &    / 'ETH      ', 3           /
+      DATA  CONV_FAC_RADM2( 201)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 202)     , SPMH_MAP_RADM2( 202)
+     &    / '2met_s     ', 176           /
+      DATA  MECH_NAM_RADM2( 202)     , MECH_MAP_RADM2( 202)
+     &    / 'SO2      ', 17           /
+      DATA  CONV_FAC_RADM2( 202)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 203)     , SPMH_MAP_RADM2( 203)
+     &    / 'butanone_2     ', 170           /
+      DATA  MECH_NAM_RADM2( 203)     , MECH_MAP_RADM2( 203)
+     &    / 'KET      ', 11           /
+      DATA  CONV_FAC_RADM2( 203)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 204)     , SPMH_MAP_RADM2( 204)
+     &    / 'terpinyl_ACT_a     ', 197           /
+      DATA  MECH_NAM_RADM2( 204)     , MECH_MAP_RADM2( 204)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 204)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 205)     , SPMH_MAP_RADM2( 205)
+     &    / 'skatole     ', 196           /
+      DATA  MECH_NAM_RADM2( 205)     , MECH_MAP_RADM2( 205)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 205)
+     &    / 1.238       /
+ 
+      DATA  SPMH_NAM_RADM2( 206)     , SPMH_MAP_RADM2( 206)
+     &    / 'skatole     ', 196           /
+      DATA  MECH_NAM_RADM2( 206)     , MECH_MAP_RADM2( 206)
+     &    / 'HNO3      ', 19           /
+      DATA  CONV_FAC_RADM2( 206)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 207)     , SPMH_MAP_RADM2( 207)
+     &    / 'naphthalene     ', 192           /
+      DATA  MECH_NAM_RADM2( 207)     , MECH_MAP_RADM2( 207)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 207)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 208)     , SPMH_MAP_RADM2( 208)
+     &    / 'pentane     ', 193           /
+      DATA  MECH_NAM_RADM2( 208)     , MECH_MAP_RADM2( 208)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 208)
+     &    / 0.847       /
+ 
+      DATA  SPMH_NAM_RADM2( 209)     , SPMH_MAP_RADM2( 209)
+     &    / 'heptanone     ', 180           /
+      DATA  MECH_NAM_RADM2( 209)     , MECH_MAP_RADM2( 209)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 209)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 210)     , SPMH_MAP_RADM2( 210)
+     &    / 'hexane     ', 181           /
+      DATA  MECH_NAM_RADM2( 210)     , MECH_MAP_RADM2( 210)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 210)
+     &    / 1.049       /
+ 
+      DATA  SPMH_NAM_RADM2( 211)     , SPMH_MAP_RADM2( 211)
+     &    / 'heptanal     ', 178           /
+      DATA  MECH_NAM_RADM2( 211)     , MECH_MAP_RADM2( 211)
+     &    / 'ALD      ', 10           /
+      DATA  CONV_FAC_RADM2( 211)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 212)     , SPMH_MAP_RADM2( 212)
+     &    / 'dodecene_1     ', 177           /
+      DATA  MECH_NAM_RADM2( 212)     , MECH_MAP_RADM2( 212)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 212)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 213)     , SPMH_MAP_RADM2( 213)
+     &    / 'indole     ', 183           /
+      DATA  MECH_NAM_RADM2( 213)     , MECH_MAP_RADM2( 213)
+     &    / 'HC8      ', 6           /
+      DATA  CONV_FAC_RADM2( 213)
+     &    / 1.238       /
+ 
+      DATA  SPMH_NAM_RADM2( 214)     , SPMH_MAP_RADM2( 214)
+     &    / 'indole     ', 183           /
+      DATA  MECH_NAM_RADM2( 214)     , MECH_MAP_RADM2( 214)
+     &    / 'HNO3      ', 19           /
+      DATA  CONV_FAC_RADM2( 214)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 215)     , SPMH_MAP_RADM2( 215)
+     &    / 'decane     ', 173           /
+      DATA  MECH_NAM_RADM2( 215)     , MECH_MAP_RADM2( 215)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 215)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 216)     , SPMH_MAP_RADM2( 216)
+     &    / 'heptane     ', 179           /
+      DATA  MECH_NAM_RADM2( 216)     , MECH_MAP_RADM2( 216)
+     &    / 'HC5      ', 5           /
+      DATA  CONV_FAC_RADM2( 216)
+     &    / 1.226       /
+ 
+      DATA  SPMH_NAM_RADM2( 217)     , SPMH_MAP_RADM2( 217)
+     &    / 'carbonyl_s     ', 172           /
+      DATA  MECH_NAM_RADM2( 217)     , MECH_MAP_RADM2( 217)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 217)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 218)     , SPMH_MAP_RADM2( 218)
+     &    / 'santene     ', 195           /
+      DATA  MECH_NAM_RADM2( 218)     , MECH_MAP_RADM2( 218)
+     &    / 'TOL      ', 12           /
+      DATA  CONV_FAC_RADM2( 218)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 219)     , SPMH_MAP_RADM2( 219)
+     &    / 'MBO_3m2e1ol     ', 190           /
+      DATA  MECH_NAM_RADM2( 219)     , MECH_MAP_RADM2( 219)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 219)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 220)     , SPMH_MAP_RADM2( 220)
+     &    / '2met_2s     ', 175           /
+      DATA  MECH_NAM_RADM2( 220)     , MECH_MAP_RADM2( 220)
+     &    / 'ETH      ', 3           /
+      DATA  CONV_FAC_RADM2( 220)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 221)     , SPMH_MAP_RADM2( 221)
+     &    / '2met_2s     ', 175           /
+      DATA  MECH_NAM_RADM2( 221)     , MECH_MAP_RADM2( 221)
+     &    / 'SO2      ', 17           /
+      DATA  CONV_FAC_RADM2( 221)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_RADM2( 222)     , SPMH_MAP_RADM2( 222)
+     &    / 'MBO_3m3e1ol     ', 191           /
+      DATA  MECH_NAM_RADM2( 222)     , MECH_MAP_RADM2( 222)
+     &    / 'ISO      ', 1           /
+      DATA  CONV_FAC_RADM2( 222)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 223)     , SPMH_MAP_RADM2( 223)
+     &    / 'undecane     ', 199           /
+      DATA  MECH_NAM_RADM2( 223)     , MECH_MAP_RADM2( 223)
+     &    / 'NR      ', 21           /
+      DATA  CONV_FAC_RADM2( 223)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 224)     , SPMH_MAP_RADM2( 224)
+     &    / 'tetradecene_1     ', 198           /
+      DATA  MECH_NAM_RADM2( 224)     , MECH_MAP_RADM2( 224)
+     &    / 'OLT      ', 9           /
+      DATA  CONV_FAC_RADM2( 224)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 225)     , SPMH_MAP_RADM2( 225)
+     &    / 'diallyl_2s     ', 174           /
+      DATA  MECH_NAM_RADM2( 225)     , MECH_MAP_RADM2( 225)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 225)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 226)     , SPMH_MAP_RADM2( 226)
+     &    / 'diallyl_2s     ', 174           /
+      DATA  MECH_NAM_RADM2( 226)     , MECH_MAP_RADM2( 226)
+     &    / 'SO2      ', 17           /
+      DATA  CONV_FAC_RADM2( 226)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_RADM2( 227)     , SPMH_MAP_RADM2( 227)
+     &    / 'PPPP_2s     ', 194           /
+      DATA  MECH_NAM_RADM2( 227)     , MECH_MAP_RADM2( 227)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 227)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 228)     , SPMH_MAP_RADM2( 228)
+     &    / 'PPPP_2s     ', 194           /
+      DATA  MECH_NAM_RADM2( 228)     , MECH_MAP_RADM2( 228)
+     &    / 'SO2      ', 17           /
+      DATA  CONV_FAC_RADM2( 228)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_RADM2( 229)     , SPMH_MAP_RADM2( 229)
+     &    / 'met_propenyl_2s     ', 189           /
+      DATA  MECH_NAM_RADM2( 229)     , MECH_MAP_RADM2( 229)
+     &    / 'OLI      ', 8           /
+      DATA  CONV_FAC_RADM2( 229)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 230)     , SPMH_MAP_RADM2( 230)
+     &    / 'met_propenyl_2s     ', 189           /
+      DATA  MECH_NAM_RADM2( 230)     , MECH_MAP_RADM2( 230)
+     &    / 'SO2      ', 17           /
+      DATA  CONV_FAC_RADM2( 230)
+     &    / 2       /
+ 
+      DATA  SPMH_NAM_RADM2( 231)     , SPMH_MAP_RADM2( 231)
+     &    / 'hydrogen_s     ', 182           /
+      DATA  MECH_NAM_RADM2( 231)     , MECH_MAP_RADM2( 231)
+     &    / 'SO2      ', 17           /
+      DATA  CONV_FAC_RADM2( 231)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 232)     , SPMH_MAP_RADM2( 232)
+     &    / 'carbon_monoxide     ', 200           /
+      DATA  MECH_NAM_RADM2( 232)     , MECH_MAP_RADM2( 232)
+     &    / 'CO      ', 16           /
+      DATA  CONV_FAC_RADM2( 232)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_RADM2( 233)     , SPMH_MAP_RADM2( 233)
+     &    / 'nitric_OXD     ', 201           /
+      DATA  MECH_NAM_RADM2( 233)     , MECH_MAP_RADM2( 233)
+     &    / 'NO      ', 18           /
+      DATA  CONV_FAC_RADM2( 233)
+     &    / 1       /
+ 

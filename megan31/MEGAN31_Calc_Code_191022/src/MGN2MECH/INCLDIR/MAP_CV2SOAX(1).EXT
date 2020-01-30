@@ -1,0 +1,835 @@
+C=======================================================================
+C  MAP_CV2SOAX.EXT
+C  This include file contains conversion table for 201 speciated species
+C  to SOAX (CMAQ/CAMx) species
+C
+C
+C  MEGAN v3
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  Tan          07/18/11 - Created for MEGANv2.10
+C  Ling Huang   03/21/17 - Updated for MEGANv3
+C=======================================================================
+
+      CHARACTER*16   MAP_SOAXMECH
+      PARAMETER     (MAP_SOAXMECH = 'SOAX            ')
+
+      INTEGER        N_SOAX
+      PARAMETER     (N_SOAX = (115))        ! Number of map species
+
+      CHARACTER*16   SPMH_NAM_SOAX( N_SOAX )   ! speciated species name
+      INTEGER        SPMH_MAP_SOAX( N_SOAX )   ! speciated species name
+                                              ! mapped to SPC_SPCAT.EXT
+      CHARACTER*16   MECH_NAM_SOAX( N_SOAX )   ! mechanism species
+      INTEGER        MECH_MAP_SOAX( N_SOAX )   ! mechanism species mapped
+
+      REAL           CONV_FAC_SOAX( N_SOAX )   ! conversion factor
+
+ 
+      DATA  SPMH_NAM_SOAX( 1)     , SPMH_MAP_SOAX( 1)
+     &    / 'isoprene     ', 1           /
+      DATA  MECH_NAM_SOAX( 1)     , MECH_MAP_SOAX( 1)
+     &    / 'ISP      ', 1           /
+      DATA  CONV_FAC_SOAX( 1)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 2)     , SPMH_MAP_SOAX( 2)
+     &    / 'pinene_a     ', 3           /
+      DATA  MECH_NAM_SOAX( 2)     , MECH_MAP_SOAX( 2)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 2)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 3)     , SPMH_MAP_SOAX( 3)
+     &    / 'pinene_b     ', 4           /
+      DATA  MECH_NAM_SOAX( 3)     , MECH_MAP_SOAX( 3)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 3)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 4)     , SPMH_MAP_SOAX( 4)
+     &    / 'myrcene     ', 5           /
+      DATA  MECH_NAM_SOAX( 4)     , MECH_MAP_SOAX( 4)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 4)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 5)     , SPMH_MAP_SOAX( 5)
+     &    / 'ocimene_al     ', 6           /
+      DATA  MECH_NAM_SOAX( 5)     , MECH_MAP_SOAX( 5)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 5)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 6)     , SPMH_MAP_SOAX( 6)
+     &    / 'ocimene_c_b     ', 7           /
+      DATA  MECH_NAM_SOAX( 6)     , MECH_MAP_SOAX( 6)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 6)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 7)     , SPMH_MAP_SOAX( 7)
+     &    / 'ocimene_t_b     ', 8           /
+      DATA  MECH_NAM_SOAX( 7)     , MECH_MAP_SOAX( 7)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 7)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 8)     , SPMH_MAP_SOAX( 8)
+     &    / 'camphene     ', 10           /
+      DATA  MECH_NAM_SOAX( 8)     , MECH_MAP_SOAX( 8)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 8)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 9)     , SPMH_MAP_SOAX( 9)
+     &    / 'bornene     ', 9           /
+      DATA  MECH_NAM_SOAX( 9)     , MECH_MAP_SOAX( 9)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 9)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 10)     , SPMH_MAP_SOAX( 10)
+     &    / 'fenchene_a     ', 12           /
+      DATA  MECH_NAM_SOAX( 10)     , MECH_MAP_SOAX( 10)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 10)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 11)     , SPMH_MAP_SOAX( 11)
+     &    / 'carene_3     ', 11           /
+      DATA  MECH_NAM_SOAX( 11)     , MECH_MAP_SOAX( 11)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 11)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 12)     , SPMH_MAP_SOAX( 12)
+     &    / 'fenchene_b     ', 13           /
+      DATA  MECH_NAM_SOAX( 12)     , MECH_MAP_SOAX( 12)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 12)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 13)     , SPMH_MAP_SOAX( 13)
+     &    / 'phellandrene_a     ', 17           /
+      DATA  MECH_NAM_SOAX( 13)     , MECH_MAP_SOAX( 13)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 13)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 14)     , SPMH_MAP_SOAX( 14)
+     &    / 'terpinene_g     ', 20           /
+      DATA  MECH_NAM_SOAX( 14)     , MECH_MAP_SOAX( 14)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 14)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 15)     , SPMH_MAP_SOAX( 15)
+     &    / 'terpinene_a     ', 19           /
+      DATA  MECH_NAM_SOAX( 15)     , MECH_MAP_SOAX( 15)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 15)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 16)     , SPMH_MAP_SOAX( 16)
+     &    / 'limonene     ', 15           /
+      DATA  MECH_NAM_SOAX( 16)     , MECH_MAP_SOAX( 16)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 16)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 17)     , SPMH_MAP_SOAX( 17)
+     &    / 'phellandrene_b     ', 16           /
+      DATA  MECH_NAM_SOAX( 17)     , MECH_MAP_SOAX( 17)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 17)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 18)     , SPMH_MAP_SOAX( 18)
+     &    / 'terpinolene     ', 21           /
+      DATA  MECH_NAM_SOAX( 18)     , MECH_MAP_SOAX( 18)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 18)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 19)     , SPMH_MAP_SOAX( 19)
+     &    / 'thujene_a     ', 22           /
+      DATA  MECH_NAM_SOAX( 19)     , MECH_MAP_SOAX( 19)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 19)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 20)     , SPMH_MAP_SOAX( 20)
+     &    / 'sabinene     ', 18           /
+      DATA  MECH_NAM_SOAX( 20)     , MECH_MAP_SOAX( 20)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 20)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 21)     , SPMH_MAP_SOAX( 21)
+     &    / 'verbenene     ', 23           /
+      DATA  MECH_NAM_SOAX( 21)     , MECH_MAP_SOAX( 21)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 21)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 22)     , SPMH_MAP_SOAX( 22)
+     &    / 'cymene_p     ', 25           /
+      DATA  MECH_NAM_SOAX( 22)     , MECH_MAP_SOAX( 22)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 22)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 23)     , SPMH_MAP_SOAX( 23)
+     &    / 'cymene_o     ', 24           /
+      DATA  MECH_NAM_SOAX( 23)     , MECH_MAP_SOAX( 23)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 23)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 24)     , SPMH_MAP_SOAX( 24)
+     &    / 'meta-cymenene     ', 26           /
+      DATA  MECH_NAM_SOAX( 24)     , MECH_MAP_SOAX( 24)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 24)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 25)     , SPMH_MAP_SOAX( 25)
+     &    / 'p-cymenene     ', 27           /
+      DATA  MECH_NAM_SOAX( 25)     , MECH_MAP_SOAX( 25)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 25)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 26)     , SPMH_MAP_SOAX( 26)
+     &    / 'piperitone     ', 38           /
+      DATA  MECH_NAM_SOAX( 26)     , MECH_MAP_SOAX( 26)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 26)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 27)     , SPMH_MAP_SOAX( 27)
+     &    / 'terpineol_a     ', 40           /
+      DATA  MECH_NAM_SOAX( 27)     , MECH_MAP_SOAX( 27)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 27)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 28)     , SPMH_MAP_SOAX( 28)
+     &    / 'estragole     ', 31           /
+      DATA  MECH_NAM_SOAX( 28)     , MECH_MAP_SOAX( 28)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 28)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 29)     , SPMH_MAP_SOAX( 29)
+     &    / 'terpineol_4     ', 39           /
+      DATA  MECH_NAM_SOAX( 29)     , MECH_MAP_SOAX( 29)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 29)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 30)     , SPMH_MAP_SOAX( 30)
+     &    / 'myrtenal     ', 35           /
+      DATA  MECH_NAM_SOAX( 30)     , MECH_MAP_SOAX( 30)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 30)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 31)     , SPMH_MAP_SOAX( 31)
+     &    / 'ionone_b     ', 33           /
+      DATA  MECH_NAM_SOAX( 31)     , MECH_MAP_SOAX( 31)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 31)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 32)     , SPMH_MAP_SOAX( 32)
+     &    / 'ipsenol     ', 34           /
+      DATA  MECH_NAM_SOAX( 32)     , MECH_MAP_SOAX( 32)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 32)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 33)     , SPMH_MAP_SOAX( 33)
+     &    / 'caryophyllene_b     ', 51           /
+      DATA  MECH_NAM_SOAX( 33)     , MECH_MAP_SOAX( 33)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 33)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 34)     , SPMH_MAP_SOAX( 34)
+     &    / 'caryophyllene_c_i     ', 52           /
+      DATA  MECH_NAM_SOAX( 34)     , MECH_MAP_SOAX( 34)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 34)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 35)     , SPMH_MAP_SOAX( 35)
+     &    / 'cadinene_d     ', 48           /
+      DATA  MECH_NAM_SOAX( 35)     , MECH_MAP_SOAX( 35)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 35)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 36)     , SPMH_MAP_SOAX( 36)
+     &    / 'selinene_d     ', 67           /
+      DATA  MECH_NAM_SOAX( 36)     , MECH_MAP_SOAX( 36)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 36)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 37)     , SPMH_MAP_SOAX( 37)
+     &    / 'bisabolene_b     ', 47           /
+      DATA  MECH_NAM_SOAX( 37)     , MECH_MAP_SOAX( 37)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 37)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 38)     , SPMH_MAP_SOAX( 38)
+     &    / 'farnescene_a     ', 54           /
+      DATA  MECH_NAM_SOAX( 38)     , MECH_MAP_SOAX( 38)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 38)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 39)     , SPMH_MAP_SOAX( 39)
+     &    / 'patchoulene_b     ', 65           /
+      DATA  MECH_NAM_SOAX( 39)     , MECH_MAP_SOAX( 39)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 39)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 40)     , SPMH_MAP_SOAX( 40)
+     &    / 'elemene_b     ', 53           /
+      DATA  MECH_NAM_SOAX( 40)     , MECH_MAP_SOAX( 40)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 40)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 41)     , SPMH_MAP_SOAX( 41)
+     &    / 'nerolidol_c     ', 63           /
+      DATA  MECH_NAM_SOAX( 41)     , MECH_MAP_SOAX( 41)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 41)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 42)     , SPMH_MAP_SOAX( 42)
+     &    / 'humulene_a     ', 59           /
+      DATA  MECH_NAM_SOAX( 42)     , MECH_MAP_SOAX( 42)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 42)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 43)     , SPMH_MAP_SOAX( 43)
+     &    / 'muurolene_a     ', 61           /
+      DATA  MECH_NAM_SOAX( 43)     , MECH_MAP_SOAX( 43)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 43)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 44)     , SPMH_MAP_SOAX( 44)
+     &    / 'bergamotene_a     ', 44           /
+      DATA  MECH_NAM_SOAX( 44)     , MECH_MAP_SOAX( 44)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 44)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 45)     , SPMH_MAP_SOAX( 45)
+     &    / 'germacrene_B     ', 57           /
+      DATA  MECH_NAM_SOAX( 45)     , MECH_MAP_SOAX( 45)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 45)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 46)     , SPMH_MAP_SOAX( 46)
+     &    / 'selinene_b     ', 66           /
+      DATA  MECH_NAM_SOAX( 46)     , MECH_MAP_SOAX( 46)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 46)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 47)     , SPMH_MAP_SOAX( 47)
+     &    / 'calarene     ', 50           /
+      DATA  MECH_NAM_SOAX( 47)     , MECH_MAP_SOAX( 47)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 47)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 48)     , SPMH_MAP_SOAX( 48)
+     &    / 'farnescene_b     ', 55           /
+      DATA  MECH_NAM_SOAX( 48)     , MECH_MAP_SOAX( 48)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 48)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 49)     , SPMH_MAP_SOAX( 49)
+     &    / 'acoradiene     ', 43           /
+      DATA  MECH_NAM_SOAX( 49)     , MECH_MAP_SOAX( 49)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 49)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 50)     , SPMH_MAP_SOAX( 50)
+     &    / 'humulene_g     ', 60           /
+      DATA  MECH_NAM_SOAX( 50)     , MECH_MAP_SOAX( 50)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 50)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 51)     , SPMH_MAP_SOAX( 51)
+     &    / 'muurolene_g     ', 62           /
+      DATA  MECH_NAM_SOAX( 51)     , MECH_MAP_SOAX( 51)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 51)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 52)     , SPMH_MAP_SOAX( 52)
+     &    / 'germacrene_D     ', 58           /
+      DATA  MECH_NAM_SOAX( 52)     , MECH_MAP_SOAX( 52)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 52)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 53)     , SPMH_MAP_SOAX( 53)
+     &    / 'cadinene_g     ', 49           /
+      DATA  MECH_NAM_SOAX( 53)     , MECH_MAP_SOAX( 53)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 53)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 54)     , SPMH_MAP_SOAX( 54)
+     &    / 'nerolidol_t     ', 64           /
+      DATA  MECH_NAM_SOAX( 54)     , MECH_MAP_SOAX( 54)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 54)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 55)     , SPMH_MAP_SOAX( 55)
+     &    / 'bergamotene_b     ', 45           /
+      DATA  MECH_NAM_SOAX( 55)     , MECH_MAP_SOAX( 55)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 55)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 56)     , SPMH_MAP_SOAX( 56)
+     &    / 'bisabolene_a     ', 46           /
+      DATA  MECH_NAM_SOAX( 56)     , MECH_MAP_SOAX( 56)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 56)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 57)     , SPMH_MAP_SOAX( 57)
+     &    / 'homosalate     ', 78           /
+      DATA  MECH_NAM_SOAX( 57)     , MECH_MAP_SOAX( 57)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 57)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 58)     , SPMH_MAP_SOAX( 58)
+     &    / '2ethyl_hexyl_salate     ', 68           /
+      DATA  MECH_NAM_SOAX( 58)     , MECH_MAP_SOAX( 58)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 58)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 59)     , SPMH_MAP_SOAX( 59)
+     &    / 'cedrene_a     ', 72           /
+      DATA  MECH_NAM_SOAX( 59)     , MECH_MAP_SOAX( 59)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 59)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 60)     , SPMH_MAP_SOAX( 60)
+     &    / 'thujopsene     ', 83           /
+      DATA  MECH_NAM_SOAX( 60)     , MECH_MAP_SOAX( 60)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 60)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 61)     , SPMH_MAP_SOAX( 61)
+     &    / 'longifolene     ', 81           /
+      DATA  MECH_NAM_SOAX( 61)     , MECH_MAP_SOAX( 61)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 61)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 62)     , SPMH_MAP_SOAX( 62)
+     &    / 'zingiberene_a     ', 85           /
+      DATA  MECH_NAM_SOAX( 62)     , MECH_MAP_SOAX( 62)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 62)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 63)     , SPMH_MAP_SOAX( 63)
+     &    / 'isolongifolene     ', 79           /
+      DATA  MECH_NAM_SOAX( 63)     , MECH_MAP_SOAX( 63)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 63)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 64)     , SPMH_MAP_SOAX( 64)
+     &    / 'longicyclene     ', 87           /
+      DATA  MECH_NAM_SOAX( 64)     , MECH_MAP_SOAX( 64)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 64)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 65)     , SPMH_MAP_SOAX( 65)
+     &    / 'copaene_a     ', 74           /
+      DATA  MECH_NAM_SOAX( 65)     , MECH_MAP_SOAX( 65)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 65)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 66)     , SPMH_MAP_SOAX( 66)
+     &    / 'bourbonene_b     ', 70           /
+      DATA  MECH_NAM_SOAX( 66)     , MECH_MAP_SOAX( 66)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 66)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 67)     , SPMH_MAP_SOAX( 67)
+     &    / 'longipinene     ', 82           /
+      DATA  MECH_NAM_SOAX( 67)     , MECH_MAP_SOAX( 67)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 67)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 68)     , SPMH_MAP_SOAX( 68)
+     &    / 'cubebene_b     ', 76           /
+      DATA  MECH_NAM_SOAX( 68)     , MECH_MAP_SOAX( 68)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 68)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 69)     , SPMH_MAP_SOAX( 69)
+     &    / 'ylangene_a     ', 84           /
+      DATA  MECH_NAM_SOAX( 69)     , MECH_MAP_SOAX( 69)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 69)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 70)     , SPMH_MAP_SOAX( 70)
+     &    / 'cubebene_a     ', 75           /
+      DATA  MECH_NAM_SOAX( 70)     , MECH_MAP_SOAX( 70)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 70)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 71)     , SPMH_MAP_SOAX( 71)
+     &    / 'copaene_b     ', 86           /
+      DATA  MECH_NAM_SOAX( 71)     , MECH_MAP_SOAX( 71)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 71)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 72)     , SPMH_MAP_SOAX( 72)
+     &    / 'kaur_16_ene     ', 80           /
+      DATA  MECH_NAM_SOAX( 72)     , MECH_MAP_SOAX( 72)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 72)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 73)     , SPMH_MAP_SOAX( 73)
+     &    / 'gurjunene_b     ', 77           /
+      DATA  MECH_NAM_SOAX( 73)     , MECH_MAP_SOAX( 73)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 73)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 74)     , SPMH_MAP_SOAX( 74)
+     &    / 'aromadendrene     ', 69           /
+      DATA  MECH_NAM_SOAX( 74)     , MECH_MAP_SOAX( 74)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 74)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 75)     , SPMH_MAP_SOAX( 75)
+     &    / 'geranyl_acetone     ', 105           /
+      DATA  MECH_NAM_SOAX( 75)     , MECH_MAP_SOAX( 75)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 75)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 76)     , SPMH_MAP_SOAX( 76)
+     &    / 'benzene     ', 128           /
+      DATA  MECH_NAM_SOAX( 76)     , MECH_MAP_SOAX( 76)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 76)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 77)     , SPMH_MAP_SOAX( 77)
+     &    / 'linalool     ', 150           /
+      DATA  MECH_NAM_SOAX( 77)     , MECH_MAP_SOAX( 77)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 77)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 78)     , SPMH_MAP_SOAX( 78)
+     &    / 'salicylaldehyde     ', 163           /
+      DATA  MECH_NAM_SOAX( 78)     , MECH_MAP_SOAX( 78)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 78)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 79)     , SPMH_MAP_SOAX( 79)
+     &    / 'guaiacol     ', 140           /
+      DATA  MECH_NAM_SOAX( 79)     , MECH_MAP_SOAX( 79)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 79)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 80)     , SPMH_MAP_SOAX( 80)
+     &    / 'met_benzoate     ', 154           /
+      DATA  MECH_NAM_SOAX( 80)     , MECH_MAP_SOAX( 80)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 80)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 81)     , SPMH_MAP_SOAX( 81)
+     &    / 'safrole     ', 162           /
+      DATA  MECH_NAM_SOAX( 81)     , MECH_MAP_SOAX( 81)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 81)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 82)     , SPMH_MAP_SOAX( 82)
+     &    / 'eugenol     ', 139           /
+      DATA  MECH_NAM_SOAX( 82)     , MECH_MAP_SOAX( 82)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 82)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 83)     , SPMH_MAP_SOAX( 83)
+     &    / 'acetophenone     ', 125           /
+      DATA  MECH_NAM_SOAX( 83)     , MECH_MAP_SOAX( 83)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 83)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 84)     , SPMH_MAP_SOAX( 84)
+     &    / 'benzyl_alcohol     ', 131           /
+      DATA  MECH_NAM_SOAX( 84)     , MECH_MAP_SOAX( 84)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 84)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 85)     , SPMH_MAP_SOAX( 85)
+     &    / 'benzaldehyde     ', 127           /
+      DATA  MECH_NAM_SOAX( 85)     , MECH_MAP_SOAX( 85)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 85)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 86)     , SPMH_MAP_SOAX( 86)
+     &    / 'anisole     ', 126           /
+      DATA  MECH_NAM_SOAX( 86)     , MECH_MAP_SOAX( 86)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 86)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 87)     , SPMH_MAP_SOAX( 87)
+     &    / 'ethyl_cinnamate     ', 138           /
+      DATA  MECH_NAM_SOAX( 87)     , MECH_MAP_SOAX( 87)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 87)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 88)     , SPMH_MAP_SOAX( 88)
+     &    / 'cinnamaldehyde     ', 134           /
+      DATA  MECH_NAM_SOAX( 88)     , MECH_MAP_SOAX( 88)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 88)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 89)     , SPMH_MAP_SOAX( 89)
+     &    / 'toluene     ', 164           /
+      DATA  MECH_NAM_SOAX( 89)     , MECH_MAP_SOAX( 89)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 89)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 90)     , SPMH_MAP_SOAX( 90)
+     &    / 'phenol     ', 160           /
+      DATA  MECH_NAM_SOAX( 90)     , MECH_MAP_SOAX( 90)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 90)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 91)     , SPMH_MAP_SOAX( 91)
+     &    / '2_pentene     ', 118           /
+      DATA  MECH_NAM_SOAX( 91)     , MECH_MAP_SOAX( 91)
+     &    / 'ISP      ', 1           /
+      DATA  CONV_FAC_SOAX( 91)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 92)     , SPMH_MAP_SOAX( 92)
+     &    / 'met_salicylate     ', 156           /
+      DATA  MECH_NAM_SOAX( 92)     , MECH_MAP_SOAX( 92)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 92)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 93)     , SPMH_MAP_SOAX( 93)
+     &    / 'benzyl_benzoate     ', 129           /
+      DATA  MECH_NAM_SOAX( 93)     , MECH_MAP_SOAX( 93)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 93)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 94)     , SPMH_MAP_SOAX( 94)
+     &    / 'phenylacetaldehyde     ', 161           /
+      DATA  MECH_NAM_SOAX( 94)     , MECH_MAP_SOAX( 94)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 94)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 95)     , SPMH_MAP_SOAX( 95)
+     &    / 'cinnamic_acid     ', 135           /
+      DATA  MECH_NAM_SOAX( 95)     , MECH_MAP_SOAX( 95)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 95)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 96)     , SPMH_MAP_SOAX( 96)
+     &    / 'benzyl_acetate     ', 130           /
+      DATA  MECH_NAM_SOAX( 96)     , MECH_MAP_SOAX( 96)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 96)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 97)     , SPMH_MAP_SOAX( 97)
+     &    / 'coniferyl_alcohol     ', 136           /
+      DATA  MECH_NAM_SOAX( 97)     , MECH_MAP_SOAX( 97)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 97)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 98)     , SPMH_MAP_SOAX( 98)
+     &    / 'jasmone     ', 149           /
+      DATA  MECH_NAM_SOAX( 98)     , MECH_MAP_SOAX( 98)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 98)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 99)     , SPMH_MAP_SOAX( 99)
+     &    / 'chavicol     ', 132           /
+      DATA  MECH_NAM_SOAX( 99)     , MECH_MAP_SOAX( 99)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 99)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 100)     , SPMH_MAP_SOAX( 100)
+     &    / 'p_coumaric_acid     ', 159           /
+      DATA  MECH_NAM_SOAX( 100)     , MECH_MAP_SOAX( 100)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 100)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 101)     , SPMH_MAP_SOAX( 101)
+     &    / '3_metthiophene     ', 120           /
+      DATA  MECH_NAM_SOAX( 101)     , MECH_MAP_SOAX( 101)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 101)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 102)     , SPMH_MAP_SOAX( 102)
+     &    / '3_metfuran     ', 119           /
+      DATA  MECH_NAM_SOAX( 102)     , MECH_MAP_SOAX( 102)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 102)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 103)     , SPMH_MAP_SOAX( 103)
+     &    / 'met_jasmonate     ', 155           /
+      DATA  MECH_NAM_SOAX( 103)     , MECH_MAP_SOAX( 103)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 103)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 104)     , SPMH_MAP_SOAX( 104)
+     &    / 'xylene     ', 166           /
+      DATA  MECH_NAM_SOAX( 104)     , MECH_MAP_SOAX( 104)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 104)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 105)     , SPMH_MAP_SOAX( 105)
+     &    / 'linalool_OXD_c     ', 151           /
+      DATA  MECH_NAM_SOAX( 105)     , MECH_MAP_SOAX( 105)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 105)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 106)     , SPMH_MAP_SOAX( 106)
+     &    / '8_heptadecene     ', 124           /
+      DATA  MECH_NAM_SOAX( 106)     , MECH_MAP_SOAX( 106)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 106)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 107)     , SPMH_MAP_SOAX( 107)
+     &    / 'z3_hexen_1yl_butyrate     ', 169           /
+      DATA  MECH_NAM_SOAX( 107)     , MECH_MAP_SOAX( 107)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 107)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 108)     , SPMH_MAP_SOAX( 108)
+     &    / 'linalool_OXD_t     ', 152           /
+      DATA  MECH_NAM_SOAX( 108)     , MECH_MAP_SOAX( 108)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 108)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 109)     , SPMH_MAP_SOAX( 109)
+     &    / '2met_nonatriene     ', 137           /
+      DATA  MECH_NAM_SOAX( 109)     , MECH_MAP_SOAX( 109)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 109)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 110)     , SPMH_MAP_SOAX( 110)
+     &    / '3met_3DCTT     ', 165           /
+      DATA  MECH_NAM_SOAX( 110)     , MECH_MAP_SOAX( 110)
+     &    / 'SQT      ', 5           /
+      DATA  CONV_FAC_SOAX( 110)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 111)     , SPMH_MAP_SOAX( 111)
+     &    / 'terpinyl_ACT_a     ', 197           /
+      DATA  MECH_NAM_SOAX( 111)     , MECH_MAP_SOAX( 111)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 111)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 112)     , SPMH_MAP_SOAX( 112)
+     &    / 'skatole     ', 196           /
+      DATA  MECH_NAM_SOAX( 112)     , MECH_MAP_SOAX( 112)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 112)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 113)     , SPMH_MAP_SOAX( 113)
+     &    / 'naphthalene     ', 192           /
+      DATA  MECH_NAM_SOAX( 113)     , MECH_MAP_SOAX( 113)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 113)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 114)     , SPMH_MAP_SOAX( 114)
+     &    / 'indole     ', 183           /
+      DATA  MECH_NAM_SOAX( 114)     , MECH_MAP_SOAX( 114)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 114)
+     &    / 1       /
+ 
+      DATA  SPMH_NAM_SOAX( 115)     , SPMH_MAP_SOAX( 115)
+     &    / 'santene     ', 195           /
+      DATA  MECH_NAM_SOAX( 115)     , MECH_MAP_SOAX( 115)
+     &    / 'TRP      ', 2           /
+      DATA  CONV_FAC_SOAX( 115)
+     &    / 1       /
+ 

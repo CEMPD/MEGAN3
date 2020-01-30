@@ -1,0 +1,297 @@
+            1           12 
+ ./input/wrfout_d01_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                                                                                                                                                                                                                                                     
+            5            6          148          112
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -97.00000    
+ wrf_file: CEN_LAT =     40.00001    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     36000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     176.9444    
+ proj_init: proj%polei,j =     81.50000        278.3400    
+ proj_init: west-east,south-north =   162  128
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-122.67221    , 16.186966    )
+ se corner @ (-71.327789    , 16.186966    )
+ ne corner @ (-52.324432    , 53.920521    )
+ nw corner @ (-141.67557    , 53.920521    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   162     1   128
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ month=            1
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon01.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+ megan2_bioemiss: file soil_nitrogen_mon01.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    2.8076532E-13   5.2073880E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon01.nc
+ month=            2
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon02.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    2.1359611E-13   6.3770905E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon02.nc
+ month=            3
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon03.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    3.5118428E-13   6.7558181E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon03.nc
+ month=            4
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon04.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    5.4577285E-13   9.4856824E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon04.nc
+ month=            5
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon05.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    1.1760996E-12   9.5188503E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon05.nc
+ month=            6
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon06.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    1.0183459E-12   8.5516073E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon06.nc
+ month=            7
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon07.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    8.2402206E-13   8.2477081E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon07.nc
+ month=            8
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon08.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    8.4209863E-13   8.9532715E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon08.nc
+ month=            9
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon09.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    1.0624124E-12   7.7636141E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon09.nc
+ month=           10
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon10.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    8.5802150E-13   7.5771972E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon10.nc
+ month=           11
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon11.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    4.9714865E-13   5.4670813E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon11.nc
+ month=           12
+  
+ Reading megan2 bio emiss file soil_nitrogen_mon12.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           288          192
+ megan2_bioemiss: data_dx,dx,has_area_map =     104774.3        36000.00      F
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -180.0000000000000        178.7500000000000    
+ megan2_bioemiss: megan lat limits =    -90.00000000000000        90.00000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            31          104
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           113          161
+ dataset size =          3626
+ dataset min,max values =    5.3549071E-13   5.1176945E-11
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_nitrogen_mon12.nc
+ map_megan2_emissions: Before write_nitrogen
+ finished writing NITROGEN to .csv file for MEGAN

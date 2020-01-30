@@ -1,0 +1,93 @@
+VegID,Veg_Description,Common_Name,genus,Family,GrowthForm
+-116,CLM/PFT16,corn,other,other,Crop
+-115,CLM/PFT15,wheat,other,other,Crop
+-114,CLM/PFT14,warm C4 grass,other,other,Herb
+-113,CLM/PFT13, cool C3 grass,other,other,Herb
+-112,CLM/PFT12,arctic C3 grass,other,other,Herb
+-111,CLM/PFT11,broadleaf deciduous boreal shrub,other,other,Shrub
+-110,CLM/PFT10, broadleaf deciduous temperate shrub,other,other,Shrub
+-109,CLM/PFT9,broadleaf evergreen temperate shrub,other,other,Shrub
+-108,CLM/PFT8,broadleaf deciduous boreal tree,other,other,Btree
+-107,CLM/PFT7,broadleaf deciduous temperate tree,other,other,Btree
+-106,CLM/PFT6,broadleaf deciduous tropical tree,other,other,Btree
+-105,CLM/PFT5,broadleaf evergreen temperate tree,other,other,Btree
+-104,CLM/PFT4,broadleaf evergreen tropical tree,other,other,Btree
+-103,CLM/PFT3,needleaf deciduous boreal tree,other,other,Ntree
+-102,CLM/PFT2,needleaf evergreen boreal tree,other,other,Ntree
+-101,CLM/PFT1,needleaf evergreen temperate tree,other,other,Ntree
+-5,Generic Crops,Generic Crops,other,other,Crop
+-4,generic herb,generic herb,other,other,Herb
+-3,Generic shrubs,Generic shrubs,other,other,Shrub
+-2,generic Btree,generic Btree,other,other,Btree
+-1,Generic Ntree,Generic Ntree,other,other,Ntree
+386,Acer,maple,Acer,Aceraceae,Btree
+2547,Arachis hypogaea,peanut,Arachis,Fabaceae,Crop
+3248,Artemisia tridentata ssp. parishii,big sagebrush,Artemisia,Asteraceae,Shrub
+4359,Atriplex canescens var. macilenta,fourwing saltbush,Atriplex,Chenopodiaceae,Shrub
+18112,Glycine max,soybean,Glycine,Fabaceae,Crop
+22885,Liquidambar styraciflua,sweetgum,Liquidambar,Hamamelidaceae,Btree
+27289,Oryza sativa,rice,Oryza,Poaceae,Crop
+29957,Picea engelmannii,Engelmann spruce,Picea_N,Pinaceae,Ntree
+30150,Pinus ponderosa var. scopulorum,ponderosa pine,Pinus_MBO1,Pinaceae,Ntree
+30154,Pinus radiata,Monterey pine,Pinus_MBO2,Pinaceae,Ntree
+32169,Pteridium aquilinum,western brackenfern,Pteridium,Dennstaedtiaceae,Herb
+32430,Quercus alba,white oak,Quercus_Iso,Fagaceae,Btree
+-201,Betulaceae,Betulaceae,Betulaceae,Betulaceae,other
+-202,Bignoniaceae,Bignoniaceae,Bignoniaceae,Bignoniaceae,other
+-203,Bumelia,Bumelia,Bumelia,Bumelia,other
+-204,Burseraceae,Burseraceae,Burseraceae,Burseraceae,other
+-205,Capparaceae,Capparaceae,Capparaceae,Capparaceae,other
+-206,Caricaceae,Caricaceae,Caricaceae,Caricaceae,other
+-207,Casuarinaceae,Casuarinaceae,Casuarinaceae,Casuarinaceae,other
+-208,Chrysobalanaceae,Chrysobalanaceae,Chrysobalanaceae,Chrysobalanaceae,other
+-209,Clusiaceae,Clusiaceae,Clusiaceae,Clusiaceae,other
+-210,Combretaceae,Combretaceae,Combretaceae,Combretaceae,other
+-211,Cornaceae,Cornaceae,Cornaceae,Cornaceae,other
+-212,Cupressaceae,Cupressaceae,Cupressaceae,Cupressaceae,other
+-213,Cyperaceae,Cyperaceae,Cyperaceae,Cyperaceae,other
+-214,Cyrillaceae,Cyrillaceae,Cyrillaceae,Cyrillaceae,other
+-215,Ebenaceae,Ebenaceae,Ebenaceae,Ebenaceae,other
+-216,Elaeagnaceae,Elaeagnaceae,Elaeagnaceae,Elaeagnaceae,other
+-217,Ericaceae,Ericaceae,Ericaceae,Ericaceae,other
+-218,Fagaceae,Fagaceae,Fagaceae,Fagaceae,other
+-219,Hamamelidaceae,Hamamelidaceae,Hamamelidaceae,Hamamelidaceae,other
+-220,Hippocastanaceae,Hippocastanaceae,Hippocastanaceae,Hippocastanaceae,other
+-221,Juglandaceae,Juglandaceae,Juglandaceae,Juglandaceae,other
+-222,Lauraceae,Lauraceae,Lauraceae,Lauraceae,other
+-223,Magnoliaceae,Magnoliaceae,Magnoliaceae,Magnoliaceae,other
+-224,Malpighiaceae,Malpighiaceae,Malpighiaceae,Malpighiaceae,other
+-225,Malvaceae,Malvaceae,Malvaceae,Malvaceae,other
+-226,Meliaceae,Meliaceae,Meliaceae,Meliaceae,other
+-227,Moraceae,Moraceae,Moraceae,Moraceae,other
+-228,Myricaceae,Myricaceae,Myricaceae,Myricaceae,other
+-229,Myrtaceae,Myrtaceae,Myrtaceae,Myrtaceae,other
+-230,Oleaceae,Oleaceae,Oleaceae,Oleaceae,other
+-231,Pandanaceae,Pandanaceae,Pandanaceae,Pandanaceae,other
+-232,Pinaceae,Pinaceae,Pinaceae,Pinaceae,other
+-233,Platanaceae,Platanaceae,Platanaceae,Platanaceae,other
+-234,Podocarpaceae,Podocarpaceae,Podocarpaceae,Podocarpaceae,other
+-235,Polygalaceae,Polygalaceae,Polygalaceae,Polygalaceae,other
+-236,Rhizophoraceae,Rhizophoraceae,Rhizophoraceae,Rhizophoraceae,other
+-237,Rosaceae,Rosaceae,Rosaceae,Rosaceae,other
+-238,Rutaceae,Rutaceae,Rutaceae,Rutaceae,other
+-239,Salicaceae,Salicaceae,Salicaceae,Salicaceae,other
+-240,Sapindaceae,Sapindaceae,Sapindaceae,Sapindaceae,other
+-241,Sapotaceae,Sapotaceae,Sapotaceae,Sapotaceae,other
+-242,Scrophulariaceae,Scrophulariaceae,Scrophulariaceae,Scrophulariaceae,other
+-243,Simaroubaceae,Simaroubaceae,Simaroubaceae,Simaroubaceae,other
+-244,Simmondsiaceae,Simmondsiaceae,Simmondsiaceae,Simmondsiaceae,other
+-245,Sladeniaceae,Sladeniaceae,Sladeniaceae,Sladeniaceae,other
+-246,Smilacaceae,Smilacaceae,Smilacaceae,Smilacaceae,other
+-247,Sterculiaceae,Sterculiaceae,Sterculiaceae,Sterculiaceae,other
+-248,Styracaceae,Styracaceae,Styracaceae,Styracaceae,other
+-249,Tamaricaceae,Tamaricaceae,Tamaricaceae,Tamaricaceae,other
+-250,Taxaceae,Taxaceae,Taxaceae,Taxaceae,other
+-251,TBD,TBD,TBD,TBD,other
+-252,Theaceae,Theaceae,Theaceae,Theaceae,other
+-253,Tiliaceae,Tiliaceae,Tiliaceae,Tiliaceae,other
+-254,Ulmaceae,Ulmaceae,Ulmaceae,Ulmaceae,other
+-255,Verbenaceae,Verbenaceae,Verbenaceae,Verbenaceae,other
+-256,Zygophyllaceae,Zygophyllaceae,Zygophyllaceae,Zygophyllaceae,other
+-257,Ulmaceae,Ulmaceae,Ulmaceae,Ulmaceae,other
+-258,Verbenaceae,Verbenaceae,Verbenaceae,Verbenaceae,other
+-259,Zygophyllaceae,Zygophyllaceae,Zygophyllaceae,Zygophyllaceae,other

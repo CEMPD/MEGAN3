@@ -1,0 +1,162 @@
+            1           12 
+ ./input/wrfout_d01_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+            5            6          148          112
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -97.00000    
+ wrf_file: CEN_LAT =     40.00001    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     36000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     176.9444    
+ proj_init: proj%polei,j =     81.50000        278.3400    
+ proj_init: west-east,south-north =   162  128
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-122.67221    , 16.186966    )
+ se corner @ (-71.327789    , 16.186966    )
+ ne corner @ (-52.324432    , 53.920521    )
+ nw corner @ (-141.67557    , 53.920521    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   162     1   128
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file W126_RPO36_0.3degree.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           261          130
+ megan2_bioemiss: data_dx,dx,has_area_map =     33380.94        36000.00      T
+ megan2_bioemiss: file W126_RPO36_0.3degree.nc has a new grid
+megan2_bioemiss: xcen_megan(1,2)  =  -136.992736816406     -136.692306518555    
+megan2_bioemiss: xedge_megan(1,2) =  -137.142951965332     -136.842529296875    
+megan2_bioemiss: dx =                      3
+megan2_bioemiss: nlon_megan,nlat_megan =    261    130
+megan2_bioemiss: ycen_megan  =   56.7905960083008      57.0908432006836    
+megan2_bioemiss: yedge_megan =   56.9407196044922      57.2409667968750    
+  
+ area_interp2: diagnostics
+area_interp2: min model lat ndx =          1
+area_interp2: max model lat ndx =        130
+area_interp2: mcells outside data domain =                    860
+area_interp2: wght size =   229644.000000000    
+area_interp2: total dcell cnt            =    229644
+area_interp2: active dcell cnt           =    108105
+area_interp2: interior dcell cnt         =         0
+area_interp2: partial dcell cnt          =    108049
+  Finished megan2 bio emiss dataset W126_RPO36_0.3degree.nc
+ map_megan2_emissions: Before write_w126
+ megan_bio_emiss is done
+            1           12 
+ ./input/wrfout_d01_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+            5            6          148          112
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -97.00000    
+ wrf_file: CEN_LAT =     40.00001    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     36000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     176.9444    
+ proj_init: proj%polei,j =     81.50000        278.3400    
+ proj_init: west-east,south-north =   162  128
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-122.67221    , 16.186966    )
+ se corner @ (-71.327789    , 16.186966    )
+ ne corner @ (-52.324432    , 53.920521    )
+ nw corner @ (-141.67557    , 53.920521    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   162     1   128
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file W126_RPO36_0.3degree.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           261          130
+ megan2_bioemiss: data_dx,dx,has_area_map =     33380.94        36000.00      T
+ megan2_bioemiss: file W126_RPO36_0.3degree.nc has a new grid
+megan2_bioemiss: xcen_megan(1,2)  =  -136.992736816406     -136.692306518555    
+megan2_bioemiss: xedge_megan(1,2) =  -137.142951965332     -136.842529296875    
+megan2_bioemiss: dx =                      3
+megan2_bioemiss: nlon_megan,nlat_megan =    261    130
+megan2_bioemiss: ycen_megan  =   56.7905960083008      57.0908432006836    
+megan2_bioemiss: yedge_megan =   56.9407196044922      57.2409667968750    
+  
+ area_interp2: diagnostics
+area_interp2: min model lat ndx =          1
+area_interp2: max model lat ndx =        130
+area_interp2: mcells outside data domain =                    860
+area_interp2: wght size =   229644.000000000    
+area_interp2: total dcell cnt            =    229644
+area_interp2: active dcell cnt           =    108105
+area_interp2: interior dcell cnt         =         0
+area_interp2: partial dcell cnt          =    108049
+  Finished megan2 bio emiss dataset W126_RPO36_0.3degree.nc
+ map_megan2_emissions: Before write_w126
+ megan_bio_emiss is done
+            1           12 
+ ./input/wrfout_d01_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+            5            6          148          112
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -97.00000    
+ wrf_file: CEN_LAT =     40.00001    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     36000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     176.9444    
+ proj_init: proj%polei,j =     81.50000        278.3400    
+ proj_init: west-east,south-north =   162  128
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-122.67221    , 16.186966    )
+ se corner @ (-71.327789    , 16.186966    )
+ ne corner @ (-52.324432    , 53.920521    )
+ nw corner @ (-141.67557    , 53.920521    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   162     1   128
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file W126_RPO36_0.3degree.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           261          130
+ megan2_bioemiss: data_dx,dx,has_area_map =     33380.94        36000.00      T
+ megan2_bioemiss: file W126_RPO36_0.3degree.nc has a new grid
+megan2_bioemiss: xcen_megan(1,2)  =  -136.992736816406     -136.692306518555    
+megan2_bioemiss: xedge_megan(1,2) =  -137.142951965332     -136.842529296875    
+megan2_bioemiss: dx =                      3
+megan2_bioemiss: nlon_megan,nlat_megan =    261    130
+megan2_bioemiss: ycen_megan  =   56.7905960083008      57.0908432006836    
+megan2_bioemiss: yedge_megan =   56.9407196044922      57.2409667968750    
+  
+ area_interp2: diagnostics
+area_interp2: min model lat ndx =          1
+area_interp2: max model lat ndx =        130
+area_interp2: mcells outside data domain =                    860
+area_interp2: wght size =   229644.000000000    
+area_interp2: total dcell cnt            =    229644
+area_interp2: active dcell cnt           =    108105
+area_interp2: interior dcell cnt         =         0
+area_interp2: partial dcell cnt          =    108049
+  Finished megan2 bio emiss dataset W126_RPO36_0.3degree.nc
+ map_megan2_emissions: Before write_w126
+ megan_bio_emiss is done

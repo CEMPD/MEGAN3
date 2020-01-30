@@ -1,0 +1,65 @@
+!=======================================================================
+!  LAI_MGN.EXT
+!  This include file contains MEGAN species
+!
+!
+!
+!  MEGAN v2.10
+!  INPUT version 2011a
+!
+!  History:
+!  Who          When       What
+!  ---------------------------------------------------------------------
+!  Tan          07/07/11 - Creates this file for MEGANv2.10
+!=======================================================================
+
+      INTEGER,PARAMETER :: N_MGN_LAI = 46
+      CHARACTER*16   MGN_LAI(N_MGN_LAI)
+      REAL           MGN_UNT(N_MGN_LAI)
+
+      DATA     MGN_LAI(  1), MGN_UNT(  1) / 'LAI01           ', 1.0    /
+      DATA     MGN_LAI(  2), MGN_UNT(  2) / 'LAI02           ', 1.0    /
+      DATA     MGN_LAI(  3), MGN_UNT(  3) / 'LAI03           ', 1.0    /
+      DATA     MGN_LAI(  4), MGN_UNT(  4) / 'LAI04           ', 1.0    /
+      DATA     MGN_LAI(  5), MGN_UNT(  5) / 'LAI05           ', 1.0    /
+      DATA     MGN_LAI(  6), MGN_UNT(  6) / 'LAI06           ', 1.0    /
+      DATA     MGN_LAI(  7), MGN_UNT(  7) / 'LAI07           ', 1.0    /
+      DATA     MGN_LAI(  8), MGN_UNT(  8) / 'LAI08           ', 1.0    /
+      DATA     MGN_LAI(  9), MGN_UNT(  9) / 'LAI09           ', 1.0    /
+      DATA     MGN_LAI( 10), MGN_UNT( 10) / 'LAI10           ', 1.0    /
+      DATA     MGN_LAI( 11), MGN_UNT( 11) / 'LAI11           ', 1.0    /
+      DATA     MGN_LAI( 12), MGN_UNT( 12) / 'LAI12           ', 1.0    /
+      DATA     MGN_LAI( 13), MGN_UNT( 13) / 'LAI13           ', 1.0    /
+      DATA     MGN_LAI( 14), MGN_UNT( 14) / 'LAI14           ', 1.0    /
+      DATA     MGN_LAI( 15), MGN_UNT( 15) / 'LAI15           ', 1.0    /
+      DATA     MGN_LAI( 16), MGN_UNT( 16) / 'LAI16           ', 1.0    /
+      DATA     MGN_LAI( 17), MGN_UNT( 17) / 'LAI17           ', 1.0    /
+      DATA     MGN_LAI( 18), MGN_UNT( 18) / 'LAI18           ', 1.0    /
+      DATA     MGN_LAI( 19), MGN_UNT( 19) / 'LAI19           ', 1.0    /
+      DATA     MGN_LAI( 20), MGN_UNT( 20) / 'LAI20           ', 1.0    /
+      DATA     MGN_LAI( 21), MGN_UNT( 21) / 'LAI21           ', 1.0    /
+      DATA     MGN_LAI( 22), MGN_UNT( 22) / 'LAI22           ', 1.0    /
+      DATA     MGN_LAI( 23), MGN_UNT( 23) / 'LAI23           ', 1.0    /
+      DATA     MGN_LAI( 24), MGN_UNT( 24) / 'LAI24           ', 1.0    /
+      DATA     MGN_LAI( 25), MGN_UNT( 25) / 'LAI25           ', 1.0    /
+      DATA     MGN_LAI( 26), MGN_UNT( 26) / 'LAI26           ', 1.0    /
+      DATA     MGN_LAI( 27), MGN_UNT( 27) / 'LAI27           ', 1.0    /
+      DATA     MGN_LAI( 28), MGN_UNT( 28) / 'LAI28           ', 1.0    /
+      DATA     MGN_LAI( 29), MGN_UNT( 29) / 'LAI29           ', 1.0    /
+      DATA     MGN_LAI( 30), MGN_UNT( 30) / 'LAI30           ', 1.0    /
+      DATA     MGN_LAI( 31), MGN_UNT( 31) / 'LAI31           ', 1.0    /
+      DATA     MGN_LAI( 32), MGN_UNT( 32) / 'LAI32           ', 1.0    /
+      DATA     MGN_LAI( 33), MGN_UNT( 33) / 'LAI33           ', 1.0    /
+      DATA     MGN_LAI( 34), MGN_UNT( 34) / 'LAI34           ', 1.0    /
+      DATA     MGN_LAI( 35), MGN_UNT( 35) / 'LAI35           ', 1.0    /
+      DATA     MGN_LAI( 36), MGN_UNT( 36) / 'LAI36           ', 1.0    /
+      DATA     MGN_LAI( 37), MGN_UNT( 37) / 'LAI37           ', 1.0    /
+      DATA     MGN_LAI( 38), MGN_UNT( 38) / 'LAI38           ', 1.0    /
+      DATA     MGN_LAI( 39), MGN_UNT( 39) / 'LAI39           ', 1.0    /
+      DATA     MGN_LAI( 40), MGN_UNT( 40) / 'LAI40           ', 1.0    /
+      DATA     MGN_LAI( 41), MGN_UNT( 41) / 'LAI41           ', 1.0    /
+      DATA     MGN_LAI( 42), MGN_UNT( 42) / 'LAI42           ', 1.0    /
+      DATA     MGN_LAI( 43), MGN_UNT( 43) / 'LAI43           ', 1.0    /
+      DATA     MGN_LAI( 44), MGN_UNT( 44) / 'LAI44           ', 1.0    /
+      DATA     MGN_LAI( 45), MGN_UNT( 45) / 'LAI45           ', 1.0    /
+      DATA     MGN_LAI( 46), MGN_UNT( 46) / 'LAI46           ', 1.0    /

@@ -1,0 +1,41 @@
+SHELL=/bin/sh
+FC= pgf90
+FFLAGS= -O -Mvect=sse -Mextend -Msecond_underscore -Bstatic -Mlfs
+PROGRAM= megcan
+LIBS =   -L/models/CMAQ/lib/ioapi_3.mulcahy/Linux2_x86pg -lioapi \
+         -L/models/CMAQ/lib/ioapi_3.mulcahy/Linux2_x86pg -lnetcdf
+INCLUDE = -I/models/CMAQ/lib/ioapi_3.mulcahy/ioapi/fixed_src \
+          -I/models/CMAQ/lib/netcdf-3.6.0-p1.mulcahy/include \
+          -I$(CURDIR)
+
+OBJS = \
+     checkmem.o \
+     findlai.o  \
+     $(PROGRAM).o
+
+MODULES= *mod.f
+
+#-----------------------------------------------------------------------
+# line to allow file.mod files to be recognised by GNU make
+%.o : %.mod
+#-----------------------------------------------------------------------
+
+.SUFFIXES : .f .f .o 
+
+.f.o:
+	$(FC) -c $(FFLAGS) $(INCLUDE) $<
+.F.o:
+	$(FC) -c $(FFLAGS) $(INCLUDE) $<
+
+#-----------------------------------------------------------------------
+
+$(PROGRAM):	$(OBJS)
+	$(FC) $(FFLAGS) $(INCLUDE) -o $(@) $(OBJS) $(LIBS)
+
+#-----------------------------------------------------------------------
+
+clean:
+	rm -f $(PROGRAM) *.o *.mod *.core
+#-----------------------------------------------------------------------
+
+

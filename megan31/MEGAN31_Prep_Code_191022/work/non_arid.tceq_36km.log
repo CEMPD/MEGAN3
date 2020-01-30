@@ -1,0 +1,54 @@
+            1           12 
+ ./input/wrfout_d01_2013-08-28_12:00:00                                                                                                                                                                                                                                                                      
+ ./input                                                                         
+            5            6          148          112
+ wrf_file: MAP_PROJ is not polar stereographic
+ wrf_file: CEN_LON =    -97.00000    
+ wrf_file: CEN_LAT =     40.00001    
+ wrf_file: STAND_LON =    -97.00000    
+ wrf_file: TRUELAT1 =     33.00000    
+ wrf_file: TRUELAT2 =     45.00000    
+ wrf_file: DX =     36000.00    
+  
+ proj_init: projection =  1
+ proj_init: proj%hemi    =     1.000000    
+ proj_init: proj%rebydx  =     176.9444    
+ proj_init: proj%polei,j =     81.50000        278.3400    
+ proj_init: west-east,south-north =   162  128
+  
+ wrf domain corners
+ --- ------ -------
+ sw corner @ (-122.67221    , 16.186966    )
+ se corner @ (-71.327789    , 16.186966    )
+ ne corner @ (-52.324432    , 53.920521    )
+ nw corner @ (-141.67557    , 53.920521    )
+  
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ wrf_file: grid dimensions
+ wrf_file: ids,ide,jds,jde
+     1   162     1   128
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+ Reading megan2 bio emiss file soil_climate_non_arid.nc
+ megan2_bioemiss:  nlon_megan, nlat_megan =           720          360
+ megan2_bioemiss: data_dx,dx,has_area_map =     55588.73        36000.00      F
+ megan2_bioemiss: file soil_climate_non_arid.nc has a new grid
+  
+ megan2_bioemiss: model lon limits =    -141.6755676269531       -52.32443237304688    
+ megan2_bioemiss: model lat limits =     16.18696594238281        60.13640594482422    
+  
+ megan2_bioemiss: megan lon limits =    -179.7500000000000        179.7500000000000    
+ megan2_bioemiss: megan lat limits =    -89.75000000000000        89.75000000000000    
+  
+ megan2_bioemiss: count of points <,> data min,max lat =             0
+ xndx_megan =            77          256
+ megan2_bioemiss: count of points < data min lat =             0
+ megan2_bioemiss: count of points > data max lat =             0
+ yndx_megan =           212          301
+ dataset size =         16200
+ dataset min,max values =     0.000000        1.000000    
+ dataset missing value count =             0
+ % valid data =     100.0000    
+  Finished megan2 bio emiss dataset soil_climate_non_arid.nc
+ map_megan2_emissions: Before write_non_arid
+ megan_bio_emiss is done

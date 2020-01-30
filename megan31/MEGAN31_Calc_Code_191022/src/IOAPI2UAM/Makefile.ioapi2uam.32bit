@@ -1,0 +1,21 @@
+SHELL = /bin/sh
+FC = pgf90
+FFLAGS = -O2 -Mdalign -Mnoframe -byteswapio -Mlfs -Bstatic
+PROGRAM = ioapi2uam
+LIBS = -L/models/MEGAN/MEGANv2.03a/lib/ioapi_3/Linux2_x86pg -lioapi \
+       -L/models/MEGAN/MEGANv2.03a/lib/netCDF/lib -lnetcdf
+INCLUDE = -I/models/MEGAN/MEGANv2.03a/lib/ioapi_3/fixed_src
+
+RAW = $(PROGRAM).o
+
+.f.o:
+	$(FC) $(FFLAGS) $(INCLUDE) -c -o $@ $<
+
+.F.o:
+	$(FC) $(FFLAGS) $(INCLUDE) -c -o $@ $<
+
+$(PROGRAM):     $(RAW)
+	$(FC) $(FFLAGS) $(INCLUDE) -o $(@) $(RAW) $(LIBS)
+
+clean:
+	rm -f $(PROGRAM)

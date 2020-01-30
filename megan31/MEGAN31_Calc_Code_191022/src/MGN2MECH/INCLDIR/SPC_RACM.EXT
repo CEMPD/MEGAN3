@@ -1,0 +1,44 @@
+C=======================================================================
+C  SPC_RACM.EXT
+C  This include file contains RACM species and their MW.
+C
+C
+C  Mechanism Name: RACM
+C  MEGAN v2.1.0
+C  INPUT version 200
+C
+C  History:
+C  Who          When       What
+C  ---------------------------------------------------------------------
+C  Tan          12/02/06 - Creates this file
+C  Tan          08/14/07 - Move from MEGAN v2.0 to MEGAN v2.1.0 with no update.
+C  Ling Huang   03/22/17 - Move from MEGAN v2.10 to MEGANv3 with no update
+C=======================================================================
+
+      INTEGER,PARAMETER :: N_RACM_SPC = 23     ! Number of mechanism species
+      CHARACTER*26   MECH_SPC_RACM( N_RACM_SPC )  ! Mechanism species name
+      REAL           MECH_MWT_RACM( N_RACM_SPC )  ! Mechanism species mol. wt.
+
+      DATA  MECH_SPC_RACM(  1), MECH_MWT_RACM(  1) /'ISO  ', 68.0   /
+      DATA  MECH_SPC_RACM(  2), MECH_MWT_RACM(  2) /'CH4  ', 16.0   /
+      DATA  MECH_SPC_RACM(  3), MECH_MWT_RACM(  3) /'ETH  ', 30.0   /
+      DATA  MECH_SPC_RACM(  4), MECH_MWT_RACM(  4) /'HC3  ', 44.0   /
+      DATA  MECH_SPC_RACM(  5), MECH_MWT_RACM(  5) /'HC5  ', 72.0   /
+      DATA  MECH_SPC_RACM(  6), MECH_MWT_RACM(  6) /'HC8  ', 114.0  /
+      DATA  MECH_SPC_RACM(  7), MECH_MWT_RACM(  7) /'OL2  ', 28.0   /
+      DATA  MECH_SPC_RACM(  8), MECH_MWT_RACM(  8) /'OLI  ', 68.0   /
+      DATA  MECH_SPC_RACM(  9), MECH_MWT_RACM(  9) /'OLT  ', 42.0   /
+      DATA  MECH_SPC_RACM( 10), MECH_MWT_RACM( 10) /'ALD  ', 44.0   /
+      DATA  MECH_SPC_RACM( 11), MECH_MWT_RACM( 11) /'KET  ', 72.0   /
+      DATA  MECH_SPC_RACM( 12), MECH_MWT_RACM( 12) /'TOL  ', 92.0   /
+      DATA  MECH_SPC_RACM( 13), MECH_MWT_RACM( 13) /'HCHO ', 30.0   /
+      DATA  MECH_SPC_RACM( 14), MECH_MWT_RACM( 14) /'ORA1 ', 46.0   /
+      DATA  MECH_SPC_RACM( 15), MECH_MWT_RACM( 15) /'ORA2 ', 60.0   /
+      DATA  MECH_SPC_RACM( 16), MECH_MWT_RACM( 16) /'API  ', 136.0  /
+      DATA  MECH_SPC_RACM( 17), MECH_MWT_RACM( 17) /'LIM  ', 136.0  /
+      DATA  MECH_SPC_RACM( 18), MECH_MWT_RACM( 18) /'CO   ', 28.0   /
+      DATA  MECH_SPC_RACM( 19), MECH_MWT_RACM( 19) /'SO2  ', 64.0   /
+      DATA  MECH_SPC_RACM( 20), MECH_MWT_RACM( 20) /'NO   ', 30.0   /
+      DATA  MECH_SPC_RACM( 21), MECH_MWT_RACM( 21) /'HNO3 ', 63.0   /
+      DATA  MECH_SPC_RACM( 22), MECH_MWT_RACM( 22) /'NO2  ', 46.0   /
+      DATA  MECH_SPC_RACM( 23), MECH_MWT_RACM( 23) /'NR   ', 1.0    /

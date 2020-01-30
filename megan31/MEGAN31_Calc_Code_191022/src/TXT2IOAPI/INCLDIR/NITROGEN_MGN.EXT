@@ -1,0 +1,29 @@
+!=======================================================================
+!  NITROGEN_MGN.EXT
+!  This include file contains MEGAN NO NITROGENS 
+!
+!
+!
+!
+!  History:
+!  Who          When       What
+!  ---------------------------------------------------------------------
+!  Xiaoyan Jiang          08/06/2019 - Creates this file for MEGANv3.10
+!=======================================================================
+
+      INTEGER,PARAMETER :: N_MGN_NITROGEN = 12 
+      CHARACTER*16   MGN_NITROGEN(N_MGN_NITROGEN)
+      REAL           MGN_UNT_NITROGEN(N_MGN_NITROGEN)
+
+      DATA     MGN_NITROGEN(  1), MGN_UNT_NITROGEN(  1) / 'NITROGEN01           ', 1.0    /
+      DATA     MGN_NITROGEN(  2), MGN_UNT_NITROGEN(  2) / 'NITROGEN02           ', 1.0    /
+      DATA     MGN_NITROGEN(  3), MGN_UNT_NITROGEN(  3) / 'NITROGEN03           ', 1.0    /
+      DATA     MGN_NITROGEN(  4), MGN_UNT_NITROGEN(  4) / 'NITROGEN04           ', 1.0    /
+      DATA     MGN_NITROGEN(  5), MGN_UNT_NITROGEN(  5) / 'NITROGEN05           ', 1.0    /
+      DATA     MGN_NITROGEN(  6), MGN_UNT_NITROGEN(  6) / 'NITROGEN06           ', 1.0    /
+      DATA     MGN_NITROGEN(  7), MGN_UNT_NITROGEN(  7) / 'NITROGEN07           ', 1.0    /
+      DATA     MGN_NITROGEN(  8), MGN_UNT_NITROGEN(  8) / 'NITROGEN08           ', 1.0    /
+      DATA     MGN_NITROGEN(  9), MGN_UNT_NITROGEN(  9) / 'NITROGEN09           ', 1.0    /
+      DATA     MGN_NITROGEN( 10), MGN_UNT_NITROGEN( 10) / 'NITROGEN10           ', 1.0    /
+      DATA     MGN_NITROGEN( 11), MGN_UNT_NITROGEN( 11) / 'NITROGEN11           ', 1.0    /
+      DATA     MGN_NITROGEN( 12), MGN_UNT_NITROGEN( 12) / 'NITROGEN12           ', 1.0    /
